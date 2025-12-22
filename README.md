@@ -6,6 +6,8 @@ Visualiza, planifica y gestiona tu avance en la malla curricular de tu carrera d
 
 ---
 
+Pruebalo aqui:👉 **[Malla Interactiva UCEN](https://diego-lagos.github.io/malla-interactiva-ucen/)**
+
 ## 🚀 Características Principales
 
 * **Gestión de Estados:** Controla cada asignatura con un sistema de clics (Aprobado ✅, Reprobado ❌, En Curso ⚠️).
