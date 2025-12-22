@@ -1,713 +1,86 @@
 {
-    "s1": [
-        [
-            "INTRODUCCION A LAS MATEMATICAS",
-            "UCEN-58000",
-            10,
-            6,
-            "CSI",
-            [],
-            ""
-        ],
-        [
-            "INTRODUCCION A LA FISICA",
-            "UCEN-14700",
-            8,
-            6,
-            "CSI",
-            [],
-            ""
-        ],
-        [
-            "INTRODUCCION A LA INGENIERIA EN CONSTRUCCION",
-            "UCEN-3242",
-            6,
-            3,
-            "CSI",
-            [],
-            ""
-        ],
-        [
-            "DIBUJO GRAFICO COMPUTACIONAL",
-            "UCEN-3850",
-            8,
-            5,
-            "CSI",
-            [],
-            ""
-        ],
-        [
-            "ESTRATEGIAS DE APRENDIZAJE",
-            "UCEN-58001",
-            4,
-            4,
-            "CSI",
-            [],
-            ""
-        ],
-        [
-            "QUIMICA GENERAL",
-            "UCEN-3267",
-            8,
-            6,
-            "CSI",
-            [],
-            ""
-        ]
-    ],
-    "s2": [
-        [
-            "ALGEBRA",
-            "UCEN-3225",
-            6,
-            6,
-            "CSI",
-            [
-                "UCEN-58000"
-            ],
-            ""
-        ],
-        [
-            "CALCULO",
-            "UCEN-3226",
-            12,
-            6,
-            "CSI",
-            [],
-            ""
-        ],
-        [
-            "MECANICA",
-            "UCEN-14704",
-            10,
-            6,
-            "CSI",
-            [
-                "UCEN-14700"
-            ],
-            ""
-        ],
-        [
-            "CURSO TRANSVERSAL INSTITUCIONAL I",
-            "UCEN-CTI1",
-            2,
-            2,
-            "CSI",
-            [],
-            ""
-        ],
-        [
-            "PROGRAMACION COMPUTACIONAL",
-            "UCEN-14702",
-            10,
-            6,
-            "CSI",
-            [],
-            ""
-        ],
-        [
-            "TOPOGRAFIA",
-            "UCEN-16000",
-            6,
-            4,
-            "CSI",
-            [],
-            ""
-        ]
-    ],
-    "s3": [
-        [
-            "ALGEBRA II",
-            "UCEN-3230",
-            6,
-            6,
-            "CSI",
-            [
-                "UCEN-3225"
-            ],
-            ""
-        ],
-        [
-            "CALCULO II",
-            "UCEN-3231",
-            10,
-            6,
-            "CSI",
-            [
-                "UCEN-3226"
-            ],
-            ""
-        ],
-        [
-            "ESTATICA APLICADA",
-            "UCEN-3244",
-            6,
-            6,
-            "CSI",
-            [
-                "UCEN-3226",
-                "UCEN-14704"
-            ],
-            ""
-        ],
-        [
-            "DIBUJO E INTERPRETACION DE PLANOS",
-            "UCEN-3245",
-            6,
-            4,
-            "CSI",
-            [
-                "UCEN-3850",
-                "UCEN-16000"
-            ],
-            ""
-        ],
-        [
-            "MATERIALES DE CONSTRUCCION",
-            "UCEN-3247",
-            8,
-            5,
-            "CSI",
-            [
-                "UCEN-3267"
-            ],
-            ""
-        ],
-        [
-            "ESTRATEGIAS DE COMUNICACION",
-            "UCEN-14701",
-            4,
-            3,
-            "CSI",
-            [],
-            ""
-        ]
-    ],
-    "s4": [
-        [
-            "ECUACIONES DIFERENCIALES",
-            "UCEN-3333",
-            8,
-            6,
-            "CSI",
-            [
-                "UCEN-3231"
-            ],
-            ""
-        ],
-        [
-            "CALCULO III",
-            "UCEN-3327",
-            6,
-            6,
-            "CSI",
-            [
-                "UCEN-3231"
-            ],
-            ""
-        ],
-        [
-            "ELECTRICIDAD Y MAGNETISMO",
-            "UCEN-14703",
-            10,
-            6,
-            "CSI",
-            [
-                "UCEN-14704"
-            ],
-            ""
-        ],
-        [
-            "PROBABILIDADES Y ESTADISTICA",
-            "UCEN-3340",
-            6,
-            6,
-            "CSI",
-            [
-                "UCEN-3231"
-            ],
-            ""
-        ],
-        [
-            "EDIFICACION I",
-            "UCEN-3246",
-            4,
-            3,
-            "CSI",
-            [
-                "UCEN-3245",
-                "UCEN-3247"
-            ],
-            ""
-        ],
-        [
-            "TALLER DE INTEGRACION BASICO",
-            "UCEN-19525",
-            4,
-            3,
-            "CSI",
-            [
-                "UCEN-3244"
-            ],
-            ""
-        ]
-    ],
-    "s5": [
-        [
-            "FUNDAMENTOS DE ECONOMIA",
-            "UCEN-3334",
-            4,
-            4,
-            "CSI",
-            [
-                "UCEN-3225"
-            ],
-            ""
-        ],
-        [
-            "ONDAS, OPTICA Y CALOR",
-            "UCEN-3248",
-            6,
-            6,
-            "CSI",
-            [
-                "UCEN-14704"
-            ],
-            ""
-        ],
-        [
-            "EDIFICACION II",
-            "UCEN-16008",
-            4,
-            6,
-            "CSI",
-            [
-                "UCEN-3246"
-            ],
-            ""
-        ],
-        [
-            "MECANICA DE SOLIDOS",
-            "UCEN-3253",
-            6,
-            6,
-            "CSI",
-            [
-                "UCEN-3244",
-                "UCEN-3231"
-            ],
-            ""
-        ],
-        [
-            "MECANICA DE FLUIDOS",
-            "UCEN-3252",
-            10,
-            6,
-            "CSI",
-            [
-                "UCEN-3327",
-                "UCEN-14704"
-            ],
-            ""
-        ],
-        [
-            "CURSO TRANSVERSAL INSTITUCIONAL II",
-            "UCEN-CTI2",
-            2,
-            2,
-            "CSI",
-            [],
-            ""
-        ],
-        [
-            "PRACTICA OPERACIONAL",
-            "UCEN-19531",
-            0,
-            9,
-            "CSI",
-            [
-                "UCEN-19525"
-            ],
-            ""
-        ]
-    ],
-    "s6": [
-        [
-            "MECANICA DE SUELOS I",
-            "UCEN-19528",
-            6,
-            6,
-            "CSI",
-            [
-                "UCEN-3247",
-                "UCEN-3253"
-            ],
-            ""
-        ],
-        [
-            "HIDRAULICA",
-            "UCEN-16011",
-            6,
-            5,
-            "CSI",
-            [
-                "UCEN-3252"
-            ],
-            ""
-        ],
-        [
-            "ESTABILIDAD I",
-            "UCEN-3256",
-            6,
-            6,
-            "CSI",
-            [
-                "UCEN-3333",
-                "UCEN-3253"
-            ],
-            ""
-        ],
-        [
-            "CUBICACION Y ANALISIS DE PRECIOS UNITARIOS",
-            "UCEN-16043",
-            8,
-            6,
-            "CSI",
-            [
-                "UCEN-3334",
-                "UCEN-16008"
-            ],
-            ""
-        ],
-        [
-            "INSTALACIONES I",
-            "UCEN-16044",
-            4,
-            4,
-            "CSI",
-            [
-                "UCEN-16008",
-                "UCEN-3252"
-            ],
-            ""
-        ],
-        [
-            "INGLES PARA INGENIERIA I",
-            "UCEN-3330",
-            4,
-            3,
-            "CSI",
-            [],
-            ""
-        ]
-    ],
-    "s7": [
-        [
-            "MECANICA DE SUELOS II",
-            "UCEN-19544",
-            10,
-            6,
-            "CSI",
-            [
-                "UCEN-19528"
-            ],
-            ""
-        ],
-        [
-            "PRESUPUESTACION Y PROCESOS DE LICITACION",
-            "UCEN-19527",
-            4,
-            4,
-            "CSI",
-            [
-                "UCEN-3340",
-                "UCEN-3246"
-            ],
-            ""
-        ],
-        [
-            "CONSTRUCCION DE OBRAS CIVILES",
-            "UCEN-3298",
-            4,
-            4,
-            "CSI",
-            [
-                "UCEN-19528",
-                "UCEN-3256"
-            ],
-            ""
-        ],
-        [
-            "EDIFICACION III",
-            "UCEN-16009",
-            12,
-            6,
-            "CSI",
-            [
-                "UCEN-16044"
-            ],
-            ""
-        ],
-        [
-            "TECNOLOGIA DEL HORMIGON",
-            "UCEN-16014",
-            6,
-            4,
-            "CSI",
-            [
-                "UCEN-3247"
-            ],
-            ""
-        ],
-        [
-            "INSTALACIONES II",
-            "UCEN-16045",
-            4,
-            3,
-            "CSI",
-            [
-                "UCEN-16044"
-            ],
-            ""
-        ],
-        [
-            "TALLER BIM",
-            "UCEN-19530",
-            4,
-            3,
-            "CSI",
-            [
-                "UCEN-3246",
-                "UCEN-3253"
-            ],
-            ""
-        ]
-    ],
-    "s8": [
-        [
-            "MOVIMIENTO DE TIERRA Y FUNDACIONES",
-            "UCEN-16034",
-            8,
-            4,
-            "CSI",
-            [
-                "UCEN-19544"
-            ],
-            ""
-        ],
-        [
-            "DISEÑO Y CONSTRUCCION EN MADERA Y ACERO",
-            "UCEN-16046",
-            4,
-            4,
-            "CSI",
-            [
-                "UCEN-19528",
-                "UCEN-3256"
-            ],
-            ""
-        ],
-        [
-            "DISEÑO GEOMETRICO VIAL",
-            "UCEN-16018",
-            10,
-            5,
-            "CSI",
-            [
-                "UCEN-19528",
-                "UCEN-16000"
-            ],
-            ""
-        ],
-        [
-            "CONSTRUCCION SOSTENIBLE",
-            "UCEN-16047",
-            4,
-            4,
-            "CSI",
-            [
-                "UCEN-16045"
-            ],
-            ""
-        ],
-        [
-            "CONTABILIDAD Y FINANZAS EN EMPRESAS CONSTRUCTORAS",
-            "UCEN-19529",
-            4,
-            5,
-            "CSI",
-            [
-                "UCEN-19527"
-            ],
-            ""
-        ],
-        [
-            "TECNOLOGIA DEL ASFALTO",
-            "UCEN-16004",
-            8,
-            4,
-            "CSI",
-            [
-                "UCEN-3247"
-            ],
-            ""
-        ],
-        [
-            "TALLER DE INTEGRACION TECNOLOGIAS CONSTRUCTIVAS",
-            "UCEN-16048",
-            2,
-            4,
-            "CSI",
-            [],
-            ""
-        ]
-    ],
-    "s9": [
-        [
-            "PLANIFICACION DE PROYECTOS",
-            "UCEN-3856",
-            6,
-            5,
-            "CSI",
-            [
-                "UCEN-19527",
-                "UCEN-19529"
-            ],
-            ""
-        ],
-        [
-            "DISEÑO DE PAVIMENTOS",
-            "UCEN-3297",
-            4,
-            4,
-            "CSI",
-            [
-                "UCEN-16018"
-            ],
-            ""
-        ],
-        [
-            "GESTION DE CALIDAD Y PREVENCION DE RIESGO",
-            "UCEN-3854",
-            4,
-            4,
-            "CSI",
-            [
-                "UCEN-3334",
-                "UCEN-3246"
-            ],
-            ""
-        ],
-        [
-            "GESTION LEGAL Y AMBIENTAL",
-            "UCEN-19514",
-            4,
-            3,
-            "CSI",
-            [
-                "UCEN-19529"
-            ],
-            ""
-        ],
-        [
-            "DISEÑO Y CONSTRUCCION EN ALBAÑILERIA Y HORMIGON ARMADO",
-            "UCEN-16049",
-            6,
-            4,
-            "CSI",
-            [
-                "UCEN-3256",
-                "UCEN-16014"
-            ],
-            ""
-        ],
-        [
-            "PROYECTO DE TITULO I",
-            "UCEN-19537",
-            4,
-            7,
-            "CSI",
-            [],
-            ""
-        ],
-        [
-            "INGLES PARA INGENIERIA II",
-            "UCEN-3338",
-            4,
-            3,
-            "CSI",
-            [
-                "UCEN-3330"
-            ],
-            ""
-        ],
-        [
-            "PRACTICA PROFESIONAL",
-            "UCEN-19543",
-            0,
-            9,
-            "CSI",
-            [],
-            ""
-        ]
-    ],
-    "s10": [
-        [
-            "EVALUACION DE PROYECTOS",
-            "UCEN-3300",
-            6,
-            5,
-            "CSI",
-            [
-                "UCEN-3856"
-            ],
-            ""
-        ],
-        [
-            "GESTION DE OPERACIONES EN CONSTRUCCION",
-            "UCEN-19542",
-            6,
-            4,
-            "CSI",
-            [
-                "UCEN-19527",
-                "UCEN-3854"
-            ],
-            ""
-        ],
-        [
-            "PROYECTO DE TITULO II",
-            "UCEN-19541",
-            2,
-            13,
-            "CSI",
-            [
-                "UCEN-19537"
-            ],
-            ""
-        ],
-        [
-            "ADMINISTRACION DE OBRAS Y RECURSOS HUMANOS",
-            "UCEN-19532",
-            4,
-            4,
-            "CSI",
-            [
-                "UCEN-19527",
-                "UCEN-3246"
-            ],
-            ""
-        ],
-        [
-            "TALLER DE INGENIERIA VIAL",
-            "UCEN-19538",
-            8,
-            4,
-            "CSI",
-            [
-                "UCEN-3297"
-            ],
-            ""
-        ]
-    ]
+  "s1": [
+    ["INTRODUCCION A LAS MATEMATICAS", "UCEN-58000", 10, 6, "CSI", [], ""],
+    ["INTRODUCCION A LA FISICA", "UCEN-14700", 8, 6, "CSI", [], ""],
+    ["INTRODUCCION A LA INGENIERIA EN CONSTRUCCION", "UCEN-3242", 6, 3, "CSI", [], ""],
+    ["DIBUJO GRAFICO COMPUTACIONAL", "UCEN-3850", 8, 5, "CSI", [], ""],
+    ["ESTRATEGIAS DE APRENDIZAJE", "UCEN-58001", 4, 4, "CSI", [], ""],
+    ["QUIMICA GENERAL", "UCEN-3267", 8, 6, "CSI", [], ""]
+  ],
+  "s2": [
+    ["ALGEBRA", "UCEN-3225", 6, 6, "CSI", ["UCEN-58000"], ""],
+    ["CALCULO", "UCEN-3226", 12, 6, "CSI", [], ""],
+    ["MECANICA", "UCEN-14704", 10, 6, "CSI", ["UCEN-14700"], ""],
+    ["CURSO TRANSVERSAL INSTITUCIONAL I", "UCEN-CTI1", 2, 2, "CSI", [], ""],
+    ["PROGRAMACION COMPUTACIONAL", "UCEN-14702", 10, 6, "CSI", [], ""],
+    ["TOPOGRAFIA", "UCEN-16000", 6, 4, "CSI", [], ""]
+  ],
+  "s3": [
+    ["ALGEBRA II", "UCEN-3230", 6, 6, "CSI", ["UCEN-3225"], ""],
+    ["CALCULO II", "UCEN-3231", 10, 6, "CSI", ["UCEN-3226"], ""],
+    ["ESTATICA APLICADA", "UCEN-3244", 6, 6, "CSI", ["UCEN-3226", "UCEN-14704"], ""],
+    ["DIBUJO E INTERPRETACION DE PLANOS", "UCEN-3245", 6, 4, "CSI", ["UCEN-3850", "UCEN-16000"], ""],
+    ["MATERIALES DE CONSTRUCCION", "UCEN-3247", 8, 5, "CSI", ["UCEN-3267"], ""],
+    ["ESTRATEGIAS DE COMUNICACION", "UCEN-14701", 4, 3, "CSI", [], ""]
+  ],
+  "s4": [
+    ["ECUACIONES DIFERENCIALES", "UCEN-3333", 8, 6, "CSI", ["UCEN-3231"], ""],
+    ["CALCULO III", "UCEN-3327", 6, 6, "CSI", ["UCEN-3231"], ""],
+    ["ELECTRICIDAD Y MAGNETISMO", "UCEN-14703", 10, 6, "CSI", ["UCEN-14704"], ""],
+    ["PROBABILIDADES Y ESTADISTICA", "UCEN-3340", 6, 6, "CSI", ["UCEN-3231"], ""],
+    ["EDIFICACION I", "UCEN-3246", 4, 3, "CSI", ["UCEN-3245", "UCEN-3247"], ""],
+    ["TALLER DE INTEGRACION BASICO", "UCEN-19525", 4, 3, "CSI", ["UCEN-3244"], ""]
+  ],
+  "s5": [
+    ["FUNDAMENTOS DE ECONOMIA", "UCEN-3334", 4, 4, "CSI", ["UCEN-3225"], ""],
+    ["ONDAS, OPTICA Y CALOR", "UCEN-3248", 6, 6, "CSI", ["UCEN-14704"], ""],
+    ["EDIFICACION II", "UCEN-16008", 4, 6, "CSI", ["UCEN-3246"], ""],
+    ["MECANICA DE SOLIDOS", "UCEN-3253", 6, 6, "CSI", ["UCEN-3244", "UCEN-3231"], ""],
+    ["MECANICA DE FLUIDOS", "UCEN-3252", 10, 6, "CSI", ["UCEN-3327", "UCEN-14704"], ""],
+    ["CURSO TRANSVERSAL INSTITUCIONAL II", "UCEN-CTI2", 2, 2, "CSI", [], ""],
+    ["PRACTICA OPERACIONAL", "UCEN-19531", 0, 9, "CSI", ["UCEN-19525"], ""]
+  ],
+  "s6": [
+    ["MECANICA DE SUELOS I", "UCEN-19528", 6, 6, "CSI", ["UCEN-3247", "UCEN-3253"], ""],
+    ["HIDRAULICA", "UCEN-16011", 6, 5, "CSI", ["UCEN-3252"], ""],
+    ["ESTABILIDAD I", "UCEN-3256", 6, 6, "CSI", ["UCEN-3333", "UCEN-3253"], ""],
+    ["CUBICACION Y ANALISIS DE PRECIOS UNITARIOS", "UCEN-16043", 8, 6, "CSI", ["UCEN-3334", "UCEN-16008"], ""],
+    ["INSTALACIONES I", "UCEN-16044", 4, 4, "CSI", ["UCEN-16008", "UCEN-3252"], ""],
+    ["INGLES PARA INGENIERIA I", "UCEN-3330", 4, 3, "CSI", [], ""]
+  ],
+  "s7": [
+    ["MECANICA DE SUELOS II", "UCEN-19544", 10, 6, "CSI", ["UCEN-19528"], ""],
+    ["PRESUPUESTACION Y PROCESOS DE LICITACION", "UCEN-19527", 4, 4, "CSI", ["UCEN-3340", "UCEN-3246"], ""],
+    ["CONSTRUCCION DE OBRAS CIVILES", "UCEN-3298", 4, 4, "CSI", ["UCEN-19528", "UCEN-3256"], ""],
+    ["EDIFICACION III", "UCEN-16009", 12, 6, "CSI", ["UCEN-16044"], ""],
+    ["TECNOLOGIA DEL HORMIGON", "UCEN-16014", 6, 4, "CSI", ["UCEN-3247"], ""],
+    ["INSTALACIONES II", "UCEN-16045", 4, 3, "CSI", ["UCEN-16044"], ""],
+    ["TALLER BIM", "UCEN-19530", 4, 3, "CSI", ["UCEN-3246", "UCEN-3253"], ""]
+  ],
+  "s8": [
+    ["MOVIMIENTO DE TIERRA Y FUNDACIONES", "UCEN-16034", 8, 4, "CSI", ["UCEN-19544"], ""],
+    ["DISEÑO Y CONSTRUCCION EN MADERA Y ACERO", "UCEN-16046", 4, 4, "CSI", ["UCEN-19528", "UCEN-3256"], ""],
+    ["DISEÑO GEOMETRICO VIAL", "UCEN-16018", 10, 5, "CSI", ["UCEN-19528", "UCEN-16000"], ""],
+    ["CONSTRUCCION SOSTENIBLE", "UCEN-16047", 4, 4, "CSI", ["UCEN-16045"], ""],
+    ["CONTABILIDAD Y FINANZAS EN EMPRESAS CONSTRUCTORAS", "UCEN-19529", 4, 5, "CSI", ["UCEN-19527"], ""],
+    ["TECNOLOGIA DEL ASFALTO", "UCEN-16004", 8, 4, "CSI", ["UCEN-3247"], ""],
+    ["TALLER DE INTEGRACION TECNOLOGIAS CONSTRUCTIVAS", "UCEN-16048", 2, 4, "CSI", [], ""]
+  ],
+  "s9": [
+    ["PLANIFICACION DE PROYECTOS", "UCEN-3856", 6, 5, "CSI", ["UCEN-19527", "UCEN-19529"], ""],
+    ["DISEÑO DE PAVIMENTOS", "UCEN-3297", 4, 4, "CSI", ["UCEN-16018"], ""],
+    ["GESTION DE CALIDAD Y PREVENCION DE RIESGO", "UCEN-3854", 4, 4, "CSI", ["UCEN-3334", "UCEN-3246"], ""],
+    ["GESTION LEGAL Y AMBIENTAL", "UCEN-19514", 4, 3, "CSI", ["UCEN-19529"], ""],
+    ["DISEÑO Y CONSTRUCCION EN ALBAÑILERIA Y HORMIGON ARMADO", "UCEN-16049", 6, 4, "CSI", ["UCEN-3256", "UCEN-16014"], ""],
+    ["PROYECTO DE TITULO I", "UCEN-19537", 4, 7, "CSI", [], ""],
+    ["INGLES PARA INGENIERIA II", "UCEN-3338", 4, 3, "CSI", ["UCEN-3330"], ""],
+    ["PRACTICA PROFESIONAL", "UCEN-19543", 0, 9, "CSI", [], ""]
+  ],
+  "s10": [
+    ["EVALUACION DE PROYECTOS", "UCEN-3300", 6, 5, "CSI", ["UCEN-3856"], ""],
+    ["GESTION DE OPERACIONES EN CONSTRUCCION", "UCEN-19542", 6, 4, "CSI", ["UCEN-19527", "UCEN-3854"], ""],
+    ["PROYECTO DE TITULO II", "UCEN-19541", 2, 13, "CSI", ["UCEN-19537"], ""],
+    ["ADMINISTRACION DE OBRAS Y RECURSOS HUMANOS", "UCEN-19532", 4, 4, "CSI", ["UCEN-19527", "UCEN-3246"], ""],
+    ["TALLER DE INGENIERIA VIAL", "UCEN-19538", 8, 4, "CSI", ["UCEN-3297"], ""]
+  ]
 }
