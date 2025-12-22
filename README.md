@@ -26,30 +26,37 @@ El proyecto se organiza de la siguiente manera para facilitar su mantenimiento:
 * **`/js`**: Scripts de lógica central y controladores.
 * **`/views`**: Fragmentos genéricos como footers y headers.
 * **`index.html`**: Punto de entrada de la aplicación.
-* **`serviceWorker.js`**: Archivo crítico para el funcionamiento de la aplicación.
+* **`serviceWorker.js`**: **Archivo crítico** para el funcionamiento y ciclo de vida de la aplicación.
 * **`RUN.BAT`**: Script de ejecución rápida para Windows.
 
 ---
 
 ## 🛠️ Instalación y Ejecución
 
-La aplicación requiere un servidor web local para cargar correctamente los archivos JSON de las mallas.
+### 🌐 Versión Web (Recomendado)
 
-### Opción Rápida (Windows)
+Puedes acceder a la aplicación directamente sin instalar nada a través del siguiente enlace:
+👉 **[Malla Interactiva UCEN](https://diego-lagos.github.io/malla-interactiva-ucen/)**
 
-Simplemente haz doble clic en el archivo **`RUN.BAT`**. Este iniciará un servidor local con Python y abrirá la aplicación en Microsoft Edge automáticamente.
+### 💻 Ejecución Local
 
-### Opción Manual
+Al ser una aplicación web estática que consume archivos JSON, requiere un servidor web local para funcionar correctamente.
+
+#### Opción Rápida (Windows)
+
+Simplemente haz doble clic en el archivo **`RUN.BAT`**. Este iniciará un servidor local con Python y abrirá la aplicación en tu navegador automáticamente.
+
+#### Opción Manual
 
 1. **Navega al directorio raíz** del proyecto.
-2. **Inicia el servidor web** con Python:
+2. **Inicia el servidor web** (ejemplo con Python):
 ```bash
 python -m http.server 8000
 
 ```
 
 
-3. **Abre en el navegador**: Accede a `http://localhost:8000`.
+3. **Accede en tu navegador**: `http://localhost:8000`.
 
 ---
 
