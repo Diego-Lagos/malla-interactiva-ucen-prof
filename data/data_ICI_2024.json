@@ -3,14 +3,14 @@
     ["Introducción a las Matemáticas", "FD-83500", 8, 7, "FD", [], ""],
     ["Introducción a la Física", "FD-83501", 8, 7, "FD", [], ""],
     ["Introducción a la Ingeniería Civil Industrial", "FD-86000", 6, 9, "FD", [], ""],
-    ["Formación Básica para la Vida Académica I", "FG-FBVA", 4, 4, "FG", [], ""],
+    ["Formación Básica para la Vida Académica I", "FG-FBVA01", 4, 4, "FG", [], ""],
     ["Curso Sello Institucional I: Inglés I", "FG-82000", 4, 4, "FG", [], ""]
   ],
   "s2": [
     ["Álgebra I", "FD-83502", 8, 7, "FD", ["FD-83500"], ""],
     ["Cálculo I", "FD-83503", 8, 7, "FD", [], ""],
     ["Mecánica", "FD-83504", 8, 7, "FD", [], ""],
-    ["Formación Básica para la Vida Académica II", "FG-FBVA", 4, 4, "FG", [], ""],
+    ["Formación Básica para la Vida Académica II", "FG-FBVA02", 4, 4, "FG", [], ""],
     ["Curso Sello Institucional II: Inglés II", "FG-82001", 4, 4, "FG", ["FG-82000"], ""]
   ],
   "s3": [
@@ -82,3 +82,4 @@
     ["Práctica Profesional", "FP-86032-P", 2, 12, "FP", [], ""]
   ]
 }
+
