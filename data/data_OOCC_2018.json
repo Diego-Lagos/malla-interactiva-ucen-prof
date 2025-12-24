@@ -54,7 +54,7 @@
     ["CONTABILIDAD Y FINANZAS EN EMPRESAS CONSTRUCTORAS", "UCEN-19529", 4, 5, "CSI", ["UCEN-19527"], ""],
     ["HIDRAULICA", "UCEN-16011", 6, 5, "CSI", ["UCEN-3252"], ""],
     ["TALLER BIM", "UCEN-19530", 4, 3, "CSI", ["UCEN-3246", "UCEN-3253"], ""],
-    ["PRACTICA OPERACIONAL", "UCEN-S/C", 0, 9, "CSI", [], ""]
+    ["PRACTICA OPERACIONAL", "UCEN-SC", 0, 9, "CSI", [], ""]
   ],
   "s8": [
     ["HORMIGON ARMADO", "UCEN-3304", 6, 5, "CSI", ["UCEN-3294"], ""],
@@ -91,3 +91,4 @@
     ["PRACTICA PROFESIONAL", "UCEN-19543", 0, 9, "CSI", [], ""]
   ]
 }
+
