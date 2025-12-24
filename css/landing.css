@@ -236,6 +236,116 @@ body.landing-mode #overlay {
 }
 
 /* Shared theme for landing + malla */
+body.landing-mode .help-widget {
+  display: none;
+}
+
+.help-widget {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.help-panel {
+  width: min(360px, 92vw);
+  max-height: min(70vh, 420px);
+  overflow-y: auto;
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  padding: 16px 18px 18px;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.help-panel.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.help-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.help-panel-header h2 {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.help-panel-body {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.help-panel-body p {
+  margin: 0 0 10px;
+}
+
+.help-panel-body ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.help-panel-body li {
+  margin-bottom: 6px;
+}
+
+.help-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 999px;
+  padding: 10px 16px;
+  box-shadow: var(--shadow);
+}
+
+.help-button-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+}
+
+.help-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid var(--stroke);
+  background: transparent;
+  color: var(--ink);
+  font-size: 0.85rem;
+}
+
+.help-close:hover {
+  background: rgba(15, 138, 124, 0.1);
+}
+
+.help-button:focus-visible,
+.help-close:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+}
+
 body a {
   color: var(--accent-strong);
 }
