@@ -53,7 +53,8 @@
     ["Hidráulica", "CI-16011", 6, 5, "CI", ["CI-3252"], ""],
     ["Dinámica de Estructuras", "CI-19506", 6, 6, "CI", ["CI-19526_M"], ""],
     ["Contabilidad y Finanzas en Empresas Constructoras", "CI-19529", 4, 5, "CI", ["IAP-19527"], ""],
-    ["Taller Building Information Modeling (BIM)", "IAP-19530", 4, 3, "IAP", ["IAP-3246", "CI-3253"], ""]
+    ["Taller Building Information Modeling (BIM)", "IAP-19530", 4, 3, "IAP", ["IAP-3246", "CI-3253"], ""],
+    ["Práctica Operacional", "IAP-SC", 0, 9, "IAP", [], ""]
   ],
   "s8": [
     ["Hormigón Armado", "IAP-3304", 6, 5, "IAP", ["CI-19526_M"], ""],
@@ -84,7 +85,9 @@
   "s11": [
     ["Taller de Hormigón Armado", "IAP-19539", 4, 6, "IAP", ["CI-19506"], ""],
     ["Diseño de Obras Marítimas y Portuarias", "IAP-19540", 8, 4, "IAP", ["IAP-19538"], ""],
+    ["Proyecto de Título II", "IAP-19541", 2, 13, "IAP", [], ""],
+    ["Gestión de Operaciones en Construcción", "IAP-19542", 6, 4, "IAP", ["IAP-19527", "IAP-3854"], ""],
     ["Gestión Legal y Ambiental", "IAP-19514", 4, 3, "IAP", ["CI-19529"], ""],
-    ["Gestión de Operaciones en Construcción", "IAP-19542", 6, 4, "IAP", ["IAP-19527", "IAP-3854"], ""]
+    ["Práctica Profesional", "IAP-19543", 0, 9, "IAP", [], ""]
   ]
 }
