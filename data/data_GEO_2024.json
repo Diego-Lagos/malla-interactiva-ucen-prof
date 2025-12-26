@@ -11,7 +11,7 @@
     ["Cálculo I", "FD-83503", 8, 7, "FD", [], ""],
     ["Mecánica", "FD-83504", 8, 7, "FD", ["FD-83501"], ""],
     ["Formación Básica para la Vida Académica II", "FG-FBVA02", 4, 4, "FG", [], ""],
-    ["Curso Sello Institucional II: Inglés II", "FG-82001", 4, 4, "FG", ["FG-82000"], ""]
+    ["Sello Curso Institucional: Inglés II", "FG-82001", 4, 4, "FG", ["FG-82000"], ""]
   ],
   "s3": [
     ["Álgebra II", "FD-83505", 6, 5, "FD", ["FD-83502"], ""],
@@ -63,7 +63,7 @@
     ["Proyecto de Título I", "FP-87026", 4, 7, "FP", ["FD-87025"], ""],
     ["Geología de Exploración Minera", "FP-87027", 14, 8, "FP", ["FD-87021"], ""],
     ["Geología de Campo II", "FP-87028", 20, 10, "FP", ["FD-87022"], ""],
-    ["Alociclicidad de los Procesos Geológicos", "FP-87030", 4, 3, "FP", ["FD-87023"], ""],
+    ["Alociclidad de los Procesos Geológicos", "FP-87030", 4, 3, "FP", ["FD-87023"], ""],
     ["Geopatrimonio y Geodiversidad", "FP-87029", 6, 4, "FP", [], ""]
   ],
   "s10": [
