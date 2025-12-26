@@ -11,7 +11,7 @@
     ["Cálculo I", "FD-83503", 8, 7, "FD", [], ""],
     ["Mecánica", "FD-83504", 8, 7, "FD", ["FD-83501"], ""],
     ["Formación Básica para la Vida Académica II", "FG-FBVA02", 4, 4, "FG", [], ""],
-    ["Sello Curso Institucional: Inglés II", "FG-82001", 4, 4, "FG", ["FG-82000"], ""]
+    ["Curso Sello Institucional II: Inglés II", "FG-82001", 4, 4, "FG", ["FG-82000"], ""]
   ],
   "s3": [
     ["Álgebra II", "FD-83505", 6, 5, "FD", ["FD-83502"], ""],
@@ -30,7 +30,7 @@
     ["Curso Sello Institucional IV", "FG-CSIRD", 4, 4, "FG", [], ""]
   ],
   "s5": [
-    ["Sistemas de Información Geográfica y Procesamiento de imágenes satelitales", "FD-87007", 8, 6, "FD", [], ""],
+    ["Sistemas de Información Geográfica y Procesamiento de Imágenes Satelitales", "FD-87007", 8, 6, "FD", [], ""],
     ["Geomorfología", "FD-87009", 10, 7, "FD", ["FD-87005"], ""],
     ["Geología Estructural", "FD-87008", 12, 8, "FD", ["FD-83506"], ""],
     ["Mineralogía Óptica", "FD-87010", 10, 5, "FD", ["FD-87004"], ""],
@@ -46,31 +46,30 @@
   ],
   "s7": [
     ["Geología Económica", "FD-87016", 8, 5, "FD", ["FD-87011"], ""],
-    ["Estadística para la geología", "FD-87017", 6, 3, "FD", [], ""],
+    ["Estadística para la Geología", "FD-87017", 6, 3, "FD", [], ""],
     ["Hidrogeología", "FD-87019", 8, 5, "FD", ["FD-87009"], ""],
     ["Volcanología", "FD-87018", 12, 7, "FD", ["FD-87012"], ""],
-    ["Evaluación y gestión de Proyectos", "FD-87015", 4, 4, "FD", ["FD-83514"], ""],
+    ["Evaluación y Gestión de Proyectos", "FD-87015", 4, 4, "FD", ["FD-83514"], ""],
     ["Práctica Operacional", "FD-87020", 2, 6, "FD", [], ""]
   ],
   "s8": [
-    ["Geofísica y exploración geofisica", "FD-87021", 8, 5, "FD", [], ""],
-    ["Métodos de investigación geológica", "FD-87025", 10, 7, "FD", [], ""],
+    ["Geofísica y Exploración Geofísica", "FD-87021", 8, 5, "FD", [], ""],
+    ["Métodos de Investigación Geológica", "FD-87025", 10, 7, "FD", [], ""],
     ["Geología de Chile", "FD-87022", 12, 8, "FD", ["FD-87013"], ""],
     ["Geología Ambiental", "FD-87023", 8, 5, "FD", ["FD-87019"], ""],
     ["Peligros Geológicos y Riesgos Naturales", "FD-87024", 8, 5, "FD", [], ""]
   ],
   "s9": [
     ["Proyecto de Título I", "FP-87026", 4, 7, "FP", ["FD-87025"], ""],
-    ["Geologia de exploración minera", "FP-87027", 14, 8, "FP", ["FD-87021"], ""],
+    ["Geología de Exploración Minera", "FP-87027", 14, 8, "FP", ["FD-87021"], ""],
     ["Geología de Campo II", "FP-87028", 20, 10, "FP", ["FD-87022"], ""],
-    ["Alociclidad de los procesos geológicos", "FP-87030", 4, 3, "FP", ["FD-87023"], ""],
+    ["Alociclicidad de los Procesos Geológicos", "FP-87030", 4, 3, "FP", ["FD-87023"], ""],
     ["Geopatrimonio y Geodiversidad", "FP-87029", 6, 4, "FP", [], ""]
   ],
   "s10": [
     ["Proyecto de Título II", "FP-87031", 4, 13, "FP", ["FP-87026"], ""],
-    ["Geología de depósitos no metálicos", "FP-87032", 4, 5, "FP", ["FP-87027"], ""],
-    ["Geología y Ética al servicio de la comunidad", "FP-87033", 6, 5, "FP", [], ""],
+    ["Geología de Depósitos No Metálicos", "FP-87032", 4, 5, "FP", ["FP-87027"], ""],
+    ["Geología y Ética al Servicio de la Comunidad", "FP-87033", 6, 5, "FP", [], ""],
     ["Práctica Profesional", "FP-87034", 2, 5, "FP", [], ""]
   ]
-
 }
