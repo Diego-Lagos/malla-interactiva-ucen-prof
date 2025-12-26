@@ -1,70 +1,70 @@
 {
   "s1": [
-    ["INTRODUCCION A LAS MATEMATICAS", "FD-83500", 8, 7, "FD", [], ""],
-    ["INTRODUCCION A LA FISICA", "FD-83501", 8, 7, "FD", [], ""],
-    ["INTRODUCCION A LA INGENIERIA EN COMPUTACION E INFORMATICA", "FD-85000", 6, 9, "FD", [], ""],
-    ["FORMACION BASICA PARA LA VIDA ACADEMICA I", "FBVA-01", 4, 4, "FG", [], ""],
-    ["CURSO SELLO INSTITUCIONAL I: INGLES I", "FG-82000", 2, 4, "FG", [], ""]
+    ["Introducción a las Matemáticas", "FD-83500", 8, 7, "FD", [], ""],
+    ["Introducción a la Física", "FD-83501", 8, 7, "FD", [], ""],
+    ["Introducción a la Ingeniería en Computación e Informática", "FD-85000", 6, 9, "FD", [], ""],
+    ["Formación Básica para la Vida Académica I", "FBVA-01", 4, 4, "FG", [], ""],
+    ["Curso Sello Institucional I: Inglés I", "FG-82000", 2, 4, "FG", [], ""]
   ],
   "s2": [
-    ["ALGEBRA I", "FD-83502", 8, 7, "FD", ["FD-83500"], ""],
-    ["CALCULO I", "FD-83503", 8, 7, "FD", ["FD-83500"], ""],
-    ["MECANICA", "FD-83504", 8, 7, "FD", ["FD-83501"], ""],
-    ["FORMACION BASICA PARA LA VIDA ACADEMICA II", "FBVA-02", 4, 4, "FG", ["FBVA-01"], ""],
-    ["CURSO SELLO INSTITUCIONAL II: INGLES II", "FG-82001", 4, 4, "FG", ["FG-82000"], ""]
+    ["Álgebra I", "FD-83502", 8, 7, "FD", ["FD-83500"], ""],
+    ["Cálculo I", "FD-83503", 8, 7, "FD", ["FD-83500"], ""],
+    ["Mecánica", "FD-83504", 8, 7, "FD", ["FD-83501"], ""],
+    ["Formación Básica para la Vida Académica II", "FBVA-02", 4, 4, "FG", ["FBVA-01"], ""],
+    ["Curso Sello Institucional II: Inglés II", "FG-82001", 4, 4, "FG", ["FG-82000"], ""]
   ],
   "s3": [
-    ["ALGEBRA II", "FD-83505", 6, 5, "FD", ["FD-83502"], ""],
-    ["CALCULO II", "FD-83506", 6, 5, "FD", ["FD-83503"], ""],
-    ["ELECTRICIDAD Y MAGNETISMO", "FD-83510", 8, 5, "FD", ["FD-83504"], ""],
-    ["PROGRAMACION COMPUTACIONAL", "FD-83512", 6, 5, "FD", ["FD-85000"], ""],
-    ["INGLES COMUNICACIONAL", "FD-85001", 4, 5, "FD", ["FG-82001"], ""],
-    ["CURSO SELLO INSTITUCIONAL III", "CSIRD-01", 4, 4, "FG", ["FG-82001"], ""]
+    ["Álgebra II", "FD-83505", 6, 5, "FD", ["FD-83502"], ""],
+    ["Cálculo II", "FD-83506", 6, 5, "FD", ["FD-83503"], ""],
+    ["Electricidad y Magnetismo", "FD-83510", 8, 5, "FD", ["FD-83504"], ""],
+    ["Programación Computacional", "FD-83512", 6, 5, "FD", ["FD-85000"], ""],
+    ["Inglés Comunicacional", "FD-85001", 4, 5, "FD", ["FG-82001"], ""],
+    ["Curso Sello Institucional III", "CSIRD-01", 4, 4, "FG", ["FG-82001"], ""]
   ],
   "s4": [
-    ["ECUACIONES DIFERENCIALES", "FD-83508", 6, 6, "FD", ["FD-83506"], ""],
-    ["CALCULO III", "FD-83509", 6, 6, "FD", ["FD-83506"], ""],
-    ["ONDAS, OPTICA Y CALOR", "FD-83513", 8, 4, "FD", ["FD-83510"], ""],
-    ["PROGRAMACION ORIENTADA A OBJETOS", "FD-85003", 8, 6, "FD", ["FD-83512"], ""],
-    ["TALLER INTEGRADOR I", "FD-85002", 2, 8, "FD", [
+    ["Ecuaciones Diferenciales", "FD-83508", 6, 6, "FD", ["FD-83506"], ""],
+    ["Cálculo III", "FD-83509", 6, 6, "FD", ["FD-83506"], ""],
+    ["Ondas, Óptica y Calor", "FD-83513", 8, 4, "FD", ["FD-83510"], ""],
+    ["Programación Orientada a Objetos", "FD-85003", 8, 6, "FD", ["FD-83512"], ""],
+    ["Taller Integrador I", "FD-85002", 2, 8, "FD", [
       "FD-83500", "FD-83501", "FD-85000", "FBVA-01", "FG-82000",
       "FD-83502", "FD-83503", "FD-83504", "FBVA-02", "FG-82001",
       "FD-83505", "FD-83506", "FD-83510", "FD-83512", "FD-85001", "CSIRD-01"
     ], ""],
-    ["CURSO SELLO INSTITUCIONAL IV", "CSIRD-02", 4, 4, "FG", ["CSIRD-01"], ""]
+    ["Curso Sello Institucional IV", "CSIRD-02", 4, 4, "FG", ["CSIRD-01"], ""]
   ],
   "s5": [
-    ["PROBABILIDAD Y ESTADISTICA", "FD-83515", 6, 5, "FD", ["FD-83506"], ""],
-    ["QUIMICA GENERAL", "FD-83518", 8, 7, "FD", ["FD-83513"], ""],
-    ["ARQUITECTURA DE COMPUTADORES", "FD-85004", 6, 5, "FD", ["FD-85003"], ""],
-    ["ESTRUCTURA DE DATOS", "FD-85005", 6, 5, "FD", ["FD-85003"], ""],
-    ["ADMINISTRACION", "FD-85006", 4, 4, "FD", [
+    ["Probabilidad y Estadística", "FD-83515", 6, 5, "FD", ["FD-83506"], ""],
+    ["Química General", "FD-83518", 8, 7, "FD", ["FD-83513"], ""],
+    ["Arquitectura de Computadores", "FD-85004", 6, 5, "FD", ["FD-85003"], ""],
+    ["Estructura de Datos", "FD-85005", 6, 5, "FD", ["FD-85003"], ""],
+    ["Administración", "FD-85006", 4, 4, "FD", [
       "FD-83500", "FD-83501", "FD-85000", "FBVA-01", "FG-82000",
       "FD-83502", "FD-83503", "FD-83504", "FBVA-02", "FG-82001",
       "FD-83505", "FD-83506", "FD-83510", "FD-83512", "FD-85001", "CSIRD-01",
       "FD-83508", "FD-83509", "FD-83513", "FD-85003", "FD-85002", "CSIRD-02"
     ], ""],
-    ["INTERDISCIPLINAR", "INTR-01", 4, 4, "FG", ["CSIRD-02"], ""]
+    ["Interdisciplinar", "INTR-01", 4, 4, "FG", ["CSIRD-02"], ""]
   ],
   "s6": [
-    ["METODOS ESTADISTICOS", "FD-85007", 6, 5, "FD", ["FD-83515"], ""],
-    ["FUNDAMENTOS DE ECONOMIA", "FD-85008", 4, 4, "FD", ["FD-85006"], ""],
-    ["SISTEMAS OPERATIVOS", "FD-85010", 6, 6, "FD", ["FD-85004"], ""],
-    ["BASES DE DATOS", "FD-85009", 6, 6, "FD", ["FD-85002"], ""],
-    ["COMPLEJIDAD DE ALGORITMOS", "FD-85011", 6, 5, "FD", ["FD-85005"], ""],
-    ["INTERDISCIPLINAR A+S", "INTR-AS-02", 4, 4, "FG", ["INTR-01"], ""]
+    ["Métodos Estadísticos", "FD-85007", 6, 5, "FD", ["FD-83515"], ""],
+    ["Fundamentos de Economía", "FD-85008", 4, 4, "FD", ["FD-85006"], ""],
+    ["Sistemas Operativos", "FD-85010", 6, 6, "FD", ["FD-85004"], ""],
+    ["Bases de Datos", "FD-85009", 6, 6, "FD", ["FD-85002"], ""],
+    ["Complejidad de Algoritmos", "FD-85011", 6, 5, "FD", ["FD-85005"], ""],
+    ["Interdisciplinar A+S", "INTR-AS-02", 4, 4, "FG", ["INTR-01"], ""]
   ],
   "s7": [
-    ["INVESTIGACION OPERATIVA", "FD-83519", 6, 5, "FD", ["FD-85006"], ""],
-    ["CONTABILIDAD Y COSTOS", "FD-85013", 6, 6, "FD", ["FD-85008"], ""],
-    ["REDES DE DATOS Y SISTEMAS DISTRIBUIDOS", "FD-85015", 6, 6, "FD", ["FD-85010"], ""],
-    ["TOPICOS AVANZADOS DE DATOS", "FD-85014", 6, 6, "FD", ["FD-85009"], ""],
-    ["ANALISIS Y DISENO DE SISTEMAS DE INFORMACION", "FD-85012", 6, 7, "FD", ["FD-85003"], ""]
+    ["Investigación Operativa", "FD-83519", 6, 5, "FD", ["FD-85006"], ""],
+    ["Contabilidad y Costos", "FD-85013", 6, 6, "FD", ["FD-85008"], ""],
+    ["Redes de Datos y Sistemas Distribuidos", "FD-85015", 6, 6, "FD", ["FD-85010"], ""],
+    ["Tópicos Avanzados de Datos", "FD-85014", 6, 6, "FD", ["FD-85009"], ""],
+    ["Análisis y Diseño de Sistemas de Información", "FD-85012", 6, 7, "FD", ["FD-85003"], ""]
   ],
   "s8": [
-    ["EVALUACION DE PROYECTOS", "FD-83517", 6, 7, "FD", ["FD-85013"], ""],
-    ["CIBERSEGURIDAD", "FD-85016", 6, 5, "FD", ["FD-85015"], ""],
-    ["AUTOMATIZACION", "FD-85018", 6, 5, "FD", [
+    ["Evaluación de Proyectos", "FD-83517", 6, 7, "FD", ["FD-85013"], ""],
+    ["Ciberseguridad", "FD-85016", 6, 5, "FD", ["FD-85015"], ""],
+    ["Automatización", "FD-85018", 6, 5, "FD", [
       "FD-83500", "FD-83501", "FD-85000", "FBVA-01", "FG-82000",
       "FD-83502", "FD-83503", "FD-83504", "FBVA-02", "FG-82001",
       "FD-83505", "FD-83506", "FD-83510", "FD-83512", "FD-85001", "CSIRD-01",
@@ -73,9 +73,9 @@
       "FD-85007", "FD-85008", "FD-85010", "FD-85009", "FD-85011", "INTR-AS-02",
       "FD-83519", "FD-85013", "FD-85015", "FD-85014", "FD-85012"
     ], ""],
-    ["MINERIA DE DATOS", "FD-85017", 6, 5, "FD", ["FD-85014"], ""],
-    ["INGENIERIA DE SOFTWARE", "FD-85020", 6, 5, "FD", ["FD-85012"], ""],
-    ["TALLER INTEGRADOR II", "FD-85019", 2, 3, "FD", [
+    ["Minería de Datos", "FD-85017", 6, 5, "FD", ["FD-85014"], ""],
+    ["Ingeniería de Software", "FD-85020", 6, 5, "FD", ["FD-85012"], ""],
+    ["Taller Integrador II", "FD-85019", 2, 3, "FD", [
       "FD-83500", "FD-83501", "FD-85000", "FBVA-01", "FG-82000",
       "FD-83502", "FD-83503", "FD-83504", "FBVA-02", "FG-82001",
       "FD-83505", "FD-83506", "FD-83510", "FD-83512", "FD-85001", "CSIRD-01",
@@ -86,12 +86,12 @@
     ], ""]
   ],
   "s9": [
-    ["INNOVACION Y EMPRENDIMIENTO", "FP-85025", 4, 4, "FP", ["FD-83519"], ""],
-    ["TECNOLOGIAS EMERGENTES", "FP-85021", 4, 4, "FP", ["FD-85019"], ""],
-    ["INTELIGENCIA ARTIFICIAL", "FP-85023", 6, 4, "FP", ["FD-85018"], ""],
-    ["PROYECTO BIG DATA", "FP-85022", 4, 4, "FP", ["FD-85017"], ""],
-    ["GESTION DE CALIDAD DE SOFTWARE", "FP-85024", 6, 5, "FP", ["FD-85020"], ""],
-    ["PRACTICA OPERACIONAL", "FP-85026", 2, 11, "FP", [
+    ["Innovación y Emprendimiento", "FP-85025", 4, 4, "FP", ["FD-83519"], ""],
+    ["Tecnologías Emergentes", "FP-85021", 4, 4, "FP", ["FD-85019"], ""],
+    ["Inteligencia Artificial", "FP-85023", 6, 4, "FP", ["FD-85018"], ""],
+    ["Proyecto Big Data", "FP-85022", 4, 4, "FP", ["FD-85017"], ""],
+    ["Gestión de Calidad de Software", "FP-85024", 6, 5, "FP", ["FD-85020"], ""],
+    ["Práctica Operacional", "FP-85026", 2, 11, "FP", [
       "FD-83500", "FD-83501", "FD-85000", "FBVA-01", "FG-82000",
       "FD-83502", "FD-83503", "FD-83504", "FBVA-02", "FG-82001",
       "FD-83505", "FD-83506", "FD-83510", "FD-83512", "FD-85001", "CSIRD-01",
@@ -102,7 +102,7 @@
     ], ""]
   ],
   "s10": [
-    ["PROYECTO DE TITULO I", "FP-85027", 2, 7, "FP", [
+    ["Proyecto de Título I", "FP-85027", 2, 7, "FP", [
       "FD-83500", "FD-83501", "FD-85000", "FBVA-01", "FG-82000",
       "FD-83502", "FD-83503", "FD-83504", "FBVA-02", "FG-82001",
       "FD-83505", "FD-83506", "FD-83510", "FD-83512", "FD-85001", "CSIRD-01",
@@ -113,14 +113,14 @@
       "FD-83517", "FD-85016", "FD-85018", "FD-85017", "FD-85020", "FD-85019",
       "FP-85025", "FP-85021", "FP-85023", "FP-85022", "FP-85024", "FP-85026"
     ], ""],
-    ["SISTEMAS INTELIGENTES", "FP-85029", 6, 7, "FP", ["FP-85023"], ""],
-    ["INGENIERIA Y GOBIERNO DE DATOS", "FP-85028", 4, 7, "FP", ["FP-85022"], ""],
-    ["DIRECCION Y EVALUACION DE PROYECTOS INFORMATICOS", "FP-85030", 6, 7, "FP", ["FP-85024"], ""]
+    ["Sistemas Inteligentes", "FP-85029", 6, 7, "FP", ["FP-85023"], ""],
+    ["Ingeniería y Gobierno de Datos", "FP-85028", 4, 7, "FP", ["FP-85022"], ""],
+    ["Dirección y Evaluación de Proyectos Informáticos", "FP-85030", 6, 7, "FP", ["FP-85024"], ""]
   ],
   "s11": [
-    ["PROYECTO DE TITULO II", "FP-85031", 2, 12, "FP", ["FP-85027"], ""],
-    ["GESTION Y PLANIFICACION ESTRATEGICA", "FP-85033", 6, 4, "FP", ["FP-85025"], ""],
-    ["PROYECTO DE INFORMATICA", "FP-85032", 4, 3, "FP", ["FP-85030"], ""],
-    ["PRACTICA PROFESIONAL", "FP-85034", 2, 11, "FP", ["FP-85026"], ""]
+    ["Proyecto de Título II", "FP-85031", 2, 12, "FP", ["FP-85027"], ""],
+    ["Gestión y Planificación Estratégica", "FP-85033", 6, 4, "FP", ["FP-85025"], ""],
+    ["Proyecto de Informática", "FP-85032", 4, 3, "FP", ["FP-85030"], ""],
+    ["Práctica Profesional", "FP-85034", 2, 11, "FP", ["FP-85026"], ""]
   ]
 }
