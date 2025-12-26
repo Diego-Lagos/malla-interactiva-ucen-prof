@@ -37,8 +37,7 @@
     ["Mecánica de Fluidos", "CI-3252", 10, 6, "CI", ["CB-3327", "CB-14704"], ""],
     ["Ondas, Óptica y Calor", "CB-3248", 6, 6, "CB", ["CB-14704"], ""],
     ["Mecánica de Sólidos", "CI-3253", 6, 6, "CI", ["CI-3244", "CB-3231"], ""],
-    ["Curso Transversal Institucional II", "CSH-CTI2", 2, 2, "CSH", [], ""],
-    ["Práctica Operacional", "IAP-19531", 0, 9, "IAP", ["IAP-19525"], ""]
+    ["Curso Transversal Institucional II", "CSH-CTI2", 2, 2, "CSH", [], ""]
   ],
   "s6": [
     ["Mecánica de Suelos I", "CI-19528", 6, 6, "CI", ["CI-3247", "CI-3253"], ""],
@@ -46,7 +45,8 @@
     ["Instalaciones I", "IAP-16044", 4, 4, "IAP", ["IAP-16008", "CI-3252"], ""],
     ["Cubicación y Análisis de Precios Unitarios", "IAP-16043", 8, 6, "IAP", ["CI-3334", "IAP-16008"], ""],
     ["Hidráulica", "CI-16011", 6, 5, "CI", ["CI-3252"], ""],
-    ["Inglés para Ingeniería I", "CSH-3330", 4, 3, "CSH", [], ""]
+    ["Inglés para Ingeniería I", "CSH-3330", 4, 3, "CSH", [], ""],
+    ["Práctica Operacional", "IAP-19531", 0, 9, "IAP", ["IAP-19525"], ""]
   ],
   "s7": [
     ["Mecánica de Suelos II", "CI-19544", 10, 6, "CI", ["CI-19528"], ""],
@@ -64,7 +64,8 @@
     ["Diseño y Construcción en Madera y Acero", "IAP-16046", 4, 4, "IAP", ["CI-19528", "CI-3256"], ""],
     ["Construcción Sostenible", "IAP-16047", 4, 4, "IAP", ["IAP-16045"], ""],
     ["Tecnología del Asfalto", "CI-16004", 8, 4, "CI", ["CI-3247"], ""],
-    ["Taller de Integración Tecnologías Constructivas", "IAP-16048", 2, 4, "IAP", [], ""]
+    ["Taller de Integración Tecnologías Constructivas", "IAP-16048", 2, 4, "IAP", [], ""],
+    ["Práctica Profesional", "IAP-19543", 0, 9, "IAP", [], ""]
   ],
   "s9": [
     ["Planificación de Proyectos", "IAP-3856", 6, 5, "IAP", ["IAP-19527", "CI-19529"], ""],
@@ -73,8 +74,7 @@
     ["Diseño de Pavimentos", "IAP-3297", 4, 4, "IAP", ["IAP-16018"], ""],
     ["Gestión Legal y Ambiental", "IAP-19514", 4, 3, "IAP", ["CI-19529"], ""],
     ["Proyecto de Título I", "IAP-19537", 4, 7, "IAP", [], ""],
-    ["Inglés para Ingeniería II", "CSH-3338", 4, 3, "CSH", ["CSH-3330"], ""],
-    ["Práctica Profesional", "IAP-19543", 0, 9, "IAP", [], ""]
+    ["Inglés para Ingeniería II", "CSH-3338", 4, 3, "CSH", ["CSH-3330"], ""]
   ],
   "s10": [
     ["Evaluación de Proyectos", "IAP-3300", 6, 5, "IAP", ["IAP-3856"], ""],
@@ -84,3 +84,4 @@
     ["Proyecto de Título II", "IAP-19541", 2, 13, "IAP", ["IAP-19537"], ""]
   ]
 }
+
