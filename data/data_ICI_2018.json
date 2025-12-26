@@ -1,91 +1,88 @@
 {
   "s1": [
-    ["Introducción a las Matemáticas", "UCEN-58000", 6, 6, "CSI", [], ""],
-    ["Introducción a la Física", "UCEN-14700", 6, 6, "CSI", [], ""],
-    ["Introducción a la Ingeniería Industrial", "UCEN-4825", 4, 6, "CSI", [], ""],
-    ["Tecnologías de la Información", "UCEN-4826", 6, 6, "CSI", [], ""],
-    ["Estrategias de Aprendizaje", "UCEN-58001", 4, 4, "CSI", [], ""],
-    ["Curso Transversal Institucional I", "UCEN-CTI1", 2, 2, "CSI", [], ""]
+    ["Introducción a las Matemáticas", "CB-58000", 6, 6, "CB", [], ""],
+    ["Introducción a la Física", "CB-14700", 6, 6, "CB", [], ""],
+    ["Introducción a la Ingeniería Industrial", "CI-4825", 4, 6, "CI", [], ""],
+    ["Tecnologías de la Información", "CI-4826", 6, 6, "CI", [], ""],
+    ["Estrategias de Aprendizaje", "CSH-58001", 4, 4, "CSH", [], ""],
+    ["Curso Transversal Institucional I", "CSH-CTI1", 2, 2, "CSH", [], ""]
   ],
   "s2": [
-    ["Álgebra", "UCEN-3225", 8, 6, "CSI", ["UCEN-58000"], ""],
-    ["Cálculo", "UCEN-3226", 8, 6, "CSI", [], ""],
-    ["Química General", "UCEN-3267", 10, 6, "CSI", [], ""],
-    ["Dibujo Gráfico Computacional", "UCEN-3850", 8, 5, "CSI", [], ""],
-    ["Administración", "UCEN-4827", 8, 4, "CSI", [], ""],
-    ["Estrategias de Comunicación", "UCEN-14701", 4, 3, "CSI", [], ""]
+    ["Álgebra I", "CB-3225", 8, 6, "CB", ["CB-58000"], ""],
+    ["Cálculo I", "CB-3226", 8, 6, "CB", [], ""],
+    ["Química General", "CB-3267", 10, 6, "CB", [], ""],
+    ["Dibujo Gráfico Computacional", "CI-3850", 8, 5, "CI", [], ""],
+    ["Administración", "IAP-4827", 8, 4, "IAP", [], ""],
+    ["Estrategias de Comunicación", "CSH-14701", 4, 3, "CSH", [], ""]
   ],
   "s3": [
-    ["Álgebra II", "UCEN-3230", 6, 6, "CSI", ["UCEN-3225"], ""],
-    ["Cálculo II", "UCEN-3231", 12, 6, "CSI", ["UCEN-3226"], ""],
-    ["Mecánica", "UCEN-14704", 6, 6, "CSI", ["UCEN-14700"], ""],
-    ["Tecnología de los Materiales", "UCEN-58003", 6, 4, "CSI", ["UCEN-3267"], ""],
-    ["Contabilidad y Costos", "UCEN-4883", 10, 6, "CSI", ["UCEN-3225"], ""],
-    ["Curso Transversal Institucional II", "UCEN-CTI2", 2, 2, "CSI", [], ""]
+    ["Álgebra II", "CB-3230", 6, 6, "CB", ["CB-3225"], ""],
+    ["Cálculo II", "CB-3231", 12, 6, "CB", ["CB-3226"], ""],
+    ["Mecánica", "CB-14704", 6, 6, "CB", ["CB-14700"], ""],
+    ["Tecnologías de los Materiales", "CI-58003", 6, 4, "CI", ["CB-3267"], ""],
+    ["Contabilidad y Costos", "IAP-4883", 10, 6, "IAP", ["CB-3225"], ""],
+    ["Curso Transversal Institucional II", "CSH-CTI2", 2, 2, "CSH", [], ""]
   ],
   "s4": [
-    ["Ecuaciones Diferenciales", "UCEN-3333", 6, 6, "CSI", ["UCEN-3231"], ""],
-    ["Cálculo III", "UCEN-3327", 6, 6, "CSI", ["UCEN-3231"], ""],
-    ["Electricidad y Magnetismo", "UCEN-14703", 6, 6, "CSI", ["UCEN-14704"], ""],
-    ["Programación Computacional", "UCEN-14702", 10, 6, "CSI", [], ""],
-    ["Habilidades Empresariales", "UCEN-4830", 4, 3, "CSI", ["UCEN-4827"], ""],
-    ["Taller de Integración de Competencias Básicas", "UCEN-58007", 4, 3, "CSI", [], ""]
+    ["Ecuaciones Diferenciales", "CB-3333", 6, 6, "CB", ["CB-3231"], ""],
+    ["Cálculo III", "CB-3327", 6, 6, "CB", ["CB-3231"], ""],
+    ["Electricidad y Magnetismo", "CB-14703", 6, 6, "CB", ["CB-14704"], ""],
+    ["Programación Computacional", "CI-14702", 10, 6, "CI", [], ""],
+    ["Habilidades Empresariales", "IAP-4830", 4, 3, "IAP", ["IAP-4827"], ""],
+    ["Taller de Integración de Competencias Básicas", "IAP-58007", 4, 3, "IAP", [], ""]
   ],
   "s5": [
-    ["Investigación Operativa", "UCEN-58005", 12, 6, "CSI", ["UCEN-3230"], ""],
-    ["Sistemas Eléctricos", "UCEN-58006", 8, 4, "CSI", ["UCEN-14703"], ""],
-    ["Ondas, Óptica y Calor", "UCEN-3248", 6, 6, "CSI", ["UCEN-14704"], ""],
-    ["Teoría de Sistemas", "UCEN-4835", 4, 4, "CSI", ["UCEN-14702"], ""],
-    ["Microeconomía", "UCEN-4833", 4, 4, "CSI", ["UCEN-3226"], ""],
-    ["Probabilidades y Estadística", "UCEN-3340", 10, 6, "CSI", ["UCEN-3231"], ""],
-    ["Práctica I", "UCEN-58004", 0, 7, "CSI", [], ""]
+    ["Investigación Operativa I", "CI-58005", 12, 6, "CI", ["CB-3230"], ""],
+    ["Sistemas Eléctricos", "CI-58006", 8, 4, "CI", ["CB-14703"], ""],
+    ["Ondas, Óptica y Calor", "CB-3248", 6, 6, "CB", ["CB-14704"], ""],
+    ["Probabilidades y Estadística", "CB-3340", 10, 6, "CB", ["CB-3231"], ""],
+    ["Teoría de Sistemas", "CI-4835", 4, 4, "CI", ["CI-14702"], ""],
+    ["Microeconomía", "CB-4833", 4, 4, "CB", ["CB-3226"], ""]
   ],
   "s6": [
-    ["Investigación Operativa II", "UCEN-58008", 6, 6, "CSI", ["UCEN-58005"], ""],
-    ["Métodos Estadísticos", "UCEN-58036", 6, 5, "CSI", ["UCEN-3340"], ""],
-    ["Termodinámica", "UCEN-58010", 6, 6, "CSI", ["UCEN-14704"], ""],
-    ["Sistemas de Información", "UCEN-4839", 6, 5, "CSI", ["UCEN-4835"], ""],
-    ["Macroeconomía", "UCEN-4840", 4, 4, "CSI", ["UCEN-4833"], ""],
-    ["Trabajo en Equipo y Liderazgo", "UCEN-4841", 4, 4, "CSI", ["UCEN-4830"], ""]
+    ["Investigación Operativa II", "IAP-58008", 6, 6, "IAP", ["CI-58005"], ""],
+    ["Métodos Estadísticos", "CI-58036", 6, 5, "CI", ["CB-3340"], ""],
+    ["Termodinámica", "CI-58010", 6, 6, "CI", ["CB-14704"], ""],
+    ["Sistemas de Información", "CI-4839", 6, 5, "CI", ["CI-4835"], ""],
+    ["Macroeconomía", "IAP-4840", 4, 4, "IAP", ["CB-4833"], ""],
+    ["Trabajo en Equipo y Liderazgo", "IAP-4841", 4, 4, "IAP", ["IAP-4830"], ""]
   ],
   "s7": [
-    ["Simulación", "UCEN-58011", 6, 6, "CSI", ["UCEN-58005"], ""],
-    ["Dirección de Producción y Operaciones", "UCEN-58012", 6, 5, "CSI", ["UCEN-58005"], ""],
-    ["Mecánica de Fluidos", "UCEN-3252", 6, 6, "CSI", ["UCEN-14704", "UCEN-3327"], ""],
-    ["Gestión Comercial", "UCEN-4852", 4, 5, "CSI", ["UCEN-4830"], ""],
-    ["Finanzas Corporativas", "UCEN-58013", 4, 5, "CSI", ["UCEN-4883"], ""],
-    ["Inglés para Ingeniería I", "UCEN-3330", 4, 3, "CSI", [], ""]
+    ["Simulación", "IAP-58011", 6, 6, "IAP", ["CI-58005"], ""],
+    ["Dirección de Producción y Operaciones I", "IAP-58012", 6, 5, "IAP", ["CI-58005"], ""],
+    ["Mecánica de Fluidos", "CI-3252", 6, 6, "CI", ["CB-14704", "CB-3327"], ""],
+    ["Gestión Comercial", "IAP-4852", 4, 5, "IAP", ["IAP-4830"], ""],
+    ["Finanzas Corporativas", "IAP-58013", 4, 5, "IAP", ["IAP-4883"], ""],
+    ["Inglés para Ingeniería I", "CSH-3330", 4, 3, "CSH", [], ""]
   ],
   "s8": [
-    ["Tópicos de Ingeniería I", "UCEN-58037", 4, 4, "CSI", [], ""],
-    ["Dirección de Producción y Operaciones II", "UCEN-58015", 8, 5, "CSI", ["UCEN-58012"], ""],
-    ["Operaciones Unitarias", "UCEN-58016", 6, 6, "CSI", ["UCEN-3252"], ""],
-    ["Gestión de Recursos Humanos", "UCEN-4848", 4, 5, "CSI", ["UCEN-4841"], ""],
-    ["Gestión Organizacional", "UCEN-4849", 4, 4, "CSI", ["UCEN-4852"], ""],
-    ["Inglés para Ingeniería II", "UCEN-3338", 4, 3, "CSI", ["UCEN-3330"], ""],
-    ["Taller de Integración de Competencias Intermedias", "UCEN-58017", 4, 3, "CSI", [], ""]
+    ["Tópicos de Ingeniería I", "IAP-58037", 4, 4, "IAP", [], ""],
+    ["Dirección de Producción y Operaciones II", "IAP-58015", 8, 5, "IAP", ["IAP-58012"], ""],
+    ["Operaciones Unitarias", "CI-58016", 6, 6, "CI", ["CI-3252"], ""],
+    ["Gestión de Recursos Humanos", "IAP-4848", 4, 5, "IAP", ["IAP-4841"], ""],
+    ["Gestión Organizacional", "IAP-4849", 4, 4, "IAP", ["IAP-4852"], ""],
+    ["Inglés para Ingeniería II", "CSH-3338", 4, 3, "CSH", ["CSH-3330"], ""],
+    ["Taller de Integración de Competencias Intermedias", "IAP-58017", 4, 3, "IAP", [], ""]
   ],
   "s9": [
-    ["Tópicos de Ingeniería II", "UCEN-58038", 4, 4, "CSI", [], ""],
-    ["Gestión de la Cadena de Abastecimiento", "UCEN-58020", 6, 6, "CSI", ["UCEN-58015"], ""],
-    ["Eficiencia Energética y Energías Renovables", "UCEN-58021", 4, 5, "CSI", ["UCEN-58015"], ""],
-    ["Tecnologías de Información y Comunicaciones", "UCEN-58024", 8, 6, "CSI", ["UCEN-4839"], ""],
-    ["Econometría", "UCEN-4845", 10, 6, "CSI", ["UCEN-4840"], ""],
-    ["Inglés Comunicacional", "UCEN-3349", 2, 3, "CSI", ["UCEN-3338"], ""],
-    ["Práctica Operacional", "UCEN-4894", 0, 7, "CSI", [], ""]
+    ["Tópicos de Ingeniería II", "IAP-58038", 4, 4, "IAP", [], ""],
+    ["Gestión de la Cadena de Abastecimiento", "IAP-58020", 6, 6, "IAP", ["IAP-58015"], ""],
+    ["Eficiencia Energética y Energías Renovables", "IAP-58021", 4, 5, "IAP", ["IAP-58015"], ""],
+    ["Tec. de Inf. y Com. para la Gestión", "IAP-58024", 8, 6, "IAP", ["CI-4839"], ""],
+    ["Econometría", "IAP-4845", 10, 6, "IAP", ["IAP-4840"], ""],
+    ["Inglés Comunicacional", "CSH-3349", 2, 3, "CSH", ["CSH-3338"], ""]
   ],
   "s10": [
-    ["Evaluación de Proyectos", "UCEN-4847", 6, 6, "CSI", ["UCEN-4883"], ""],
-    ["Gestión de Sustentabilidad", "UCEN-58023", 6, 7, "CSI", ["UCEN-58021"], ""],
-    ["Planificación Estratégica", "UCEN-4856", 4, 6, "CSI", [], ""],
-    ["Proyecto de Título I", "UCEN-19537", 4, 7, "CSI", [], ""],
-    ["Innovación y Emprendimiento", "UCEN-4858", 4, 4, "CSI", [], ""]
+    ["Evaluación de Proyectos", "IAP-4847", 6, 6, "IAP", ["IAP-4883"], ""],
+    ["Gestión de Sustentabilidad", "IAP-58023", 6, 7, "IAP", ["IAP-58021"], ""],
+    ["Planificación Estratégica", "IAP-4856", 4, 6, "IAP", [], ""],
+    ["Innovación y Emprendimiento", "CSH-4858", 4, 4, "CSH", [], ""],
+    ["Proyecto de Título I", "IAP-19537", 4, 7, "IAP", [], ""]
   ],
   "s11": [
-    ["Sistemas Integrados de Gestión", "UCEN-58039", 8, 6, "CSI", ["UCEN-58020"], ""],
-    ["Inteligencia de Negocios", "UCEN-58029", 10, 6, "CSI", ["UCEN-58024"], ""],
-    ["Legislación Comercial y Laboral", "UCEN-58022", 4, 5, "CSI", ["UCEN-4852"], ""],
-    ["Proyecto de Título II", "UCEN-19541", 2, 13, "CSI", ["UCEN-19537"], ""],
-    ["Práctica Profesional", "UCEN-4895", 0, 13, "CSI", [], ""]
+    ["Sistemas Integrados de Gestión", "IAP-58039", 8, 6, "IAP", ["IAP-58020"], ""],
+    ["Inteligencia de Negocios", "IAP-58029", 10, 6, "IAP", ["IAP-58024"], ""],
+    ["Legislación Comercial y Laboral", "CSH-58022", 4, 5, "CSH", ["IAP-4852"], ""],
+    ["Proyecto de Título II", "IAP-19541", 2, 13, "IAP", ["IAP-19537"], ""]
   ]
 }
