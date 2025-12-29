@@ -7,7 +7,7 @@
     "Nombre": "Ingenieria en Construccion [CO06]",
     "Link": "CONTRU_2024"
   },
-  {
+    {
     "Nombre": "Geologia [GE02]",
     "Link": "GEO_2018"
   },
@@ -32,12 +32,12 @@
     "Link": "ICI_2024"
   },
   {
-    "Nombre": "Ingenieria Civil en Minas [IM02]",
-    "Link": "MIN_2018"
-  },
-  {
     "Nombre": "Ingenieria Civil en Minas [IM03]",
     "Link": "MIN_2024"
+  },
+   {
+    "Nombre": "Ingenieria Civil en Minas [IM02]",
+    "Link": "MIN_2018"
   },
   {
     "Nombre": "Ingenieria Civil en Obras Civiles [OB07]",
@@ -47,5 +47,4 @@
     "Nombre": "Ingenieria Civil en Obras Civiles [OB08]",
     "Link": "OOCC_2024"
   }
-
 ]
