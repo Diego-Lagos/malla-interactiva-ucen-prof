@@ -27,7 +27,7 @@
     ["Electricidad y Magnetismo", "FD-83510", 6, 5, "FD", [], ""],
     ["Mecánica de Sólidos", "FD-84003", 6, 5, "FD", ["FD-84001"], ""],
     ["Edificación BIM en Obras Gruesas", "FD-83511", 6, 5, "FD", ["FD-84002"], ""],
-    ["Curso Sello Institucional III", "FG-CSIRD", 4, 4, "FG", [], ""]
+    ["Curso Sello Institucional III", "CSIRD-01", 4, 4, "FG", [], ""]
   ],
   "s5": [
     ["Programación Computacional", "FD-83512", 6, 5, "FD", [], ""],
@@ -35,7 +35,7 @@
     ["Probabilidad y Estadística", "FD-83515", 6, 5, "FD", [], ""],
     ["Análisis Estructural", "FD-84004", 6, 5, "FD", ["FD-84003"], ""],
     ["Capstone Project I", "FD-83526", 4, 5, "FD", [], ""],
-    ["Curso Sello Institucional IV", "FG-CSIRD", 4, 4, "FG", [], ""]
+    ["Curso Sello Institucional IV", "CSIRD-02", 4, 4, "FG", [], ""]
   ],
   "s6": [
     ["Presupuestación y Procesos de Licitación", "FD-84005", 6, 5, "FD", ["FD-83511"], ""],
@@ -83,3 +83,4 @@
     ["Proyecto Título II", "FP-84029", 2, 12, "FP", ["FP-83524"], ""]
   ]
 }
+
