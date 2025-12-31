@@ -49,7 +49,7 @@
     ["Contabilidad y Finanzas en Empresas Constructoras", "FD-84513", 4, 4, "FD", ["FD-84505"], ""],
     ["Edificación BIM en Proyectos Industriales y Comerciales", "FD-84514", 8, 5, "FD", ["FD-84510"], ""],
     ["Movimiento de Tierra y Fundaciones", "FD-84515", 4, 4, "FD", ["FD-84502"], ""],
-    ["Práctica Operacional", "FD-84516", 2, 9, "FD", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4", "FD-84505", "FD-83525", "FD-84506", "FD-84507", "FD-83526", "FG-INTR", "FD-83515", "FD-84508", "FD-84509", "FD-84510", "FD-84511", "FG-INTRAS"], ""],
+    ["Práctica Operacional", "FD-84516", 2, 9, "FD", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4", "FD-84505", "FD-83525", "FD-84506", "FD-84507", "FD-83526", "FG-INTR", "FD-83515", "FD-84508", "FD-84509", "FD-84510", "FD-84511", "FG-INTRAS"], ""]
   ],
   "s8": [
     ["Gestión y Coordinación de Proyectos", "FP-84517", 6, 6, "FP", ["FD-84513"], ""],
