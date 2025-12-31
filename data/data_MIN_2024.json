@@ -42,7 +42,7 @@
     ["Evaluación de Proyectos", "FD-86507", 6, 6, "FD", ["FD-83514"], ""],
     ["Exploración y Geología Económica", "FD-86508", 4, 5, "FD", [], ""],
     ["Perforación y Tronadura", "FD-86509", 8, 5, "FD", ["FD-86505"], ""],
-    ["Taller Integrador I", "FD-86510", 4, 5, "FD", [], ""],
+    ["Taller Integrador I", "FD-86510", 4, 5, "FD", ["FD-83500", "FD-83501", "FD-86500", "FG-FBVA1", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA2", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86501", "FD-86502", "FG-CSIRD3", "FD-83508", "FD-83509", "FD-83510", "FD-86503", "FD-86504", "FG-CSIRD4", "FD-83515", "FD-83514", "FD-83519", "FD-83520", "FD-83521", "FD-86505"], ""],
     ["Interdisciplinar", "FG-INTR", 4, 4, "FG", [], ""]
   ],
   "s7": [
@@ -52,7 +52,7 @@
     ["Carguío y Transporte", "FD-86514", 6, 5, "FD", ["FD-86509"], ""],
     ["Mecánica de Rocas", "FD-86515", 4, 4, "FD", [], ""],
     ["Interdisciplinar A+S", "FG-INTRAS", 4, 4, "FG", [], ""],
-    ["Práctica Operacional", "FD-86516", 2, 7, "FD", [], ""]
+    ["Práctica Operacional", "FD-86516", 2, 7, "FD", ["FD-83500", "FD-83501", "FD-86500", "FG-FBVA1", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA2", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86501", "FD-86502", "FG-CSIRD3", "FD-83508", "FD-83509", "FD-83510", "FD-86503", "FD-86504", "FG-CSIRD4", "FD-83515", "FD-83514", "FD-83519", "FD-83520", "FD-83521", "FD-86505", "FD-86506", "FD-86507", "FD-86508", "FD-86509", "FD-86510", "FG-INTR"], ""]
   ],
   "s8": [
     ["Software de Productividad Minera", "FD-86517", 6, 6, "FD", ["FD-86511"], ""],
@@ -60,10 +60,10 @@
     ["Procesamiento de Minerales", "FD-86519", 6, 5, "FD", ["FD-86513"], ""],
     ["Legislación Minera", "FD-86520", 4, 4, "FD", ["FD-86508"], ""],
     ["Seguridad y Medioambiente en Minería", "FD-86521", 4, 4, "FD", [], ""],
-    ["Taller Integrador II", "FD-86522", 4, 4, "FD", [], ""]
+    ["Taller Integrador II", "FD-86522", 4, 4, "FD", ["FD-83500", "FD-83501", "FD-86500", "FG-FBVA1", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA2", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86501", "FD-86502", "FG-CSIRD3", "FD-83508", "FD-83509", "FD-83510", "FD-86503", "FD-86504", "FG-CSIRD4", "FD-83515", "FD-83514", "FD-83519", "FD-83520", "FD-83521", "FD-86505", "FD-86506", "FD-86507", "FD-86508", "FD-86509", "FD-86510", "FG-INTR", "FD-86511", "FD-86512", "FD-86513", "FD-86514", "FD-86515", "FG-INTRAS", "FD-86516"], ""]
   ],
   "s9": [
-    ["Proyecto de Título I", "FP-86523", 4, 7, "FP", [], ""],
+    ["Proyecto de Título I", "FP-86523", 4, 7, "FP", ["FD-83500", "FD-83501", "FD-86500", "FG-FBVA1", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA2", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86501", "FD-86502", "FG-CSIRD3", "FD-83508", "FD-83509", "FD-83510", "FD-86503", "FD-86504", "FG-CSIRD4", "FD-83515", "FD-83514", "FD-83519", "FD-83520", "FD-83521", "FD-86505", "FD-86506", "FD-86507", "FD-86508", "FD-86509", "FD-86510", "FG-INTR", "FD-86511", "FD-86512", "FD-86513", "FD-86514", "FD-86515", "FG-INTRAS", "FD-86516", "FD-86517", "FD-86518", "FD-86519", "FD-86520", "FD-86521", "FD-86522"], ""],
     ["Gestión de Empresas y Liderazgo en Minería", "FP-86524", 4, 4, "FP", ["FD-86517"], ""],
     ["Diseño y Planificación Mina Subterránea", "FP-86525", 8, 6, "FP", ["FD-86518"], ""],
     ["Diseño y Planificación Rajo Abierto", "FP-86526", 8, 6, "FP", [], ""],
@@ -74,6 +74,6 @@
     ["Gestión de la Tecnología en Minería", "FP-86529", 4, 4, "FP", ["FP-86527"], ""],
     ["Responsabilidad Social Empresarial en Minería", "FP-86530", 4, 4, "FP", ["FD-86521"], ""],
     ["Innovación y Emprendimiento en Minería", "FP-86531", 4, 4, "FP", [], ""],
-    ["Práctica Profesional", "FP-86532", 2, 7, "FP", [], ""]
+    ["Práctica Profesional", "FP-86532", 2, 7, "FP", ["FD-83500", "FD-83501", "FD-86500", "FG-FBVA1", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA2", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86501", "FD-86502", "FG-CSIRD3", "FD-83508", "FD-83509", "FD-83510", "FD-86503", "FD-86504", "FG-CSIRD4", "FD-83515", "FD-83514", "FD-83519", "FD-83520", "FD-83521", "FD-86505", "FD-86506", "FD-86507", "FD-86508", "FD-86509", "FD-86510", "FG-INTR", "FD-86511", "FD-86512", "FD-86513", "FD-86514", "FD-86515", "FG-INTRAS", "FD-86516", "FD-86517", "FD-86518", "FD-86519", "FD-86520", "FD-86521", "FD-86522", "FP-86523", "FP-86524", "FP-86525", "FP-86526", "FP-86527"], ""]
   ]
 }
