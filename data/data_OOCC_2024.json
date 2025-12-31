@@ -34,7 +34,7 @@
     ["Ondas, Óptica y Calor", "FD-83513", 8, 5, "FD", [], ""],
     ["Probabilidad y Estadística", "FD-83515", 6, 5, "FD", [], ""],
     ["Análisis Estructural", "FD-84004", 6, 5, "FD", ["FD-84003"], ""],
-    ["Capstone Project I", "FD-83526", 4, 5, "FD", [], ""],
+    ["Capstone Project I", "FD-83526", 4, 5, "FD", ["FD-83500", "FD-83501", "FD-84000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-82001", "FG-FBVA02", "FD-83505", "FD-83506", "FD-83507", "FD-84001", "FD-83518", "FD-84002", "FD-83508", "FD-83509", "FD-83510", "FD-84003", "FD-83511", "CSIRD-01"], ""],
     ["Curso Sello Institucional IV", "CSIRD-02", 4, 4, "FG", [], ""]
   ],
   "s6": [
@@ -50,7 +50,7 @@
     ["Diseño Geométrico Vial", "FD-84012", 6, 5, "FD", [], ""],
     ["Hidráulica", "FD-84011", 6, 5, "FD", ["FD-83516"], ""],
     ["Diseño Sismorresistente", "FD-84013", 6, 5, "FD", ["FD-84004"], ""],
-    ["Práctica Operacional", "FD-84014", 2, 9, "FD", [], ""],
+    ["Práctica Operacional", "FD-84014", 2, 9, "FD", ["FD-83500", "FD-83501", "FD-84000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-82001", "FG-FBVA02", "FD-83505", "FD-83506", "FD-83507", "FD-84001", "FD-83518", "FD-84002", "FD-83508", "FD-83509", "FD-83510", "FD-84003", "FD-83511", "CSIRD-01", "FD-83512", "FD-83513", "FD-83515", "FD-84004", "FD-83526", "CSIRD-02", "FD-84005", "FD-83514", "FD-83516", "FD-84006", "FD-83525", "FG-INTR"], ""],
     ["Interdisciplinar A+S", "FG-INTR A+S", 4, 4, "FG", [], ""]
   ],
   "s8": [
@@ -67,14 +67,14 @@
     ["Redes Hidráulicas Urbanas", "FP-84019", 4, 4, "FP", ["FD-84011"], ""],
     ["Diseño de Estructuras de Acero", "FP-84020", 8, 7, "FP", [], ""],
     ["Administración y Coordinación de Proyectos BIM", "FP-84021", 4, 5, "FP", [], ""],
-    ["Capstone Project II", "FP-84022", 4, 5, "FP", [], ""]
+    ["Capstone Project II", "FP-84022", 4, 5, "FP", ["FD-83500", "FD-83501", "FD-84000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-82001", "FG-FBVA02", "FD-83505", "FD-83506", "FD-83507", "FD-84001", "FD-83518", "FD-84002", "FD-83508", "FD-83509", "FD-83510", "FD-84003", "FD-83511", "CSIRD-01", "FD-83512", "FD-83513", "FD-83515", "FD-84004", "FD-83526", "CSIRD-02", "FD-84005", "FD-83514", "FD-83516", "FD-84006", "FD-83525", "FG-INTR", "FD-84010", "FD-84012", "FD-84011", "FD-84013", "FD-84014", "FG-INTR A+S", "FD-84912", "FD-84913", "FD-84015", "FD-84016", "FD-83522"], ""]
   ],
   "s10": [
     ["Taller de Modelación Computacional de Estructuras de Acero", "FP-84023", 6, 5, "FP", ["FP-84020"], ""],
     ["Ingeniería Sanitaria", "FP-84024", 4, 5, "FP", ["FP-84019"], ""],
     ["Diseño de Estructuras de Madera", "FP-84025", 6, 5, "FP", [], ""],
-    ["Proyecto Título I", "FP-83524", 2, 5, "FP", [], ""],
-    ["Práctica Profesional", "FP-84026", 2, 9, "FP", [], ""]
+    ["Proyecto Título I", "FP-83524", 2, 5, "FP", ["FD-83500", "FD-83501", "FD-84000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-82001", "FG-FBVA02", "FD-83505", "FD-83506", "FD-83507", "FD-84001", "FD-83518", "FD-84002", "FD-83508", "FD-83509", "FD-83510", "FD-84003", "FD-83511", "CSIRD-01", "FD-83512", "FD-83513", "FD-83515", "FD-84004", "FD-83526", "CSIRD-02", "FD-84005", "FD-83514", "FD-83516", "FD-84006", "FD-83525", "FG-INTR", "FD-84010", "FD-84012", "FD-84011", "FD-84013", "FD-84014", "FG-INTR A+S", "FD-84912", "FD-84913", "FD-84015", "FD-84016", "FD-83522", "FP-84017", "FP-84018", "FP-84019", "FP-84020", "FP-84021", "FP-84022"], ""],
+    ["Práctica Profesional", "FP-84026", 2, 9, "FP", ["FD-83500", "FD-83501", "FD-84000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-82001", "FG-FBVA02", "FD-83505", "FD-83506", "FD-83507", "FD-84001", "FD-83518", "FD-84002", "FD-83508", "FD-83509", "FD-83510", "FD-84003", "FD-83511", "CSIRD-01", "FD-83512", "FD-83513", "FD-83515", "FD-84004", "FD-83526", "CSIRD-02", "FD-84005", "FD-83514", "FD-83516", "FD-84006", "FD-83525", "FG-INTR", "FD-84010", "FD-84012", "FD-84011", "FD-84013", "FD-84014", "FG-INTR A+S", "FD-84912", "FD-84913", "FD-84015", "FD-84016", "FD-83522", "FP-84017", "FP-84018", "FP-84019", "FP-84020", "FP-84021", "FP-84022"], ""]
   ],
   "s11": [
     ["Infraestructura Marítima", "FP-84027", 6, 5, "FP", [], ""],
