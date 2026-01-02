@@ -1,0 +1,94 @@
+{
+  "s1": [
+    ["Introducción a las Matemáticas", "CB-58000", 6, 6, "CB", [], ""],
+    ["Introducción a la Física", "CB-14700", 8, 6, "CB", [], ""],
+    ["Introducción a la Ingeniería en Obras Civiles", "IAP-19500", 6, 3, "IAP", [], ""],
+    ["Estrategias de Aprendizaje", "CSH-58001", 8, 4, "CSH", [], ""],
+    ["Dibujo Gráfico Computacional", "CB-3850", 8, 5, "CB", [], ""],
+    ["Química General", "CB-3267", 6, 6, "CB", [], ""]
+  ],
+  "s2": [
+    ["Álgebra I", "CB-3225", 10, 6, "CB", ["CB-58000"], ""],
+    ["Cálculo I", "CB-3226", 10, 6, "CB", [], ""],
+    ["Mecánica", "CB-14704", 6, 6, "CB", ["CB-14700"], ""],
+    ["Programación Computacional", "CB-14702", 6, 6, "CB", [], ""],
+    ["Topografía", "CI-16000", 6, 4, "CI", [], ""],
+    ["Curso Transversal Institucional I", "CSH-CTI1", 2, 2, "CSH", [], ""]
+  ],
+  "s3": [
+    ["Álgebra II", "CB-3230", 10, 6, "CB", ["CB-3225"], ""],
+    ["Cálculo II", "CB-3231", 10, 6, "CB", ["CB-3226"], ""],
+    ["Estática Aplicada", "CI-3244", 6, 6, "CI", ["CB-3226", "CB-14704"], ""],
+    ["Materiales de Construcción", "CI-3247", 6, 5, "CI", ["CB-3267"], ""],
+    ["Dibujo e Interpretación de Planos", "CI-3245", 6, 4, "CI", ["CB-3850", "CI-16000"], ""],
+    ["Estrategias de Comunicación", "CSH-14701", 2, 3, "CSH", [], ""]
+  ],
+  "s4": [
+    ["Ecuaciones Diferenciales", "CB-3333", 6, 6, "CB", ["CB-3231"], ""],
+    ["Cálculo III", "CB-3327", 12, 6, "CB", ["CB-3231"], ""],
+    ["Electricidad y Magnetismo", "CB-14703", 6, 6, "CB", ["CB-14704"], ""],
+    ["Edificación I", "IAP-3246", 4, 3, "IAP", ["CI-3245", "CI-3247"], ""],
+    ["Mecánica de Sólidos", "CI-3253", 6, 6, "CI", ["CI-3244", "CB-3231"], ""],
+    ["Taller de Integración Básico", "IAP-19525", 2, 3, "IAP", ["CI-3244"], ""]
+  ],
+  "s5": [
+    ["Análisis Numérico Asistido por Computador", "CB-19526", 4, 5, "CB", ["CB-3333", "CB-3327"], ""],
+    ["Ondas, Óptica y Calor", "CB-3248", 10, 6, "CB", ["CB-14704"], ""],
+    ["Análisis Estructural", "CI-3288", 6, 7, "CI", ["CI-3253"], ""],
+    ["Tecnología del Hormigón", "CI-16014", 6, 4, "CI", ["CI-3247"], ""],
+    ["Probabilidades y Estadística", "CB-3340", 10, 6, "CB", ["CB-3231"], ""],
+    ["Curso Transversal Institucional II", "CSH-CTI2", 4, 2, "CSH", [], ""]
+  ],
+  "s6": [
+    ["Análisis Matricial de Estructuras", "CI-19526_M", 6, 8, "CI", ["CB-19526", "CI-3288"], ""],
+    ["Ética y Liderazgo", "IAP-19505", 4, 5, "IAP", ["IAP-3246"], ""],
+    ["Fundamentos de Economía", "CI-3334", 4, 4, "CI", ["CB-3225"], ""],
+    ["Mecánica de Fluidos", "CI-3252", 6, 6, "CI", ["CB-3327", "CB-14704"], ""],
+    ["Presupuestación y Procesos de Licitación", "IAP-19527", 4, 4, "IAP", ["CB-3340", "IAP-3246"], ""],
+    ["Inglés para Ingeniería I", "CSH-3330", 4, 3, "CSH", [], ""]
+  ],
+  "s7": [
+    ["Mecánica de Suelos I", "CI-19528", 6, 6, "CI", ["CI-3247", "CI-3253"], ""],
+    ["Modelos de Tránsito", "IAP-19508", 4, 5, "IAP", ["CB-3340"], ""],
+    ["Hidráulica", "CI-16011", 6, 5, "CI", ["CI-3252"], ""],
+    ["Dinámica de Estructuras", "CI-19506", 6, 6, "CI", ["CI-19526_M"], ""],
+    ["Contabilidad y Finanzas en Empresas Constructoras", "CI-19529", 4, 5, "CI", ["IAP-19527"], ""],
+    ["Taller Building Information Modeling (BIM)", "IAP-19530", 4, 3, "IAP", ["IAP-3246", "CI-3253"], ""],
+    ["Práctica Operacional", "IAP-SC", 0, 9, "IAP", ["CB-58000", "CB-14700", "IAP-19500", "CSH-58001", "CB-3850", "CB-3267", "CB-3225", "CB-3226", "CB-14704", "CB-14702", "CI-16000", "CSH-CTI1", "CB-3230", "CB-3231", "CI-3244", "CI-3247", "CI-3245", "CSH-14701", "CB-3333", "CB-3327", "CB-14703", "IAP-3246", "CI-3253", "IAP-19525", "CB-19526", "CB-3248", "CI-3288", "CI-16014", "CB-3340", "CSH-CTI2"], ""]
+  ],
+  "s8": [
+    ["Hormigón Armado", "IAP-3304", 6, 5, "IAP", ["CI-19526_M"], ""],
+    ["Mecánica de Suelos II", "CI-19544", 6, 6, "CI", ["CI-19528"], ""],
+    ["Administración de Obras y Recursos Humanos", "IAP-19532", 4, 6, "IAP", ["IAP-3246", "IAP-19527"], ""],
+    ["Diseño Sismo Resistente", "IAP-19516", 4, 6, "IAP", ["CI-19506"], ""],
+    ["Diseño Geométrico Vial", "IAP-16018", 4, 5, "IAP", ["CI-19528", "CI-16000"], ""],
+    ["Hidrología", "CI-19504", 4, 2, "CI", ["CB-3340"], ""],
+    ["Taller de Integración de Obras Civiles", "IAP-19533", 2, 2, "IAP", ["IAP-19525", "CI-16011", "IAP-19508"], ""]
+  ],
+  "s9": [
+    ["Planificación de Proyectos", "IAP-3856", 6, 5, "IAP", ["IAP-19527", "CI-19529"], ""],
+    ["Diseño de Pavimentos", "IAP-3297", 4, 4, "IAP", ["IAP-16018"], ""],
+    ["Redes Públicas", "IAP-19507", 4, 5, "IAP", ["CI-19504"], ""],
+    ["Construcción Pesada", "IAP-19509", 4, 4, "IAP", ["IAP-19532"], ""],
+    ["Estructuras de Acero I", "IAP-19534", 6, 6, "IAP", ["IAP-19516"], ""],
+    ["Fundaciones", "IAP-19511", 10, 6, "IAP", ["IAP-3304", "CI-19544"], ""]
+  ],
+  "s10": [
+    ["Evaluación de Proyectos", "IAP-3300", 6, 5, "IAP", ["IAP-3856"], ""],
+    ["Gestión de Calidad y Prevención de Riesgo", "IAP-3854", 4, 4, "IAP", ["CI-3334", "IAP-3246"], ""],
+    ["Proyecto de Título I", "IAP-19537", 4, 7, "IAP", ["CB-58000", "CB-14700", "IAP-19500", "CSH-58001", "CB-3850", "CB-3267", "CB-3225", "CB-3226", "CB-14704", "CB-14702", "CI-16000", "CSH-CTI1", "CB-3230", "CB-3231", "CI-3244", "CI-3247", "CI-3245", "CSH-14701", "CB-3333", "CB-3327", "CB-14703", "IAP-3246", "CI-3253", "IAP-19525", "CB-19526", "CB-3248", "CI-3288", "CI-16014", "CB-3340", "CSH-CTI2", "CI-19526_M", "IAP-19505", "CI-3334", "CI-3252", "IAP-19527", "CSH-3330", "CI-19528", "IAP-19508", "CI-16011", "CI-19506", "CI-19529", "IAP-19530", "IAP-SC", "IAP-3304", "CI-19544", "IAP-19532", "IAP-19516", "IAP-16018", "CI-19504", "IAP-19533"], ""],
+    ["Estructuras de Madera", "IAP-19535", 4, 3, "IAP", ["CI-19506"], ""],
+    ["Estructuras de Acero II", "IAP-19536", 4, 4, "IAP", [], ""],
+    ["Taller de Ingeniería Vial", "IAP-19538", 4, 4, "IAP", ["IAP-3297"], ""],
+    ["Inglés para Ingeniería II", "CSH-3338", 4, 3, "CSH", ["CSH-3330"], ""]
+  ],
+  "s11": [
+    ["Taller de Hormigón Armado", "IAP-19539", 4, 6, "IAP", ["CI-19506"], ""],
+    ["Diseño de Obras Marítimas y Portuarias", "IAP-19540", 8, 4, "IAP", ["IAP-19538"], ""],
+    ["Proyecto de Título II", "IAP-19541", 2, 13, "IAP", ["CB-58000", "CB-14700", "IAP-19500", "CSH-58001", "CB-3850", "CB-3267", "CB-3225", "CB-3226", "CB-14704", "CB-14702", "CI-16000", "CSH-CTI1", "CB-3230", "CB-3231", "CI-3244", "CI-3247", "CI-3245", "CSH-14701", "CB-3333", "CB-3327", "CB-14703", "IAP-3246", "CI-3253", "IAP-19525", "CB-19526", "CB-3248", "CI-3288", "CI-16014", "CB-3340", "CSH-CTI2", "CI-19526_M", "IAP-19505", "CI-3334", "CI-3252", "IAP-19527", "CSH-3330", "CI-19528", "IAP-19508", "CI-16011", "CI-19506", "CI-19529", "IAP-19530", "IAP-SC", "IAP-3304", "CI-19544", "IAP-19532", "IAP-19516", "IAP-16018", "CI-19504", "IAP-19533", "IAP-3856", "IAP-3297", "IAP-19507", "IAP-19509", "IAP-19534", "IAP-19511", "IAP-3300", "IAP-3854", "IAP-19537", "IAP-19535", "IAP-19536", "IAP-19538", "CSH-3338"], ""],
+    ["Gestión de Operaciones en Construcción", "IAP-19542", 6, 4, "IAP", ["IAP-19527", "IAP-3854"], ""],
+    ["Gestión Legal y Ambiental", "IAP-19514", 4, 3, "IAP", ["CI-19529"], ""],
+    ["Práctica Profesional", "IAP-19543", 0, 9, "IAP", ["CB-58000", "CB-14700", "IAP-19500", "CSH-58001", "CB-3850", "CB-3267", "CB-3225", "CB-3226", "CB-14704", "CB-14702", "CI-16000", "CSH-CTI1", "CB-3230", "CB-3231", "CI-3244", "CI-3247", "CI-3245", "CSH-14701", "CB-3333", "CB-3327", "CB-14703", "IAP-3246", "CI-3253", "IAP-19525", "CB-19526", "CB-3248", "CI-3288", "CI-16014", "CB-3340", "CSH-CTI2", "CI-19526_M", "IAP-19505", "CI-3334", "CI-3252", "IAP-19527", "CSH-3330", "CI-19528", "IAP-19508", "CI-16011", "CI-19506", "CI-19529", "IAP-19530", "IAP-SC", "IAP-3304", "CI-19544", "IAP-19532", "IAP-19516", "IAP-16018", "CI-19504", "IAP-19533", "IAP-3856", "IAP-3297", "IAP-19507", "IAP-19509", "IAP-19534", "IAP-19511"], ""]
+  ]
+}
+

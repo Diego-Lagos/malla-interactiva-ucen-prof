@@ -1,0 +1,85 @@
+{
+  "s1": [
+    ["Introducción a las Matemáticas", "FD-83500", 8, 7, "FD", [], ""],
+    ["Introducción a la Física", "FD-83501", 8, 7, "FD", [], ""],
+    ["Introducción a la Ingeniería Civil Industrial", "FD-86000", 6, 9, "FD", [], ""],
+    ["Formación Básica para la Vida Académica I", "FG-FBVA01", 4, 4, "FG", [], ""],
+    ["Curso Sello Institucional I: Inglés I", "FG-82000", 4, 4, "FG", [], ""]
+  ],
+  "s2": [
+    ["Álgebra I", "FD-83502", 8, 7, "FD", ["FD-83500"], ""],
+    ["Cálculo I", "FD-83503", 8, 7, "FD", [], ""],
+    ["Mecánica", "FD-83504", 8, 7, "FD", [], ""],
+    ["Formación Básica para la Vida Académica II", "FG-FBVA02", 4, 4, "FG", [], ""],
+    ["Curso Sello Institucional II: Inglés II", "FG-82001", 4, 4, "FG", ["FG-82000"], ""]
+  ],
+  "s3": [
+    ["Álgebra II", "FD-83505", 6, 5, "FD", ["FD-83502"], ""],
+    ["Cálculo II", "FD-83506", 6, 5, "FD", ["FD-83503"], ""],
+    ["Química General", "FD-83518", 8, 7, "FD", [], ""],
+    ["Programación Computacional", "FD-86002", 6, 5, "FD", [], ""],
+    ["Curso Sello Institucional III", "CSIRD-01", 4, 4, "FG", [], ""],
+    ["Administración", "FD-86003", 4, 4, "FD", [], ""]
+  ],
+  "s4": [
+    ["Ecuaciones Diferenciales", "FD-83508", 6, 5, "FD", [], ""],
+    ["Cálculo III", "FD-83509", 6, 5, "FD", ["FD-83506"], ""],
+    ["Electricidad y Magnetismo", "FD-83510", 6, 5, "FD", ["FD-83504"], ""],
+    ["Ciclo de Vida y Tecnología de los Materiales", "FD-86005", 6, 7, "FD", [], ""],
+    ["Curso Sello Institucional IV", "CSIRD-02", 4, 4, "FG", [], ""],
+    ["Taller Integrador de Competencias Básicas", "FD-86004", 2, 4, "FD", ["FD-83500", "FD-83501", "FD-86000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86002", "CSIRD-01", "FD-86003"], ""]
+  ],
+  "s5": [
+    ["Contabilidad y Costos", "FD-86007", 6, 7, "FD", ["FD-83502"], ""],
+    ["Ondas, Óptica y Calor", "FD-83513", 8, 5, "FD", ["FD-83504"], ""],
+    ["Probabilidad y Estadística", "FD-83515", 6, 5, "FD", ["FD-83506"], ""],
+    ["Dibujo e Interpretación de Planos", "FD-86008", 6, 5, "FD", [], ""],
+    ["Interdisciplinar", "FG-INTR", 4, 4, "FG", [], ""],
+    ["Termodinámica", "FD-86006", 6, 5, "FD", [], ""]
+  ],
+  "s6": [
+    ["Métodos Estadísticos", "FD-83523", 6, 5, "FD", ["FD-83515"], ""],
+    ["Gestión de Recursos Humanos y Liderazgo", "FD-86009", 6, 4, "FD", [], ""],
+    ["Investigación Operativa I", "FD-86010", 6, 5, "FD", [], ""],
+    ["Sistemas de Información", "FD-86011", 6, 5, "FD", ["FD-86002"], ""],
+    ["Interdisciplinar A+S", "FG-INTRAS", 4, 4, "FG", [], ""],
+    ["Mecánica de Fluidos", "FD-86013", 8, 6, "FD", ["FD-83509"], ""]
+  ],
+  "s7": [
+    ["Microeconomía", "FD-86017", 6, 4, "FD", [], ""],
+    ["Marketing", "FD-86014", 4, 4, "FD", [], ""],
+    ["Investigación Operativa II", "FD-86015", 6, 4, "FD", ["FD-86010"], ""],
+    ["Gestión de Operaciones y Logística I", "FD-86016", 6, 4, "FD", [], ""],
+    ["Ciencia de Datos", "FD-86018", 6, 5, "FD", ["FD-83523"], ""],
+    ["Procesos Industriales", "FD-86019", 6, 4, "FD", ["FD-86013"], ""],
+    ["Práctica Operacional", "FD-86020", 2, 7, "FD", ["FD-83500", "FD-83501", "FD-86000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86002", "CSIRD-01", "FD-86003", "FD-83508", "FD-83509", "FD-83510", "FD-86005", "CSIRD-02", "FD-86004", "FD-86007", "FD-83513", "FD-83515", "FD-86008", "FG-INTR", "FD-86006", "FD-83523", "FD-86009", "FD-86010", "FD-86011", "FG-INTRAS", "FD-86013"], ""]
+  ],
+  "s8": [
+    ["Inteligencia Artificial para la Gestión", "FD-86021", 6, 5, "FD", [], ""],
+    ["Simulación", "FD-86022", 6, 5, "FD", [], ""],
+    ["Gestión de Operaciones y Logística II", "FD-86023", 6, 5, "FD", ["FD-86016"], ""],
+    ["Macroeconomía", "FD-86024", 6, 5, "FD", ["FD-86017"], ""],
+    ["Gestión de Sustentabilidad y Sostenibilidad", "FD-86025", 6, 5, "FD", ["FD-86019"], ""],
+    ["Taller Integrador de Competencias Intermedias", "FD-86026", 2, 3, "FD", ["FD-83500", "FD-83501", "FD-86000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86002", "CSIRD-01", "FD-86003", "FD-83508", "FD-83509", "FD-83510", "FD-86005", "CSIRD-02", "FD-86004", "FD-86007", "FD-83513", "FD-83515", "FD-86008", "FG-INTR", "FD-86006", "FD-83523", "FD-86009", "FD-86010", "FD-86011", "FG-INTRAS", "FD-86013", "FD-86017", "FD-86014", "FD-86015", "FD-86016", "FD-86018", "FD-86019", "FD-86020"], ""]
+  ],
+  "s9": [
+    ["Finanzas Corporativas", "FP-86030", 6, 6, "FP", [], ""],
+    ["Evaluación de Proyectos", "FP-86028", 6, 7, "FP", [], ""],
+    ["Econometría", "FP-86031", 8, 7, "FP", ["FD-83523"], ""],
+    ["Gestión de la Innovación", "FP-86029", 6, 6, "FP", ["FD-86014"], ""],
+    ["Inteligencia de Negocios", "FP-86027", 6, 6, "FP", ["FD-86018"], ""]
+  ],
+  "s10": [
+    ["Planificación Estratégica", "FP-86032", 4, 7, "FP", [], ""],
+    ["Emprendimiento y Liderazgo en Negocios", "FP-86033", 6, 7, "FP", ["FP-86029"], ""],
+    ["Eficiencia Energética y Energías Renovables", "FP-86034", 6, 7, "FP", ["FD-86023"], ""],
+    ["Proyecto Título I", "FP-86035", 2, 7, "FP", ["FD-83500", "FD-83501", "FD-86000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86002", "CSIRD-01", "FD-86003", "FD-83508", "FD-83509", "FD-83510", "FD-86005", "CSIRD-02", "FD-86004", "FD-86007", "FD-83513", "FD-83515", "FD-86008", "FG-INTR", "FD-86006", "FD-83523", "FD-86009", "FD-86010", "FD-86011", "FG-INTRAS", "FD-86013", "FD-86017", "FD-86014", "FD-86015", "FD-86016", "FD-86018", "FD-86019", "FD-86020", "FD-86021", "FD-86022", "FD-86023", "FD-86024", "FD-86025", "FD-86026", "FP-86030", "FP-86028", "FP-86031", "FP-86029", "FP-86027"], ""]
+  ],
+  "s11": [
+    ["Legislación Comercial y Laboral", "FP-86033-XI", 4, 3, "FP", [], ""],
+    ["Ética y Responsabilidad Social y Empresarial", "FP-86032-XI", 4, 3, "FP", [], ""],
+    ["Proyecto Título II", "FP-86034-XI", 2, 12, "FP", ["FP-86035"], ""],
+    ["Práctica Profesional", "FP-86032-P", 2, 12, "FP", ["FD-83500", "FD-83501", "FD-86000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86002", "CSIRD-01", "FD-86003", "FD-83508", "FD-83509", "FD-83510", "FD-86005", "CSIRD-02", "FD-86004", "FD-86007", "FD-83513", "FD-83515", "FD-86008", "FG-INTR", "FD-86006", "FD-83523", "FD-86009", "FD-86010", "FD-86011", "FG-INTRAS", "FD-86013", "FD-86017", "FD-86014", "FD-86015", "FD-86016", "FD-86018", "FD-86019", "FD-86020", "FD-86021", "FD-86022", "FD-86023", "FD-86024", "FD-86025", "FD-86026"], ""]
+  ]
+}
+

@@ -1,0 +1,92 @@
+{
+  "s1": [
+    ["Introducción a las Matemáticas", "CB-58000", 6, 6, "CB", [], ""],
+    ["Introducción a la Física", "CB-14700", 6, 6, "CB", [], ""],
+    ["Introducción a la Ingeniería Industrial", "CI-4825", 4, 6, "CI", [], ""],
+    ["Tecnologías de la Información", "CI-4826", 6, 6, "CI", [], ""],
+    ["Estrategias de Aprendizaje", "CSH-58001", 4, 4, "CSH", [], ""],
+    ["Curso Transversal Institucional I", "CSH-CTI1", 2, 2, "CSH", [], ""]
+  ],
+  "s2": [
+    ["Álgebra I", "CB-3225", 8, 6, "CB", ["CB-58000"], ""],
+    ["Cálculo I", "CB-3226", 8, 6, "CB", [], ""],
+    ["Química General", "CB-3267", 10, 6, "CB", [], ""],
+    ["Dibujo Gráfico Computacional", "CI-3850", 8, 5, "CI", [], ""],
+    ["Administración", "IAP-4827", 8, 4, "IAP", [], ""],
+    ["Estrategias de Comunicación", "CSH-14701", 4, 3, "CSH", [], ""]
+  ],
+  "s3": [
+    ["Álgebra II", "CB-3230", 6, 6, "CB", ["CB-3225"], ""],
+    ["Cálculo II", "CB-3231", 12, 6, "CB", ["CB-3226"], ""],
+    ["Mecánica", "CB-14704", 6, 6, "CB", ["CB-14700"], ""],
+    ["Tecnologías de los Materiales", "CI-58003", 6, 4, "CI", ["CB-3267"], ""],
+    ["Contabilidad y Costos", "IAP-4883", 10, 6, "IAP", ["CB-3225"], ""],
+    ["Curso Transversal Institucional II", "CSH-CTI2", 2, 2, "CSH", [], ""]
+  ],
+  "s4": [
+    ["Ecuaciones Diferenciales", "CB-3333", 6, 6, "CB", ["CB-3231"], ""],
+    ["Cálculo III", "CB-3327", 6, 6, "CB", ["CB-3231"], ""],
+    ["Electricidad y Magnetismo", "CB-14703", 6, 6, "CB", ["CB-14704"], ""],
+    ["Programación Computacional", "CI-14702", 10, 6, "CI", [], ""],
+    ["Habilidades Empresariales", "IAP-4830", 4, 3, "IAP", ["IAP-4827"], ""],
+    ["Taller de Integración de Competencias Básicas", "IAP-58007", 4, 3, "IAP", ["CB-58000", "CB-14700", "CI-4825", "CI-4826", "CSH-58001", "CSH-CTI1", "CB-3225", "CB-3226", "CB-3267", "CI-3850", "IAP-4827", "CSH-14701", "CB-3230", "CB-3231", "CB-14704", "CI-58003", "IAP-4883", "CSH-CTI2"], ""]
+  ],
+  "s5": [
+    ["Investigación Operativa I", "CI-58005", 12, 6, "CI", ["CB-3230"], ""],
+    ["Sistemas Eléctricos", "CI-58006", 8, 4, "CI", ["CB-14703"], ""],
+    ["Ondas, Óptica y Calor", "CB-3248", 6, 6, "CB", ["CB-14704"], ""],
+    ["Probabilidades y Estadística", "CB-3340", 10, 6, "CB", ["CB-3231"], ""],
+    ["Teoría de Sistemas", "CI-4835", 4, 4, "CI", ["CI-14702"], ""],
+    ["Microeconomía", "CB-4833", 4, 4, "CB", ["CB-3226"], ""],
+    ["Practica I","IAP-58004",0,7,"IAP",["CB-58000", "CB-14700", "CI-4825", "CI-4826", "CSH-58001", "CSH-CTI1", "CB-3225", "CB-3226", "CB-3267", "CI-3850", "IAP-4827", "CSH-14701", "CB-3230", "CB-3231", "CB-14704", "CI-58003", "IAP-4883", "CSH-CTI2"]]
+  ],
+  "s6": [
+    ["Investigación Operativa II", "IAP-58008", 6, 6, "IAP", ["CI-58005"], ""],
+    ["Métodos Estadísticos", "CI-58036", 6, 5, "CI", ["CB-3340"], ""],
+    ["Termodinámica", "CI-58010", 6, 6, "CI", ["CB-14704"], ""],
+    ["Sistemas de Información", "CI-4839", 6, 5, "CI", ["CI-4835"], ""],
+    ["Macroeconomía", "IAP-4840", 4, 4, "IAP", ["CB-4833"], ""],
+    ["Trabajo en Equipo y Liderazgo", "CSH-4841", 4, 4, "CSH", ["IAP-4830"], ""]
+  ],
+  "s7": [
+    ["Simulación", "IAP-58011", 6, 6, "IAP", ["CI-58005"], ""],
+    ["Dirección de Producción y Operaciones I", "IAP-58012", 6, 5, "IAP", ["CI-58005"], ""],
+    ["Mecánica de Fluidos", "CI-3252", 6, 6, "CI", ["CB-14704", "CB-3327"], ""],
+    ["Gestión Comercial", "IAP-4852", 4, 5, "IAP", ["IAP-4830"], ""],
+    ["Finanzas Corporativas", "IAP-58013", 4, 5, "IAP", ["IAP-4883"], ""],
+    ["Inglés para Ingeniería I", "CSH-3330", 4, 3, "CSH", [], ""]
+  ],
+  "s8": [
+    ["Tópicos de Ingeniería I", "IAP-58037", 4, 4, "IAP", ["CB-58000", "CB-14700", "CI-4825", "CI-4826", "CSH-58001", "CSH-CTI1", "CB-3225", "CB-3226", "CB-3267", "CI-3850", "IAP-4827", "CSH-14701", "CB-3230", "CB-3231", "CB-14704", "CI-58003", "IAP-4883", "CSH-CTI2", "CB-3333", "CB-3327", "CB-14703", "CI-14702", "IAP-4830", "IAP-58007", "CI-58005", "CI-58006", "CB-3248", "CB-3340", "CI-4835", "CB-4833", "IAP-58004", "IAP-58008", "CI-58036", "CI-58010", "CI-4839", "IAP-4840", "CSH-4841"], ""],
+    ["Dirección de Producción y Operaciones II", "IAP-58015", 8, 5, "IAP", ["IAP-58012"], ""],
+    ["Operaciones Unitarias", "CI-58016", 6, 6, "CI", ["CI-3252"], ""],
+    ["Gestión de Recursos Humanos", "IAP-4848", 4, 5, "IAP", ["CSH-4841"], ""],
+    ["Gestión Organizacional", "IAP-4849", 4, 4, "IAP", ["IAP-4852"], ""],
+    ["Inglés para Ingeniería II", "CSH-3338", 4, 3, "CSH", ["CSH-3330"], ""],
+    ["Taller de Integración de Competencias Intermedias", "IAP-58017", 4, 3, "IAP", [], ""],
+    ["Práctica Operacional", "IAP-4894", 0, 7, "IAP", ["CB-58000", "CB-14700", "CI-4825", "CI-4826", "CSH-58001", "CSH-CTI1", "CB-3225", "CB-3226", "CB-3267", "CI-3850", "IAP-4827", "CSH-14701", "CB-3230", "CB-3231", "CB-14704", "CI-58003", "IAP-4883", "CSH-CTI2", "CB-3333", "CB-3327", "CB-14703", "CI-14702", "IAP-4830", "IAP-58007", "CI-58005", "CI-58006", "CB-3248", "CB-3340", "CI-4835", "CB-4833", "IAP-58004", "IAP-58008", "CI-58036", "CI-58010", "CI-4839", "IAP-4840", "CSH-4841", "IAP-58011", "IAP-58012", "CI-3252", "IAP-4852", "IAP-58013", "CSH-3330"], ""]
+  ],
+  "s9": [
+    ["Tópicos de Ingeniería II", "IAP-58038", 4, 4, "IAP", ["CB-58000", "CB-14700", "CI-4825", "CI-4826", "CSH-58001", "CSH-CTI1", "CB-3225", "CB-3226", "CB-3267", "CI-3850", "IAP-4827", "CSH-14701", "CB-3230", "CB-3231", "CB-14704", "CI-58003", "IAP-4883", "CSH-CTI2", "CB-3333", "CB-3327", "CB-14703", "CI-14702", "IAP-4830", "IAP-58007", "CI-58005", "CI-58006", "CB-3248", "CB-3340", "CI-4835", "CB-4833", "IAP-58004", "IAP-58008", "CI-58036", "CI-58010", "CI-4839", "IAP-4840", "CSH-4841"], ""],
+    ["Gestión de la Cadena de Abastecimiento", "IAP-58020", 6, 6, "IAP", ["IAP-58015"], ""],
+    ["Eficiencia Energética y Energías Renovables", "IAP-58021", 4, 5, "IAP", ["IAP-58015"], ""],
+    ["Tec. de Inf. y Com. para la Gestión", "IAP-58024", 8, 6, "IAP", ["CI-4839"], ""],
+    ["Econometría", "IAP-4845", 10, 6, "IAP", ["IAP-4840"], ""],
+    ["Inglés Comunicacional", "CSH-3349", 2, 3, "CSH", ["CSH-3338"], ""]
+  ],
+  "s10": [
+    ["Evaluación de Proyectos", "IAP-4847", 6, 6, "IAP", ["IAP-4883"], ""],
+    ["Gestión de Sustentabilidad", "IAP-58023", 6, 7, "IAP", ["IAP-58021"], ""],
+    ["Planificación Estratégica", "IAP-4856", 4, 6, "IAP", ["CB-58000", "CB-14700", "CI-4825", "CI-4826", "CSH-58001", "CSH-CTI1", "CB-3225", "CB-3226", "CB-3267", "CI-3850", "IAP-4827", "CSH-14701", "CB-3230", "CB-3231", "CB-14704", "CI-58003", "IAP-4883", "CSH-CTI2", "CB-3333", "CB-3327", "CB-14703", "CI-14702", "IAP-4830", "IAP-58007", "CI-58005", "CI-58006", "CB-3248", "CB-3340", "CI-4835", "CB-4833", "IAP-58004", "IAP-58008", "CI-58036", "CI-58010", "CI-4839", "IAP-4840", "CSH-4841"], ""],
+    ["Innovación y Emprendimiento", "CSH-4858", 4, 4, "CSH", ["CB-58000", "CB-14700", "CI-4825", "CI-4826", "CSH-58001", "CSH-CTI1", "CB-3225", "CB-3226", "CB-3267", "CI-3850", "IAP-4827", "CSH-14701", "CB-3230", "CB-3231", "CB-14704", "CI-58003", "IAP-4883", "CSH-CTI2", "CB-3333", "CB-3327", "CB-14703", "CI-14702", "IAP-4830", "IAP-58007", "CI-58005", "CI-58006", "CB-3248", "CB-3340", "CI-4835", "CB-4833", "IAP-58004", "IAP-58008", "CI-58036", "CI-58010", "CI-4839", "IAP-4840", "CSH-4841"], ""],
+    ["Proyecto de Título I", "IAP-19537", 4, 7, "IAP", ["CB-58000", "CB-14700", "CI-4825", "CI-4826", "CSH-58001", "CSH-CTI1", "CB-3225", "CB-3226", "CB-3267", "CI-3850", "IAP-4827", "CSH-14701", "CB-3230", "CB-3231", "CB-14704", "CI-58003", "IAP-4883", "CSH-CTI2", "CB-3333", "CB-3327", "CB-14703", "CI-14702", "IAP-4830", "IAP-58007", "CI-58005", "CI-58006", "CB-3248", "CB-3340", "CI-4835", "CB-4833", "IAP-58004", "IAP-58008", "CI-58036", "CI-58010", "CI-4839", "IAP-4840", "CSH-4841", "IAP-58011", "IAP-58012", "CI-3252", "IAP-4852", "IAP-58013", "CSH-3330", "IAP-58037", "IAP-58015", "CI-58016", "IAP-4848", "IAP-4849", "CSH-3338", "IAP-58017", "IAP-4894"], ""]
+    
+  ],
+  "s11": [
+    ["Sistemas Integrados de Gestión", "IAP-58039", 8, 6, "IAP", ["IAP-58020"], ""],
+    ["Inteligencia de Negocios", "IAP-58029", 10, 6, "IAP", ["IAP-58024"], ""],
+    ["Legislación Comercial y Laboral", "CSH-58022", 4, 5, "CSH", ["IAP-4852"], ""],
+    ["Proyecto de Título II", "IAP-19541", 2, 13, "IAP", ["IAP-19537"], ""],
+    ["Práctica Profesional", "IAP-4895", 0, 13, "IAP", ["CB-58000", "CB-14700", "CI-4825", "CI-4826", "CSH-58001", "CSH-CTI1", "CB-3225", "CB-3226", "CB-3267", "CI-3850", "IAP-4827", "CSH-14701", "CB-3230", "CB-3231", "CB-14704", "CI-58003", "IAP-4883", "CSH-CTI2", "CB-3333", "CB-3327", "CB-14703", "CI-14702", "IAP-4830", "IAP-58007", "CI-58005", "CI-58006", "CB-3248", "CB-3340", "CI-4835", "CB-4833", "IAP-58004", "IAP-58008", "CI-58036", "CI-58010", "CI-4839", "IAP-4840", "CSH-4841", "IAP-58011", "IAP-58012", "CI-3252", "IAP-4852", "IAP-58013", "CSH-3330", "IAP-58037", "IAP-58015", "CI-58016", "IAP-4848", "IAP-4849", "CSH-3338", "IAP-58017", "IAP-4894", "IAP-58038", "IAP-58020", "IAP-58021", "IAP-58024", "IAP-4845", "CSH-3349"], ""]
+  ]
+}

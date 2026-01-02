@@ -1,0 +1,86 @@
+{
+  "s1": [
+    ["Introducción a las Matemáticas", "FD-83500", 8, 7, "FD", [], ""],
+    ["Introducción a la Física", "FD-83501", 8, 7, "FD", [], ""],
+    ["Introducción a la Ingeniería Civil en Obras Civiles", "FD-84000", 6, 9, "FD", [], ""],
+    ["Formación Básica para la Vida Académica I", "FG-FBVA01", 4, 4, "FG", [], ""],
+    ["Curso Sello Institucional I: Inglés I", "FG-82000", 4, 4, "FG", [], ""]
+  ],
+  "s2": [
+    ["Álgebra I", "FD-83502", 8, 7, "FD", ["FD-83500"], ""],
+    ["Cálculo I", "FD-83503", 8, 7, "FD", [], ""],
+    ["Mecánica", "FD-83504", 8, 7, "FD", ["FD-83501"], ""],
+    ["Curso Sello Institucional II: Inglés II", "FG-82001", 4, 4, "FG", ["FG-82000"], ""],
+    ["Formación Básica para la Vida Académica II", "FG-FBVA02", 4, 4, "FG", [], ""]
+  ],
+  "s3": [
+    ["Álgebra II", "FD-83505", 6, 5, "FD", ["FD-83502"], ""],
+    ["Cálculo II", "FD-83506", 6, 5, "FD", ["FD-83503"], ""],
+    ["Tecnología Avanzada en Topografía", "FD-83507", 6, 5, "FD", [], ""],
+    ["Estática Aplicada", "FD-84001", 6, 5, "FD", ["FD-83504"], ""],
+    ["Química General", "FD-83518", 8, 7, "FD", [], ""],
+    ["Dibujo e Interpretación de Planos", "FD-84002", 6, 4, "FD", ["FD-84000"], ""]
+  ],
+  "s4": [
+    ["Ecuaciones Diferenciales", "FD-83508", 6, 5, "FD", ["FD-83503"], ""],
+    ["Cálculo III", "FD-83509", 6, 5, "FD", ["FD-83506"], ""],
+    ["Electricidad y Magnetismo", "FD-83510", 6, 5, "FD", [], ""],
+    ["Mecánica de Sólidos", "FD-84003", 6, 5, "FD", ["FD-84001"], ""],
+    ["Edificación BIM en Obras Gruesas", "FD-83511", 6, 5, "FD", ["FD-84002"], ""],
+    ["Curso Sello Institucional III", "CSIRD-01", 4, 4, "FG", [], ""]
+  ],
+  "s5": [
+    ["Programación Computacional", "FD-83512", 6, 5, "FD", [], ""],
+    ["Ondas, Óptica y Calor", "FD-83513", 8, 5, "FD", [], ""],
+    ["Probabilidad y Estadística", "FD-83515", 6, 5, "FD", [], ""],
+    ["Análisis Estructural", "FD-84004", 6, 5, "FD", ["FD-84003"], ""],
+    ["Capstone Project I", "FD-83526", 4, 5, "FD", ["FD-83500", "FD-83501", "FD-84000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-82001", "FG-FBVA02", "FD-83505", "FD-83506", "FD-83507", "FD-84001", "FD-83518", "FD-84002", "FD-83508", "FD-83509", "FD-83510", "FD-84003", "FD-83511", "CSIRD-01"], ""],
+    ["Curso Sello Institucional IV", "CSIRD-02", 4, 4, "FG", [], ""]
+  ],
+  "s6": [
+    ["Presupuestación y Procesos de Licitación", "FD-84005", 6, 5, "FD", ["FD-83511"], ""],
+    ["Fundamentos de Economía", "FD-83514", 4, 5, "FD", ["FD-83515"], ""],
+    ["Mecánica de Fluidos", "FD-83516", 8, 7, "FD", [], ""],
+    ["Ingeniería Geotecnia", "FD-84006", 6, 5, "FD", ["FD-84003"], ""],
+    ["Tecnología del Hormigón", "FD-83525", 4, 5, "FD", [], ""],
+    ["Interdisciplinar", "FG-INTR", 4, 4, "FG", [], ""]
+  ],
+  "s7": [
+    ["Mecánica de Suelos", "FD-84010", 6, 4, "FD", ["FD-84006"], ""],
+    ["Diseño Geométrico Vial", "FD-84012", 6, 5, "FD", [], ""],
+    ["Hidráulica", "FD-84011", 6, 5, "FD", ["FD-83516"], ""],
+    ["Diseño Sismorresistente", "FD-84013", 6, 5, "FD", ["FD-84004"], ""],
+    ["Práctica Operacional", "FD-84014", 2, 9, "FD", ["FD-83500", "FD-83501", "FD-84000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-82001", "FG-FBVA02", "FD-83505", "FD-83506", "FD-83507", "FD-84001", "FD-83518", "FD-84002", "FD-83508", "FD-83509", "FD-83510", "FD-84003", "FD-83511", "CSIRD-01", "FD-83512", "FD-83513", "FD-83515", "FD-84004", "FD-83526", "CSIRD-02", "FD-84005", "FD-83514", "FD-83516", "FD-84006", "FD-83525", "FG-INTR"], ""],
+    ["Interdisciplinar A+S", "FG-INTR A+S", 4, 4, "FG", [], ""]
+  ],
+  "s8": [
+    ["Fundaciones", "FD-84912", 6, 5, "FD", ["FD-84010"], ""],
+    ["Diseño de Pavimentos", "FD-84913", 4, 5, "FD", ["FD-84012"], ""],
+    ["Hidrología", "FD-84014", 4, 4, "FD", ["FD-84011"], ""],
+    ["Diseño de Hormigón Armado", "FD-84015", 8, 5, "FD", ["FD-84013"], ""],
+    ["Gestión Ambiental y Sostenibilidad", "FD-84016", 4, 4, "FD", [], ""],
+    ["Planificación de Proyectos", "FD-83522", 4, 5, "FD", [], ""]
+  ],
+  "s9": [
+    ["Taller de Modelación Computacional de Estructuras de Hormigón Armado", "FP-84017", 6, 5, "FP", ["FD-84015"], ""],
+    ["Taller de Movilidad Sostenible", "FP-84018", 6, 5, "FP", [], ""],
+    ["Redes Hidráulicas Urbanas", "FP-84019", 4, 4, "FP", ["FD-84011"], ""],
+    ["Diseño de Estructuras de Acero", "FP-84020", 8, 7, "FP", [], ""],
+    ["Administración y Coordinación de Proyectos BIM", "FP-84021", 4, 5, "FP", [], ""],
+    ["Capstone Project II", "FP-84022", 4, 5, "FP", ["FD-83500", "FD-83501", "FD-84000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-82001", "FG-FBVA02", "FD-83505", "FD-83506", "FD-83507", "FD-84001", "FD-83518", "FD-84002", "FD-83508", "FD-83509", "FD-83510", "FD-84003", "FD-83511", "CSIRD-01", "FD-83512", "FD-83513", "FD-83515", "FD-84004", "FD-83526", "CSIRD-02", "FD-84005", "FD-83514", "FD-83516", "FD-84006", "FD-83525", "FG-INTR", "FD-84010", "FD-84012", "FD-84011", "FD-84013", "FD-84014", "FG-INTR A+S", "FD-84912", "FD-84913", "FD-84015", "FD-84016", "FD-83522"], ""]
+  ],
+  "s10": [
+    ["Taller de Modelación Computacional de Estructuras de Acero", "FP-84023", 6, 5, "FP", ["FP-84020"], ""],
+    ["Ingeniería Sanitaria", "FP-84024", 4, 5, "FP", ["FP-84019"], ""],
+    ["Diseño de Estructuras de Madera", "FP-84025", 6, 5, "FP", [], ""],
+    ["Proyecto Título I", "FP-83524", 2, 5, "FP", ["FD-83500", "FD-83501", "FD-84000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-82001", "FG-FBVA02", "FD-83505", "FD-83506", "FD-83507", "FD-84001", "FD-83518", "FD-84002", "FD-83508", "FD-83509", "FD-83510", "FD-84003", "FD-83511", "CSIRD-01", "FD-83512", "FD-83513", "FD-83515", "FD-84004", "FD-83526", "CSIRD-02", "FD-84005", "FD-83514", "FD-83516", "FD-84006", "FD-83525", "FG-INTR", "FD-84010", "FD-84012", "FD-84011", "FD-84013", "FD-84014", "FG-INTR A+S", "FD-84912", "FD-84913", "FD-84015", "FD-84016", "FD-83522", "FP-84017", "FP-84018", "FP-84019", "FP-84020", "FP-84021", "FP-84022"], ""],
+    ["Práctica Profesional", "FP-84026", 2, 9, "FP", ["FD-83500", "FD-83501", "FD-84000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-82001", "FG-FBVA02", "FD-83505", "FD-83506", "FD-83507", "FD-84001", "FD-83518", "FD-84002", "FD-83508", "FD-83509", "FD-83510", "FD-84003", "FD-83511", "CSIRD-01", "FD-83512", "FD-83513", "FD-83515", "FD-84004", "FD-83526", "CSIRD-02", "FD-84005", "FD-83514", "FD-83516", "FD-84006", "FD-83525", "FG-INTR", "FD-84010", "FD-84012", "FD-84011", "FD-84013", "FD-84014", "FG-INTR A+S", "FD-84912", "FD-84913", "FD-84015", "FD-84016", "FD-83522", "FP-84017", "FP-84018", "FP-84019", "FP-84020", "FP-84021", "FP-84022"], ""]
+  ],
+  "s11": [
+    ["Infraestructura Marítima", "FP-84027", 6, 5, "FP", [], ""],
+    ["Diseño de Puentes e Infraestructura Vial", "FP-84028", 8, 8, "FP", ["FP-84018"], ""],
+    ["Evaluación de Proyectos", "FP-83517", 6, 5, "FP", ["FP-84021"], ""],
+    ["Proyecto Título II", "FP-84029", 2, 12, "FP", ["FP-83524"], ""]
+  ]
+}
+

@@ -1,0 +1,76 @@
+{
+  "s1": [
+    ["Introducción a las Matemáticas", "FD-83500", 8, 7, "FD", [], ""],
+    ["Introducción a la Física", "FD-83501", 8, 7, "FD", [], ""],
+    ["Geología General", "FD-87000", 12, 9, "FD", [], ""],
+    ["Formación Básica para la Vida Académica I", "FG-FBVA01", 4, 4, "FG", [], ""],
+    ["Curso Sello Institucional I: Inglés I", "FG-82000", 4, 4, "FG", [], ""]
+  ],
+  "s2": [
+    ["Álgebra I", "FD-83502", 8, 7, "FD", ["FD-83500"], ""],
+    ["Cálculo I", "FD-83503", 8, 7, "FD", [], ""],
+    ["Mecánica", "FD-83504", 8, 7, "FD", ["FD-83501"], ""],
+    ["Formación Básica para la Vida Académica II", "FG-FBVA02", 4, 4, "FG", [], ""],
+    ["Sello Curso Institucional: Inglés II", "FG-82001", 4, 4, "FG", ["FG-82000"], ""]
+  ],
+  "s3": [
+    ["Álgebra II", "FD-83505", 6, 5, "FD", ["FD-83502"], ""],
+    ["Cálculo II", "FD-83506", 6, 5, "FD", ["FD-83503"], ""],
+    ["Química General", "FD-83518", 8, 7, "FD", [], ""],
+    ["Mineralogía y Cristalografía", "FD-87001", 10, 5, "FD", ["FD-87000"], ""],
+    ["Programación Computacional", "FD-87002", 6, 4, "FD", [], ""],
+    ["Curso Sello Institucional III", "CSIRD-01", 4, 4, "FG", [], ""]
+  ],
+  "s4": [
+    ["Termodinámica", "FD-83520", 6, 4, "FD", ["FD-83506"], ""],
+    ["Paleontología", "FD-87003", 10, 6, "FD", [], ""],
+    ["Fundamentos de Petrología", "FD-87004", 8, 5, "FD", ["FD-87001"], ""],
+    ["Estratigrafía y Sedimentación", "FD-87005", 12, 7, "FD", [], ""],
+    ["Inglés para la Geología", "FG-87006", 4, 4, "FG", ["FG-82001"], ""],
+    ["Curso Sello Institucional IV", "CSIRD-02", 4, 4, "FG", [], ""]
+  ],
+  "s5": [
+    ["Sistemas de Información Geográfica y Procesamiento de Imágenes Satelitales", "FD-87007", 8, 6, "FD", [], ""],
+    ["Geomorfología", "FD-87009", 10, 7, "FD", ["FD-87005"], ""],
+    ["Geología Estructural", "FD-87008", 12, 8, "FD", ["FD-83506"], ""],
+    ["Mineralogía Óptica", "FD-87010", 10, 5, "FD", ["FD-87004"], ""],
+    ["Interdisciplinar", "FG-INTR", 4, 4, "FG", [], ""]
+  ],
+  "s6": [
+    ["Metalogénesis de Depósitos Minerales", "FD-87011", 6, 4, "FD", [], ""],
+    ["Geología de Campo I", "FD-87013", 14, 7, "FD", ["FD-87008"], ""],
+    ["Petrología Ígnea y Metamórfica", "FD-87012", 12, 7, "FD", ["FD-87010"], ""],
+    ["Geoquímica", "FD-87014", 4, 4, "FD", [], ""],
+    ["Fundamentos de Economía", "FD-83514", 4, 4, "FD", [], ""],
+    ["Interdisciplinario A+S", "FG-INTR A+S", 4, 4, "FG", [], ""]
+  ],
+  "s7": [
+    ["Geología Económica", "FD-87016", 8, 5, "FD", ["FD-87011"], ""],
+    ["Estadística para la Geología", "FD-87017", 6, 3, "FD", [], ""],
+    ["Hidrogeología", "FD-87019", 8, 5, "FD", ["FD-87009"], ""],
+    ["Volcanología", "FD-87018", 12, 7, "FD", ["FD-87012"], ""],
+    ["Evaluación y Gestión de Proyectos", "FD-87015", 4, 4, "FD", ["FD-83514"], ""],
+    ["Práctica Operacional", "FD-87020", 2, 6, "FD", ["FD-83500", "FD-83501", "FD-87000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-87001", "FD-87002", "CSIRD-01", "FD-83520", "FD-87003", "FD-87004", "FD-87005", "FG-87006", "CSIRD-02", "FD-87007", "FD-87009", "FD-87008", "FD-87010", "FG-INTR", "FD-87011", "FD-87013", "FD-87012", "FD-87014", "FD-83514", "FG-INTR A+S"], ""]
+  ],
+  "s8": [
+    ["Geofísica y Exploración Geofísica", "FD-87021", 8, 5, "FD", [], ""],
+    ["Métodos de Investigación Geológica", "FD-87025", 10, 7, "FD", ["FD-83500", "FD-83501", "FD-87000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-87001", "FD-87002", "CSIRD-01", "FD-83520", "FD-87003", "FD-87004", "FD-87005", "FG-87006", "CSIRD-02", "FD-87007", "FD-87009", "FD-87008", "FD-87010", "FG-INTR", "FD-87011", "FD-87013", "FD-87012", "FD-87014", "FD-83514", "FG-INTR A+S", "FD-87016", "FD-87017", "FD-87019", "FD-87018", "FD-87015", "FD-87020"], ""],
+    ["Geología de Chile", "FD-87022", 12, 8, "FD", ["FD-87013"], ""],
+    ["Geología Ambiental", "FD-87023", 8, 5, "FD", ["FD-87019"], ""],
+    ["Peligros Geológicos y Riesgos Naturales", "FD-87024", 8, 5, "FD", [], ""]
+  ],
+  "s9": [
+    ["Proyecto de Título I", "FP-87026", 4, 7, "FP", ["FD-87025"], ""],
+    ["Geología de Exploración Minera", "FP-87027", 14, 8, "FP", ["FD-87021"], ""],
+    ["Geología de Campo II", "FP-87028", 20, 10, "FP", ["FD-87022"], ""],
+    ["Alociclidad de los Procesos Geológicos", "FP-87030", 4, 3, "FP", ["FD-87023"], ""],
+    ["Geopatrimonio y Geodiversidad", "FP-87029", 6, 4, "FP", [], ""]
+  ],
+  "s10": [
+    ["Proyecto de Título II", "FP-87031", 4, 13, "FP", ["FP-87026"], ""],
+    ["Geología de Depósitos No Metálicos", "FP-87032", 4, 5, "FP", ["FP-87027"], ""],
+    ["Geología y Ética al Servicio de la Comunidad", "FP-87033", 6, 5, "FP", [], ""],
+    ["Práctica Profesional", "FP-87034", 2, 5, "FP", ["FD-83500", "FD-83501", "FD-87000", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-87001", "FD-87002", "CSIRD-01", "FD-83520", "FD-87003", "FD-87004", "FD-87005", "FG-87006", "CSIRD-02", "FD-87007", "FD-87009", "FD-87008", "FD-87010", "FG-INTR", "FD-87011", "FD-87013", "FD-87012", "FD-87014", "FD-83514", "FG-INTR A+S", "FD-87016", "FD-87017", "FD-87019", "FD-87018", "FD-87015", "FD-87020", "FD-87021", "FD-87025", "FD-87022", "FD-87023", "FD-87024", "FP-87026", "FP-87027", "FP-87028", "FP-87030", "FP-87029"], ""]
+  ]
+}
+

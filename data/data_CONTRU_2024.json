@@ -1,0 +1,76 @@
+{
+  "s1": [
+    ["Introducción a las Matemáticas", "FD-83500", 8, 7, "FD", [], ""],
+    ["Introducción a la Física", "FD-83501", 8, 7, "FD", [], ""],
+    ["Introducción a la Ingeniería en Construcción", "FD-84500", 6, 9, "FD", [], ""],
+    ["Formación Básica para la Vida Académica I", "FG-FBVA01", 4, 4, "FG", [], ""],
+    ["Curso Sello Institucional I: Inglés I", "FG-82000", 4, 4, "FG", [], ""]
+  ],
+  "s2": [
+    ["Álgebra I", "FD-83502", 8, 7, "FD", [], ""],
+    ["Cálculo I", "FD-83503", 8, 7, "FD", ["FD-83500"], ""],
+    ["Mecánica", "FD-83504", 8, 7, "FD", ["FD-83501"], ""],
+    ["Formación Básica para la Vida Académica II", "FG-FBVA02", 4, 4, "FG", [], ""],
+    ["Curso Sello Institucional II: Inglés II", "FG-82001", 4, 4, "FG", ["FG-82000"], ""]
+  ],
+  "s3": [
+    ["Álgebra II", "FD-83505", 6, 5, "FD", ["FD-83502"], ""],
+    ["Cálculo II", "FD-83506", 6, 5, "FD", ["FD-83503"], ""],
+    ["Química General", "FD-83518", 8, 7, "FD", [], ""],
+    ["Dibujo e Interpretación de Planos", "FD-84501", 6, 7, "FD", [], ""],
+    ["Curso Sello Institucional III", "FG-CSIRD3", 4, 4, "FG", [], ""]
+  ],
+  "s4": [
+    ["Tecnología Avanzada en Topografía", "FD-84502", 4, 4, "FD", [], ""],
+    ["Materiales para la Ingeniería", "FD-84503", 8, 9, "FD", ["FD-83518"], ""],
+    ["Hidráulica para la Construcción", "FD-84504", 8, 9, "FD", [], ""],
+    ["Edificación BIM Obra Gruesa", "FD-83511", 8, 6, "FD", ["FD-84501"], ""],
+    ["Curso Sello Institucional IV", "FG-CSIRD4", 4, 4, "FG", [], ""]
+  ],
+  "s5": [
+    ["Cubicación, Presupuestos y Licitaciones", "FD-84505", 4, 4, "FD", [], ""],
+    ["Tecnología del Hormigón", "FD-83525", 6, 5, "FD", [], ""],
+    ["Instalación BIM en Proyectos Sanitarios y Gas", "FD-84506", 6, 5, "FD", ["FD-84504"], ""],
+    ["Edificación BIM Terminaciones", "FD-84507", 8, 5, "FD", ["FD-83511"], ""],
+    ["Capstone Project I", "FD-83526", 4, 5, "FD", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4"], ""],
+    ["Interdisciplinar", "FG-INTR", 4, 4, "FG", [], ""]
+  ],
+  "s6": [
+    ["Probabilidades y Estadística", "FD-83515", 6, 5, "FD", [], ""],
+    ["Fundamento Estructural", "FD-84508", 6, 5, "FD", [], ""],
+    ["Instalación BIM Proyectos Eléctricos y Clima", "FD-84509", 6, 5, "FD", ["FD-84507"], ""],
+    ["Edificación BIM Construcción en Altura", "FD-84510", 8, 7, "FD", [], ""],
+    ["Mecánica de Suelos", "FD-84511", 8, 6, "FD", ["FD-84503"], ""],
+    ["Interdisciplinar A+S", "FG-INTRAS", 4, 4, "FG", [], ""]
+  ],
+  "s7": [
+    ["Fundamentos de Economía", "FD-83513", 4, 5, "FD", ["FD-83515"], ""],
+    ["Comportamiento Estructural", "FD-84512", 8, 5, "FD", ["FD-84508"], ""],
+    ["Contabilidad y Finanzas en Empresas Constructoras", "FD-84513", 4, 4, "FD", ["FD-84505"], ""],
+    ["Edificación BIM en Proyectos Industriales y Comerciales", "FD-84514", 8, 5, "FD", ["FD-84510"], ""],
+    ["Movimiento de Tierra y Fundaciones", "FD-84515", 4, 4, "FD", ["FD-84502"], ""],
+    ["Práctica Operacional", "FD-84516", 2, 9, "FD", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4", "FD-84505", "FD-83525", "FD-84506", "FD-84507", "FD-83526", "FG-INTR", "FD-83515", "FD-84508", "FD-84509", "FD-84510", "FD-84511", "FG-INTRAS"], ""]
+  ],
+  "s8": [
+    ["Gestión y Coordinación de Proyectos", "FP-84517", 6, 6, "FP", ["FD-84513"], ""],
+    ["Planificación de Proyectos", "FP-83522", 4, 5, "FP", [], ""],
+    ["Innovación y Emprendimiento en Construcción", "FP-84518", 4, 7, "FP", [], ""],
+    ["Tecnologías Avanzadas en Construcción", "FP-84519", 8, 6, "FP", [], ""],
+    ["Capstone Project II", "FP-84520", 4, 4, "FP", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4", "FD-84505", "FD-83525", "FD-84506", "FD-84507", "FD-83526", "FG-INTR", "FD-83515", "FD-84508", "FD-84509", "FD-84510", "FD-84511", "FG-INTRAS", "FD-83513", "FD-84512", "FD-84513", "FD-84514", "FD-84515", "FD-84516"], ""]
+  ],
+  "s9": [
+    ["Gestión de Calidad y Prevención de Riesgos", "FP-84521", 6, 6, "FP", [], ""],
+    ["Sistemas Constructivos en Madera y Acero", "FP-84522", 6, 6, "FP", ["FD-84512"], ""],
+    ["Proyectos Viales", "FP-84523", 6, 6, "FP", ["FD-84511"], ""],
+    ["Construcción Sostenible", "FP-84524", 8, 6, "FP", [], ""],
+    ["Proyecto de Título I", "FP-83524", 4, 6, "FP", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4", "FD-84505", "FD-83525", "FD-84506", "FD-84507", "FD-83526", "FG-INTR", "FD-83515", "FD-84508", "FD-84509", "FD-84510", "FD-84511", "FG-INTRAS", "FD-83513", "FD-84512", "FD-84513", "FD-84514", "FD-84515", "FD-84516", "FP-84517", "FP-83522", "FP-84518", "FP-84519", "FP-84520"], ""]
+  ],
+  "s10": [
+    ["Evaluación de Proyectos", "FP-83517", 6, 5, "FP", ["FP-83522"], ""],
+    ["Administración de Obras", "FP-84525", 8, 7, "FP", [], ""],
+    ["Construcción de Obras Civiles", "FP-84526", 6, 5, "FP", ["FP-84523"], ""],
+    ["Proyecto de Título II", "FP-84527", 2, 4, "FP", ["FP-83524"], ""],
+    ["Práctica Profesional", "FP-84528", 2, 9, "FP", ["FD-83500", "FD-83501", "FD-84500", "FG-FBVA01", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA02", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-84501", "FG-CSIRD3", "FD-84502", "FD-84503", "FD-84504", "FD-83511", "FG-CSIRD4", "FD-84505", "FD-83525", "FD-84506", "FD-84507", "FD-83526", "FG-INTR", "FD-83515", "FD-84508", "FD-84509", "FD-84510", "FD-84511", "FG-INTRAS", "FD-83513", "FD-84512", "FD-84513", "FD-84514", "FD-84515", "FD-84516", "FP-84517", "FP-83522", "FP-84518", "FP-84519", "FP-84520", "FP-84521", "FP-84522", "FP-84523", "FP-84524", "FP-83524"], ""]
+  ]
+}
+

@@ -1,0 +1,130 @@
+{
+    "s1": [
+        ["Introducción a las Matemáticas", "CB-58000", 12, 6, "CB", []],
+        ["Introducción a la Física", "CB-14700", 12, 6, "CB", []],
+        ["Introducción a la Geología y Minería", "CI-59000", 10, 5, "CI", []],
+        ["Química General", "CB-3267", 12, 6, "CB", []],
+        ["Estrategias de Aprendizaje", "CSH-58001", 8, 4, "CSH", []],
+        ["Inglés para Ingeniería I", "CSH-3330", 6, 3, "CSH", []]
+    ],
+    "s2": [
+        ["Álgebra I", "CB-3225", 12, 6, "CB", ["CB-58000"]],
+        ["Cálculo I", "CB-3226", 12, 6, "CB", []],
+        ["Estrategias de Comunicación", "CSH-14701", 6, 3, "CSH", []],
+        ["Mecánica", "CB-14704", 12, 6, "CB", ["CB-14700"]],
+        ["Programación Computacional", "CI-14702", 12, 6, "CI", []],
+        ["Inglés para Ingeniería II", "CSH-3338", 6, 3, "CSH", ["CSH-3330"]]
+    ],
+    "s3": [
+        ["Álgebra II", "CB-3230", 12, 6, "CB", ["CB-3225"]],
+        ["Cálculo II", "CB-3231", 12, 6, "CB", ["CB-3226"]],
+        ["Geología General", "IAP-56035", 8, 4, "IAP", ["CI-59000"]],
+        ["Topografía", "CI-56003", 6, 3, "CI", ["CI-14702", "CB-58000"]],
+        ["Dibujo Gráfico Computacional", "CI-3850", 10, 5, "CI", []],
+        ["Electricidad y Magnetismo", "CB-14703", 12, 6, "CB", ["CB-14704"]]
+    ],
+    "s4": [
+        ["Ecuaciones Diferenciales", "CB-3333", 12, 6, "CB", ["CB-3231"]],
+        ["Sedimentología y Estratigrafía", "IAP-59005", 10, 5, "IAP", ["IAP-56035"]],
+        ["Cartografía y Mapeo Geológico", "IAP-59006", 10, 5, "IAP", ["IAP-56035", "CI-56003"]],
+        ["Cristalografía", "IAP-59007", 12, 6, "IAP", ["IAP-56035", "CB-3267"]],
+        ["Métodos de Explotación Minera", "IAP-56037", 10, 5, "IAP", ["CI-59000", "CI-56003"]],
+        ["Inglés Comunicacional", "CSH-3349", 6, 3, "CSH", ["CSH-3338"]]
+    ],
+    "s5": [
+        ["Métodos Numéricos", "CB-3279", 10, 5, "CB", ["CB-3333"]],
+        ["Geomorfología", "IAP-59008", 8, 4, "IAP", ["IAP-59005", "CI-56003"]],
+        ["Probabilidades y Estadística", "CB-3340", 12, 6, "CB", ["CB-3231"]],
+        ["Geología Estructural y Dinámica Global", "IAP-59009", 8, 4, "IAP", ["IAP-56035"]],
+        ["Fundamentos de Economía", "CI-3334", 8, 4, "CI", ["CB-3225"]],
+        ["Geofísica", "CI-59010", 8, 4, "CI", ["IAP-56035", "CB-14703"]],
+        ["Evaluación Competencias de Primer Ciclo", "CI-56006", 6, 3, "CI", [
+            "CB-58000", "CB-14700", "CI-59000", "CB-3267", "CSH-58001", "CSH-3330",
+            "CB-3225", "CB-3226", "CSH-14701", "CB-14704", "CI-14702", "CSH-3338",
+            "CB-3230", "CB-3231", "IAP-56035", "CI-56003", "CI-3850", "CB-14703",
+            "CB-3333", "IAP-59005", "IAP-59006", "IAP-59007", "IAP-56037", "CSH-3349"
+        ]]
+    ],
+    "s6": [
+        ["Prospección Geofísica", "IAP-59011", 12, 6, "IAP", ["CI-59010"]],
+        ["Petrología Ígnea", "IAP-59012", 10, 5, "IAP", ["IAP-59007"]],
+        ["Mineralogía", "IAP-59013", 12, 6, "IAP", ["IAP-59007"]],
+        ["Paleontología", "IAP-59014", 10, 5, "IAP", ["IAP-59005"]],
+        ["Termodinámica", "CI-58010", 12, 6, "CI", ["CB-14704"]],
+        ["Curso Transversal Institucional I", "CSH-TR1", 4, 2, "CSH", []]
+    ],
+    "s7": [
+        ["Geoestadística y Estimación de Recursos", "IAP-56012", 10, 5, "IAP", ["CB-3340", "IAP-56035"]],
+        ["Geología Ambiental", "IAP-59015", 8, 4, "IAP", ["IAP-56035", "IAP-56037"]],
+        ["Laboratorio Microscopía", "IAP-59016", 8, 4, "IAP", ["IAP-59013"]],
+        ["Petrología Metamórfica y Sedimentaria", "IAP-59017", 10, 5, "IAP", ["IAP-59012", "IAP-59005"]],
+        ["Geología de Campo I", "IAP-59018", 14, 5, "IAP", ["IAP-59012", "IAP-59009","IAP-59005"]],
+        ["Geoquímica", "IAP-59019", 10, 5, "IAP", ["IAP-56035", "CB-3267"]],
+        ["Curso Transversal Institucional II", "CSH-TR2", 4, 2, "CSH", []],
+        ["Práctica Operacional", "IAP-56011", 0, 7, "IAP", [
+            "CB-58000", "CB-14700", "CI-59000", "CB-3267", "CSH-58001", "CSH-3330",
+            "CB-3225", "CB-3226", "CSH-14701", "CB-14704", "CI-14702", "CSH-3338",
+            "CB-3230", "CB-3231", "IAP-56035", "CI-56003", "CI-3850", "CB-14703",
+            "CB-3333", "IAP-59005", "IAP-59006", "IAP-59007", "IAP-56037", "CSH-3349",
+            "CB-3279", "IAP-59008", "CB-3340", "IAP-59009", "CI-3334", "CI-59010", "CI-56006",
+            "IAP-59011", "IAP-59012", "IAP-59013", "IAP-59014", "CI-58010", "CSH-TR1"
+        ]]
+    ],
+    "s8": [
+        ["Vulcanología y Geotermia", "IAP-59020", 8, 4, "IAP", ["IAP-59012", "IAP-59009"]],
+        ["Geomecánica Aplicada", "CI-56018", 10, 5, "CI", ["IAP-56035", "IAP-56037"]],
+        ["Exploración Geológica", "IAP-56020", 10, 5, "IAP", ["IAP-56012", "IAP-59008"]],
+        ["Hidrogeología", "IAP-59021", 8, 4, "IAP", ["IAP-59018", "IAP-59008"]],
+        ["Geología de Yacimientos Minerales y Metalogénesis", "IAP-59022", 10, 5, "IAP", ["IAP-59019","IAP-59017"]],
+        ["Software de Productividad Geológica", "IAP-59023", 8, 4, "IAP", ["IAP-56012"]],
+        ["Evaluación Competencias de Segundo Ciclo", "IAP-56023", 6, 3, "IAP", [
+            "CB-58000", "CB-14700", "CI-59000", "CB-3267", "CSH-58001", "CSH-3330",
+            "CB-3225", "CB-3226", "CSH-14701", "CB-14704", "CI-14702", "CSH-3338",
+            "CB-3230", "CB-3231", "IAP-56035", "CI-56003", "CI-3850", "CB-14703",
+            "CB-3333", "IAP-59005", "IAP-59006", "IAP-59007", "IAP-56037", "CSH-3349",
+            "CB-3279", "IAP-59008", "CB-3340", "IAP-59009", "CI-3334", "CI-59010", "CI-56006",
+            "IAP-59011", "IAP-59012", "IAP-59013", "IAP-59014", "CI-58010", "CSH-TR1",
+            "IAP-56012", "IAP-59015", "IAP-59016", "IAP-59017", "IAP-59018", "IAP-59019", "CSH-TR2", "IAP-56011"
+        ]]
+    ],
+    "s9": [
+        ["Riesgos Geológicos", "IAP-59024", 8, 4, "IAP", ["IAP-59020"]],
+        ["Geología de Campo II", "IAP-59025", 10, 5, "IAP", ["IAP-59018"]],
+        ["Geología de Hidrocarburos", "IAP-59026", 10, 5, "IAP", ["CI-58010", "IAP-59005"]],
+        ["Proyecto de Título I", "CI-19537", 14, 7, "CI", [
+            "CB-58000", "CB-14700", "CI-59000", "CB-3267", "CSH-58001", "CSH-3330",
+            "CB-3225", "CB-3226", "CSH-14701", "CB-14704", "CI-14702", "CSH-3338",
+            "CB-3230", "CB-3231", "IAP-56035", "CI-56003", "CI-3850", "CB-14703",
+            "CB-3333", "IAP-59005", "IAP-59006", "IAP-59007", "IAP-56037", "CSH-3349",
+            "CB-3279", "IAP-59008", "CB-3340", "IAP-59009", "CI-3334", "CI-59010", "CI-56006",
+            "IAP-59011", "IAP-59012", "IAP-59013", "IAP-59014", "CI-58010", "CSH-TR1",
+            "IAP-56012", "IAP-59015", "IAP-59016", "IAP-59017", "IAP-59018", "IAP-59019", "CSH-TR2", "IAP-56011",
+            "IAP-59020", "CI-56018", "IAP-56020", "IAP-59021", "IAP-59022", "IAP-59023", "IAP-56023"
+        ]],
+        ["Evaluación y Gestión de Proyectos", "CI-56027", 10, 5, "CI", ["CI-3334", "IAP-56020"]],
+        ["Geometalurgia", "IAP-56029", 8, 4, "IAP", ["IAP-59013"]],
+        ["Práctica Profesional", "IAP-56034", 0, 7, "IAP", [
+            "CB-58000", "CB-14700", "CI-59000", "CB-3267", "CSH-58001", "CSH-3330",
+            "CB-3225", "CB-3226", "CSH-14701", "CB-14704", "CI-14702", "CSH-3338",
+            "CB-3230", "CB-3231", "IAP-56035", "CI-56003", "CI-3850", "CB-14703",
+            "CB-3333", "IAP-59005", "IAP-59006", "IAP-59007", "IAP-56037", "CSH-3349",
+            "CB-3279", "IAP-59008", "CB-3340", "IAP-59009", "CI-3334", "CI-59010", "CI-56006",
+            "IAP-59011", "IAP-59012", "IAP-59013", "IAP-59014", "CI-58010", "CSH-TR1",
+            "IAP-56012", "IAP-59015", "IAP-59016", "IAP-59017", "IAP-59018", "IAP-59019", "CSH-TR2", "IAP-56011",
+            "IAP-59020", "CI-56018", "IAP-56020", "IAP-59021", "IAP-59022", "IAP-59023", "IAP-56023"
+        ]]
+    ],
+    "s10": [
+        ["Geología de Chile", "IAP-59027", 8, 4, "IAP", ["IAP-59017"]],
+        ["Electivo Profesional", "CI-59028", 6, 3, "CI", [
+            "CB-58000", "CB-14700", "CI-59000", "CB-3267", "CSH-58001", "CSH-3330",
+            "CB-3225", "CB-3226", "CSH-14701", "CB-14704", "CI-14702", "CSH-3338",
+            "CB-3230", "CB-3231", "IAP-56035", "CI-56003", "CI-3850", "CB-14703",
+            "CB-3333", "IAP-59005", "IAP-59006", "IAP-59007", "IAP-56037", "CSH-3349",
+            "CB-3279", "IAP-59008", "CB-3340", "IAP-59009", "CI-3334", "CI-59010", "CI-56006",
+            "IAP-59011", "IAP-59012", "IAP-59013", "IAP-59014", "CI-58010", "CSH-TR1",
+            "IAP-56012", "IAP-59015", "IAP-59016", "IAP-59017", "IAP-59018", "IAP-59019", "CSH-TR2", "IAP-56011"
+        ]],
+        ["Proyecto de Título II", "IAP-56042", 46, 23, "IAP", ["CI-19537"]]
+    ]
+}
