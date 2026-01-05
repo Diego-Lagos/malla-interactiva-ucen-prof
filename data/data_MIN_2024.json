@@ -24,56 +24,56 @@
   "s4": [
     ["Ecuaciones Diferenciales", "FD-83508", 6, 5, "FD", ["FD-83505"], ""],
     ["Cálculo III", "FD-83509", 6, 5, "FD", ["FD-83506"], ""],
-    ["Electricidad y Magnetismo", "FD-83510", 8, 5, "FD", [], ""],
-    ["Métodos de Producción Minera", "FD-86503", 6, 5, "FD", [], ""],
+    ["Electricidad y Magnetismo", "FD-83510", 8, 5, "FD", ["FD-83501"], ""],
+    ["Métodos de Producción Minera", "FD-86503", 6, 5, "FD", ["FD-86500"], ""],
     ["Petrografía y Mineralogía", "FD-86504", 6, 5, "FD", ["FD-86501"], ""],
     ["Curso Sello Institucional IV", "FG-CSIRD4", 4, 4, "FG", [], ""]
   ],
   "s5": [
     ["Probabilidad y Estadística", "FD-83515", 6, 5, "FD", ["FD-83506"], ""],
-    ["Fundamentos de Economía", "FD-83514", 4, 4, "FD", [], ""],
-    ["Investigación Operativa", "FD-83519", 6, 6, "FD", [], ""],
+    ["Fundamentos de Economía", "FD-83514", 4, 4, "FD", ["FD-83503"], ""],
+    ["Investigación Operativa", "FD-83519", 6, 6, "FD", ["FD-83505"], ""],
     ["Termodinámica", "FD-83520", 6, 5, "FD", ["FD-83518"], ""],
-    ["Métodos Numéricos", "FD-83521", 6, 5, "FD", [], ""],
+    ["Métodos Numéricos", "FD-83521", 6, 5, "FD", ["FD-83508"], ""],
     ["Topografía y Geomensura Minera", "FD-86505", 6, 5, "FD", ["FD-86503"], ""]
   ],
   "s6": [
     ["Geoestadística", "FD-86506", 6, 5, "FD", ["FD-83515"], ""],
     ["Evaluación de Proyectos", "FD-86507", 6, 6, "FD", ["FD-83514"], ""],
-    ["Exploración y Geología Económica", "FD-86508", 4, 5, "FD", [], ""],
+    ["Exploración y Geología Económica", "FD-86508", 4, 5, "FD", ["FD-86501"], ""],
     ["Perforación y Tronadura", "FD-86509", 8, 5, "FD", ["FD-86505"], ""],
     ["Taller Integrador I", "FD-86510", 4, 5, "FD", ["FD-83500", "FD-83501", "FD-86500", "FG-FBVA1", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA2", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86501", "FD-86502", "FG-CSIRD3", "FD-83508", "FD-83509", "FD-83510", "FD-86503", "FD-86504", "FG-CSIRD4"], ""],
-    ["Interdisciplinar", "FG-INTR", 4, 4, "FG", [], ""]
+    ["Interdisciplinar", "FG-INTR", 4, 4, "FG", ["FD-83500", "FD-83501", "FD-86500", "FG-FBVA1", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA2", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86501", "FD-86502", "FG-CSIRD3", "FD-83508", "FD-83509", "FD-83510", "FD-86503", "FD-86504", "FG-CSIRD4"], ""]
   ],
   "s7": [
     ["Evaluación Económica de Yacimientos", "FD-86511", 6, 4, "FD", ["FD-86507"], ""],
-    ["Mecánica de Fluidos", "FD-86512", 6, 4, "FD", [], ""],
-    ["Fundamentos de Metalurgia", "FD-86513", 4, 4, "FD", [], ""],
+    ["Mecánica de Fluidos", "FD-86512", 6, 4, "FD", ["FD-83504"], ""],
+    ["Fundamentos de Metalurgia", "FD-86513", 4, 4, "FD", ["FD-83518"], ""],
     ["Carguío y Transporte", "FD-86514", 6, 5, "FD", ["FD-86509"], ""],
-    ["Mecánica de Rocas", "FD-86515", 4, 4, "FD", [], ""],
-    ["Interdisciplinar A+S", "FG-INTRAS", 4, 4, "FG", [], ""],
+    ["Mecánica de Rocas", "FD-86515", 4, 4, "FD", ["FD-86504"], ""],
+    ["Interdisciplinar A+S", "FG-INTRAS", 4, 4, "FG", ["FG-INTR"], ""],
     ["Práctica Operacional", "FD-86516", 2, 7, "FD", ["FD-83500", "FD-83501", "FD-86500", "FG-FBVA1", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA2", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86501", "FD-86502", "FG-CSIRD3", "FD-83508", "FD-83509", "FD-83510", "FD-86503", "FD-86504", "FG-CSIRD4", "FD-83515", "FD-83514", "FD-83519", "FD-83520", "FD-83521", "FD-86505", "FD-86506", "FD-86507", "FD-86508", "FD-86509", "FD-86510", "FG-INTR"], ""]
   ],
   "s8": [
     ["Software de Productividad Minera", "FD-86517", 6, 6, "FD", ["FD-86511"], ""],
-    ["Ventilación y Servicios Mina", "FD-86518", 4, 5, "FD", [], ""],
+    ["Ventilación y Servicios Mina", "FD-86518", 4, 5, "FD", ["FD-86512"], ""],
     ["Procesamiento de Minerales", "FD-86519", 6, 5, "FD", ["FD-86513"], ""],
     ["Legislación Minera", "FD-86520", 4, 4, "FD", ["FD-86508"], ""],
-    ["Seguridad y Medioambiente en Minería", "FD-86521", 4, 4, "FD", [], ""],
+    ["Seguridad y Medioambiente en Minería", "FD-86521", 4, 4, "FD", ["FD-86503"], ""],
     ["Taller Integrador II", "FD-86522", 4, 4, "FD", ["FD-83500", "FD-83501", "FD-86500", "FG-FBVA1", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA2", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86501", "FD-86502", "FG-CSIRD3", "FD-83508", "FD-83509", "FD-83510", "FD-86503", "FD-86504", "FG-CSIRD4", "FD-83515", "FD-83514", "FD-83519", "FD-83520", "FD-83521", "FD-86505", "FD-86506", "FD-86507", "FD-86508", "FD-86509", "FD-86510", "FG-INTR", "FD-86511", "FD-86512", "FD-86513", "FD-86514", "FD-86515", "FG-INTRAS", "FD-86516"], ""]
   ],
   "s9": [
     ["Proyecto de Título I", "FP-86523", 4, 7, "FP", ["FD-83500", "FD-83501", "FD-86500", "FG-FBVA1", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA2", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86501", "FD-86502", "FG-CSIRD3", "FD-83508", "FD-83509", "FD-83510", "FD-86503", "FD-86504", "FG-CSIRD4", "FD-83515", "FD-83514", "FD-83519", "FD-83520", "FD-83521", "FD-86505", "FD-86506", "FD-86507", "FD-86508", "FD-86509", "FD-86510", "FG-INTR", "FD-86511", "FD-86512", "FD-86513", "FD-86514", "FD-86515", "FG-INTRAS", "FD-86516", "FD-86517", "FD-86518", "FD-86519", "FD-86520", "FD-86521", "FD-86522"], ""],
     ["Gestión de Empresas y Liderazgo en Minería", "FP-86524", 4, 4, "FP", ["FD-86517"], ""],
     ["Diseño y Planificación Mina Subterránea", "FP-86525", 8, 6, "FP", ["FD-86518"], ""],
-    ["Diseño y Planificación Rajo Abierto", "FP-86526", 8, 6, "FP", [], ""],
-    ["Excelencia Operacional", "FP-86527", 4, 6, "FP", [], ""]
+    ["Diseño y Planificación Rajo Abierto", "FP-86526", 8, 6, "FP", ["FD-86515"], ""],
+    ["Excelencia Operacional", "FP-86527", 4, 6, "FP", ["FD-86511"], ""]
   ],
   "s10": [
     ["Proyecto de Título II", "FP-86528", 2, 12, "FP", ["FP-86523"], ""],
     ["Gestión de la Tecnología en Minería", "FP-86529", 4, 4, "FP", ["FP-86527"], ""],
     ["Responsabilidad Social Empresarial en Minería", "FP-86530", 4, 4, "FP", ["FD-86521"], ""],
-    ["Innovación y Emprendimiento en Minería", "FP-86531", 4, 4, "FP", [], ""],
+    ["Innovación y Emprendimiento en Minería", "FP-86531", 4, 4, "FP", ["FD-86511"], ""],
     ["Práctica Profesional", "FP-86532", 2, 7, "FP", ["FD-83500", "FD-83501", "FD-86500", "FG-FBVA1", "FG-82000", "FD-83502", "FD-83503", "FD-83504", "FG-FBVA2", "FG-82001", "FD-83505", "FD-83506", "FD-83518", "FD-86501", "FD-86502", "FG-CSIRD3", "FD-83508", "FD-83509", "FD-83510", "FD-86503", "FD-86504", "FG-CSIRD4", "FD-83515", "FD-83514", "FD-83519", "FD-83520", "FD-83521", "FD-86505", "FD-86506", "FD-86507", "FD-86508", "FD-86509", "FD-86510", "FG-INTR", "FD-86511", "FD-86512", "FD-86513", "FD-86514", "FD-86515", "FG-INTRAS", "FD-86516", "FD-86517", "FD-86518", "FD-86519", "FD-86520", "FD-86521", "FD-86522", "FP-86523", "FP-86524", "FP-86525", "FP-86526", "FP-86527"], ""]
   ]
 }
