@@ -101,7 +101,7 @@ function initMalla(careerName, welcome) {
 
 class Malla {
     constructor(t = !1, e = Ramo, a = 1, r = 1) {
-        this.scaleX = a, this.scaleY = r, this.subjectType = e, this.rawMalla = {}, this.categories = {}, this.malla = {}, this.sct = t, this.longestSemester = 0, this.totalCredits = 0, this.totalSubjects = 0, this.MAX_SELECTED_CREDITS = 30, this.semesterManager = null, this.currentMalla = null, this.generatedCode = [], this.APPROVED = [], this.FAILED = [], this.ONHOLD = [], this.SUBJECTID = 1, this.ALLSUBJECTS = {}, this.checkPrer = !1, this.saveEnabled = !1, this.isMallaSet = !1, this.showCreditSystem = !1, this.showCreditStats = !1, document.getElementById("loadfile") && document.getElementById("loadfile").addEventListener("click", this.loadFile.bind(this)), document.getElementById("downloadStateButton") && document.getElementById("downloadStateButton").addEventListener("click", this.downloadMallaState.bind(this));
+        this.scaleX = a, this.scaleY = r, this.subjectType = e, this.rawMalla = {}, this.categories = {}, this.malla = {}, this.sct = t, this.longestSemester = 0, this.totalCredits = 0, this.totalSubjects = 0, this.MAX_SELECTED_CREDITS = 32, this.semesterManager = null, this.currentMalla = null, this.generatedCode = [], this.APPROVED = [], this.FAILED = [], this.ONHOLD = [], this.SUBJECTID = 1, this.ALLSUBJECTS = {}, this.checkPrer = !1, this.saveEnabled = !1, this.isMallaSet = !1, this.showCreditSystem = !1, this.showCreditStats = !1, document.getElementById("loadfile") && document.getElementById("loadfile").addEventListener("click", this.loadFile.bind(this)), document.getElementById("downloadStateButton") && document.getElementById("downloadStateButton").addEventListener("click", this.downloadMallaState.bind(this));
         document.getElementById("downloadImageButton") && document.getElementById("downloadImageButton").addEventListener("click", () => this.downloadMallaImage("jpg"));
         this.dependencyMap = {};
         this.baseSemester = 1;
@@ -602,3 +602,4 @@ class Ramo {
         return .2126 * s[0] + .7152 * s[1] + .0722 * s[2] <= .6;
     }
 }
+
