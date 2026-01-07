@@ -1,0 +1,77 @@
+{
+    "s1": [
+        ["Taller Espacio y Forma", "FP-83002", 27, 12, "FP", []],
+        ["Composición Espacial", "FD-83001", 13, 6, "FD", []],
+        ["Lenguaje Arquitectónico", "FD-83000", 8, 4, "FD", []],
+        ["Formación Básica para la Vida Académica I", "FG-FBVA1", 8, 4, "FG", []],
+        ["Curso Sello Institucional I: Inglés I", "FG-82000", 8, 4, "FG", []]
+    ],
+    "s2": [
+        ["Taller Materia y Orden", "FP-83005", 22, 10, "FP", ["FP-83002"]],
+        ["Geometría", "FD-83003", 13, 6, "FD", []],
+        ["Tectónica Constructiva", "FD-83004", 13, 6, "FD", []],
+        ["Formación Básica para la Vida Académica II", "FG-FBVA2", 8, 4, "FG", []],
+        ["Curso Sello Institucional II: Inglés II", "FG-82001", 8, 4, "FG", ["FG-82000"]]
+    ],
+    "s3": [
+        ["Taller Lugar y Paisaje", "FP-83009", 22, 10, "FP", ["FP-83005"]],
+        ["Representación Digital", "FD-83008", 8, 4, "FD", []],
+        ["Sistemas Estructurales", "FD-83006", 13, 6, "FD", []],
+        ["Sistemas Constructivos", "FD-83007", 13, 6, "FD", []],
+        ["Curso Sello Institucional III", "FG-CSIRD3", 8, 4, "FG", []]
+    ],
+    "s4": [
+        ["Taller Contexto Urbano", "FP-83013", 22, 10, "FP", ["FP-83009"]],
+        ["Modelación BIM", "FD-83012", 8, 4, "FD", ["FD-83008"]],
+        ["Diseño Bioclimático", "FD-83010", 13, 6, "FD", ["FD-83007"]],
+        ["Análisis Urbano", "FD-83011", 13, 6, "FD", []],
+        ["Curso Sello Institucional IV", "FG-CSIRD4", 8, 4, "FG", []]
+    ],
+    "s5": [
+        ["Taller Diseño Urbano", "FP-83017", 22, 10, "FP", []],
+        ["Modelos Estructurales", "FD-83016", 13, 6, "FD", ["FD-83006"]],
+        ["Historia de la Arquitectura y la Ciudad", "FD-83014", 8, 4, "FD", []],
+        ["Clínica Territorial", "FD-83015", 13, 6, "FD", []],
+        ["Interdisciplinar", "FG-INTR", 8, 4, "FG", []]
+    ],
+    "s6": [
+        ["Taller Habitar Colectivo", "FP-83021", 22, 10, "FP", []],
+        ["Coordinación BIM", "FD-83019", 13, 6, "FD", ["FD-83012"]],
+        ["Diseño Sísmico", "FD-83018", 13, 6, "FD", ["FD-83016"]],
+        ["Crítica Arquitectónica", "FD-83020", 8, 4, "FD", []],
+        ["Interdisciplinar A+S", "FG-INTR2", 8, 4, "FG", []]
+    ],
+    "s7": [
+        ["Taller Innovación Sustentable", "FP-83026", 22, 10, "FP", ["FD-83010"]],
+        ["Estructuras Especiales", "FD-83024", 8, 4, "FD", []],
+        ["Instalaciones y Sistemas Eficientes", "FD-83025", 8, 4, "FD", []],
+        ["Práctica de Obra", "FD-83022", 13, 6, "FD", []],
+        ["Gestión del Territorio", "FD-83023", 13, 6, "FD", []]
+    ],
+    "s8": [
+        ["Taller Programas Emergentes", "FP-83031", 22, 10, "FP", []],
+        ["Ética y Normativa", "FD-83027", 8, 4, "FD", []],
+        ["Patrimonio e Intervención Contemporánea", "FD-83028", 8, 4, "FD", []],
+        ["Políticas Urbanas", "FD-83029", 13, 6, "FD", []],
+        ["Seminario", "FD-83030", 13, 6, "FD", ["FD-83020"]]
+    ],
+    "s9": [
+        ["Anteproyecto de Título", "FP-83036", 22, 10, "FP", ["FP-83031"]],
+        ["Práctica Profesional", "FP-83035", 17, 8, "FP", [
+            "FP-83002", "FD-83001", "FD-83000", "FG-FBVA1", "FG-82000",
+            "FP-83005", "FD-83003", "FD-83004", "FG-FBVA2", "FG-82001",
+            "FP-83009", "FD-83008", "FD-83006", "FD-83007", "FG-CSIRD3",
+            "FP-83013", "FD-83012", "FD-83010", "FD-83011", "FG-CSIRD4",
+            "FP-83017", "FD-83016", "FD-83014", "FD-83015", "FG-INTR",
+            "FP-83021", "FD-83019", "FD-83018", "FD-83020", "FG-INTR2",
+            "FP-83026", "FD-83024", "FD-83025", "FD-83022", "FD-83023",
+            "FP-83031", "FD-83027", "FD-83028", "FD-83029", "FD-83030"
+        ]],
+        ["Electivo de Profundización: Diseño de Proyectos", "FP-83032", 8, 4, "FP", []],
+        ["Electivo de Profundización: Investigación en Arquitectura y Diseño Urbano", "FP-83033", 8, 4, "FP", []],
+        ["Electivo de Profundización: Gestión", "FP-83034", 8, 4, "FP", []]
+    ],
+    "s10": [
+        ["Proyecto de Título", "FP-83037", 48, 30, "FP", ["FP-83036"]]
+    ]
+}
