@@ -35,7 +35,6 @@
   <meta property="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/darkMode.css" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/landing.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,8 +55,7 @@
   <meta name="apple-mobile-web-app-title" content="Malla Interactiva">
   <meta name="application-name" content="Malla Interactiva">
   <meta name="msapplication-TileColor" content="#2f58a7">
-  <meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f8f9fa">
 
 
   <link rel="preload" href="js/min1.js" as="script">
@@ -65,6 +63,17 @@
   <link rel="preload" href="./views/footer.html" as="document">
   
   <style>
+    :root {
+      color-scheme: light !important;
+    }
+
+    /* Anular consultas de medios de modo oscuro */
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #f8f9fa !important; /* Color claro de fondo */
+            color: #000000 !important;
+        }
+    }
     .limit-exceeded {
         background-color: #ff0000 !important; /* Rojo intenso */
         color: white !important;
@@ -75,10 +84,19 @@
     }
     /* NUEVO: Aseguramos que la columna de la malla pueda desbordarse para el scroll */
     .malla-container-scroll {
-        overflow-x: auto;
-        padding-left: 0; /* Eliminar padding de columna si es necesario */
-        padding-right: 0;
+    overflow-x: hidden; /* Evita el scroll en PC */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .malla-container-scroll {
+        overflow-x: auto !important; /* Permite deslizar */
+        display: block !important;   /* Cambia el layout para permitir desborde */
+        -webkit-overflow-scrolling: touch; /* Suavidad en iOS */
     }
+
     .malla-stage, 
     .malla-container-scroll, 
     .canvas {
@@ -101,7 +119,8 @@
     /* Aseguramos que el div donde D3.js dibuja no tenga márgenes extra */
     .canvas {
         margin: 0 auto !important;
-        display: block !important;
+        min-width: 800px; 
+        display: inline-block !important;
     }
   </style>
   </head>
@@ -238,18 +257,6 @@
           stroke: black;
         }
 
-        @media(prefers-color-scheme: dark) {
-          .bars {
-            fill: #404040;
-          }
-
-          .text {
-            fill: white;
-          }
-
-          .line {
-            stroke: white;
-          }
         }
       </style>
       <style>
