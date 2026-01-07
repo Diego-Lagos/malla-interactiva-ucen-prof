@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créditos - Malla Interactiva</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/landing.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #f8f9fa;
+      min-height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    .help-shell {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 3rem;
+      padding: 3rem 1.5rem;
+      min-height: 100vh;
+    }
+
+    .help-sidebar {
+      position: sticky;
+      top: 2rem;
+      height: fit-content;
+      z-index: 10;
+      align-self: start;
+    }
+
+    .help-main { flex: 1; max-width: 850px; }
+
+    .landing-orbs {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 0; pointer-events: none;
+    }
+
+    .help-hero { position: relative; z-index: 1; margin: 0 0 4rem 0; text-align: left; }
+
+    .landing-eyebrow {
+      font-size: 0.875rem; font-weight: 600; text-transform: uppercase;
+      letter-spacing: 0.1em; color: #2e58a7; margin-bottom: 0.5rem;
+    }
+
+    .help-card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2rem; font-weight: 700; color: #2e58a7; margin-bottom: 2rem;
+      position: relative; display: inline-block; padding-bottom: 0.75rem;
+    }
+
+    .section-title::after {
+      content: ''; position: absolute; bottom: 0; left: 25%; width: 50%;
+      height: 4px; background: linear-gradient(90deg, #2e58a7, #5a7ec7); border-radius: 2px;
+    }
+
+    .member-name { font-size: 1.5rem; font-weight: 700; color: #1a1a1a; margin-bottom: 0.2rem; }
+    .member-role { font-size: 1.1rem; color: #666; margin-bottom: 0.5rem; }
+    .member-mail { font-size: 1rem; color: #2e58a7; text-decoration: none; font-weight: 500; }
+    .member-mail:hover { text-decoration: underline; }
+
+    .nav-buttons {
+      display: flex; flex-direction: column; gap: 1rem;
+      background: rgba(255, 255, 255, 0.7); padding: 1.5rem;
+      border-radius: 16px; backdrop-filter: blur(5px);
+    }
+
+    .btn-landing {
+      background: linear-gradient(135deg, #2e58a7, #3d6bc3);
+      color: white; font-weight: 600; border: none; padding: 14px 24px;
+      border-radius: 12px; text-decoration: none; text-align: center;
+      display: inline-block;
+    }
+
+    .btn-outline-landing {
+      background: white; color: #2e58a7; font-weight: 600; border: 2px solid #2e58a7;
+      padding: 12px 24px; border-radius: 12px; text-decoration: none; text-align: center;
+    }
+
+    /* Grid para desarrolladores y colaboradores */
+    .credits-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .colab-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 992px) {
+      .help-shell { display: flex; flex-direction: column; }
+      .credits-grid, .colab-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="landing-orbs" aria-hidden="true">
+    <span class="orb orb-one"></span>
+    <span class="orb orb-two"></span>
+    <span class="orb orb-three"></span>
+  </div>
+
+  <div class="help-shell">
+    <aside class="help-sidebar">
+      <div class="nav-buttons">
+        <button onclick="window.history.back()" class="btn-outline-landing">← Volver</button>
+        <a href="../index.html" class="btn-landing">Ir al inicio</a>
+      </div>
+    </aside>
+
+    <div class="help-main">
+      <header class="help-hero">
+        <p class="landing-eyebrow">Equipo de Trabajo</p>
+        <h1>Créditos</h1>
+      </header>
+
+      <div class="help-content">
+        <div class="help-card">
+          <div class="member-name">Fernanda Inostroza Mery</div>
+          <div class="member-role">Docente a cargo del proyecto</div>
+          <a href="mailto:fernanda.inostroza@ucentral.cl" class="member-mail">Correo</a>
+        </div>
+
+        <div class="credits-grid">
+          <div class="help-card">
+            <div class="member-name">Diego Lagos Morales</div>
+            <div class="member-role">Desarrollador</div>
+            <a href="mailto:diego.lagosm@alumnos.ucentral.cl" class="member-mail">Correo</a>
+          </div>
+          <div class="help-card">
+            <div class="member-name">Ariel Acuña</div>
+            <div class="member-role">Desarrollador</div>
+            <a href="mailto:ariel.acuna@alumnos.ucentral.cl" class="member-mail">Correo</a>
+          </div>
+        </div>
+
+        <h2 class="section-title w-100 mt-5">Colaboradores</h2>
+        <div class="colab-grid">
+          <div class="help-card p-4">
+            <div class="member-name" style="font-size: 1.2rem;">Fidel Cartes Romero</div>
+            <a href="mailto:fidel.cartes@alumnos.ucentral.cl " class="member-mail">Correo</a>
+          </div>
+          <div class="help-card p-4">
+            <div class="member-name" style="font-size: 1.2rem;">David Chinga Flores</div>
+            <a href="mailto:david.chinga@alumnos.ucentral.cl" class="member-mail">Correo</a>
+          </div>
+          <div class="help-card p-4">
+            <div class="member-name" style="font-size: 1.2rem;">Reinaldo Ramírez</div>
+            <a href="" class="member-mail">Correo</a>
+          </div>
+        </div>
+
+        <h2 class="section-title w-100 mt-5">Idea Original</h2>
+        <div class="help-card">
+          <div class="member-name">BooterMan98</div>
+          <div class="member-role">Creador del concepto inicial</div>
+          <div class="mt-3">
+            <a href="https://github.com/BooterMan98/malla-interactiva" target="_blank" class="btn-landing">
+              Ver GitHub Original
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
