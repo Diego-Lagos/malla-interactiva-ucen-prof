@@ -1,0 +1,89 @@
+{
+    "s1": [
+        ["Taller 1: Cuerpo y Espacio: Gramática Arquitectónica", "ARQ-001", 12, 12, "ARQ", []],
+        ["Dibujo de Arquitectónica", "ARQ-002", 4, 3, "ARQ", []],
+        ["Composición 1", "ARQ-003", 4, 3, "ARQ", []],
+        ["Geometría Aplicada a la Arquitectura", "ARQ-004", 4, 3, "ARQ", []],
+        ["Materia y Construcción", "ARQ-005", 4, 3, "ARQ", []],
+        ["Introducción a la Teoría e Historia de la Arquitectura", "ARQ-006", 4, 3, "ARQ", []],
+        ["Expresión Oral y Escrita", "ARQ-007", 4, 3, "ARQ", []]
+    ],
+    "s2": [
+        ["Taller 2: Cuerpo y Materia: Lenguaje Arquitectónico", "ARQ-008", 12, 12, "ARQ", []],
+        ["Dimensión Material", "ARQ-009", 4, 2, "ARQ", []],
+        ["Ideación Gráfica", "ARQ-010", 4, 2, "ARQ", []],
+        ["Geometría y Topología", "ARQ-011", 4, 2, "ARQ", []],
+        ["Introducción a los Sistemas Constructivos", "ARQ-012", 4, 2, "ARQ", []],
+        ["Espacio y Percepción", "ARQ-013", 4, 2, "ARQ", []],
+        ["Curso Transversal Institucional I", "ARQ-014", 2, 2, "ARQ", []],
+        ["Optativo 1", "ARQ-015", 2, 2, "ARQ", []]
+    ],
+    "s3": [
+        ["Taller 3: Proyecto y Lugar", "ARQ-016", 8, 10, "ARQ", []],
+        ["Razón y Lógica de los Tipos Estructurales", "ARQ-017", 4, 4, "ARQ", []],
+        ["Construcción y Diseño Bioclimático", "ARQ-018", 4, 4, "ARQ", []],
+        ["Semilogía de la Arquitectura", "ARQ-019", 4, 4, "ARQ", []],
+        ["Introducción al Análisis Urbano", "ARQ-020", 4, 4, "ARQ", []],
+        ["Optativo 2", "ARQ-021", 2, 2, "ARQ", []],
+        ["Curso Transversal Institucional II", "ARQ-022", 2, 2, "ARQ", []],
+        ["Práctica I de Observación", "ARQ-023", 0, 2, "ARQ", []]
+    ],
+    "s4": [
+        ["Taller 4: Proyecto y Barrio I", "ARQ-024", 8, 10, "ARQ", []],
+        ["Herramientas Digitales", "ARQ-025", 4, 4, "ARQ", []],
+        ["Modelos Estructurales de Barra", "ARQ-026", 4, 4, "ARQ", []],
+        ["Sistemas Constructivos Tradicionales", "ARQ-027", 4, 4, "ARQ", []],
+        ["Historia y Pensamiento Latinoamericano", "ARQ-028", 4, 4, "ARQ", []],
+        ["Electivo 1", "ARQ-029", 4, 3, "ARQ", []]
+    ],
+    "s5": [
+        ["Taller 5: Proyecto y Ciudad", "ARQ-030", 8, 12, "ARQ", []],
+        ["Modelos Estructurales Planos", "ARQ-031", 4, 4, "ARQ", []],
+        ["Sistemas Constructivos Avanzados", "ARQ-032", 4, 4, "ARQ", []],
+        ["Proceso de Gestión Urbana", "ARQ-033", 4, 4, "ARQ", []],
+        ["Electivo 2", "ARQ-034", 4, 3, "ARQ", []],
+        ["Electivo 3", "ARQ-035", 4, 3, "ARQ", []],
+        ["Práctica II Social", "ARQ-036", 0, 4, "ARQ", []]
+    ],
+    "s6": [
+        ["Taller 6 Atmósfera y Habitabilidad", "ARQ-037", 8, 10, "ARQ", []],
+        ["Historia de la Arquitectura: Memoria y Actualidad", "ARQ-038", 4, 4, "ARQ", []],
+        ["Producción del Espacio Urbano", "ARQ-039", 4, 4, "ARQ", []],
+        ["Electivo 4", "ARQ-040", 4, 4, "ARQ", []],
+        ["Electivo 5", "ARQ-041", 4, 3, "ARQ", []],
+        ["Electivo 6", "ARQ-042", 4, 3, "ARQ", []],
+        ["Electivo 7", "ARQ-043", 4, 3, "ARQ", []]
+    ],
+    "s7": [
+        ["Taller 7: Materialidad y Sustentabilidad", "ARQ-044", 8, 10, "ARQ", []],
+        ["Teoría Crítica de la Arquitectura", "ARQ-045", 4, 4, "ARQ", []],
+        ["Diseño Urbano", "ARQ-046", 4, 4, "ARQ", []],
+        ["Electivo 8", "ARQ-047", 4, 3, "ARQ", []],
+        ["Electivo 9", "ARQ-048", 4, 3, "ARQ", []],
+        ["Optativo 3", "ARQ-049", 2, 2, "ARQ", []],
+        ["Practica III Obra", "ARQ-050", 0, 8, "ARQ", []]
+    ],
+    "s8": [
+        ["Taller 8: Proceso Contemporáneo y Programas Emergentes", "ARQ-051", 8, 12, "ARQ", []],
+        ["Diseño Estructural Sísmico", "ARQ-052", 4, 4, "ARQ", []],
+        ["Electivo 10", "ARQ-053", 4, 3, "ARQ", []],
+        ["Electivo 11", "ARQ-054", 4, 3, "ARQ", []],
+        ["Electivo 12", "ARQ-055", 4, 3, "ARQ", []],
+        ["Electivo 13", "ARQ-056", 4, 3, "ARQ", []],
+        ["Optativo 4", "ARQ-057", 2, 2, "ARQ", []]
+    ],
+    "s9": [
+        ["Investigación Proyectual en Área de Profundización", "ARQ-058", 4, 6, "ARQ", []],
+        ["Taller de Anteproyecto en Área de Profundización", "ARQ-059", 4, 6, "ARQ", []],
+        ["Seminario Profesional", "ARQ-060", 4, 8, "ARQ", []],
+        ["Electivo de Profundización", "ARQ-061", 4, 3, "ARQ", []],
+        ["Electivo de Profundización", "ARQ-062", 4, 3, "ARQ", []],
+        ["Practica IV Profesional", "ARQ-063", 0, 8, "ARQ", []]
+    ],
+    "s10": [
+        ["Pretítulo", "ARQ-064", 10, 22, "ARQ", []]
+    ],
+    "s11": [
+        ["Proyecto de Título", "ARQ-065", 10, 22, "ARQ", []]
+    ]
+}
