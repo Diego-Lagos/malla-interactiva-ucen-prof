@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayuda - Malla Interactiva</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/landing.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #f8f9fa;
+      min-height: 100vh;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    /* Contenedor principal centrado y con grid */
+    .help-shell {
+      position: relative;
+      max-width: 1200px; /* Limita el ancho para centrar el contenido */
+      margin: 0 auto;    /* Centra horizontalmente */
+      display: grid;
+      grid-template-columns: 240px 1fr; /* Sidebar fija y contenido flexible */
+      gap: 3rem;
+      padding: 3rem 1.5rem;
+      min-height: 100vh;
+    }
+
+    /* Sidebar Flotante (Sticky) */
+    .help-sidebar {
+      position: sticky;
+      top: 2rem;         /* Distancia desde arriba al hacer scroll */
+      height: fit-content;
+      z-index: 10;
+      align-self: start;
+    }
+
+    .help-main {
+      flex: 1;
+      max-width: 850px;
+    }
+
+    .landing-orbs {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .help-hero {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 4rem 0;
+      text-align: left;
+    }
+
+    .landing-eyebrow {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #2e58a7;
+      margin-bottom: 0.5rem;
+    }
+
+    .help-hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    .help-lead {
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .help-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .help-card {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .help-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #2e58a7;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.75rem;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #2e58a7, #5a7ec7);
+      border-radius: 2px;
+    }
+
+    .subsection-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .help-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+
+    .img-smaller {
+      width: 15%;
+      max-width: 250px;
+      min-width: 50px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin: 0.5rem 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-small {
+      width: 30%;
+      max-width: 250px;
+      min-width: 150px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin: 1rem 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-medium {
+      width: 60%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      margin: 1.5rem 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-large {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      margin: 2rem 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Ajuste para móviles: todas ocupan el ancho completo si la pantalla es pequeña */
+    @media (max-width: 768px) {
+      .img-smaller, .img-small, .img-medium, .img-large {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .state-card {
+      background: linear-gradient(135deg, rgba(46, 88, 167, 0.05), rgba(90, 126, 199, 0.05));
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #2e58a7;
+      transition: all 0.3s ease;
+    }
+
+    .state-card:hover {
+      transform: translateX(8px);
+      box-shadow: -4px 0 0 #2e58a7;
+    }
+
+    .state-card h4 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #2e58a7;
+      margin-bottom: 0.75rem;
+    }
+
+    .state-card.state-approved {
+      background: linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.05));
+      border-left-color: #28a745;
+    }
+    .state-card.state-approved h4 { color: #1e7e34; }
+
+    .state-card.state-failed {
+      background: linear-gradient(135deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.05));
+      border-left-color: #dc3545;
+    }
+    .state-card.state-failed h4 { color: #a71d2a; }
+
+    .state-card.state-progress {
+      background: linear-gradient(135deg, rgba(255, 193, 7, 0.15), rgba(255, 193, 7, 0.05));
+      border-left-color: #ffc107;
+    }
+    .state-card.state-progress h4 { color: #856404; }
+
+
+    .important-box {
+      background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
+      border-left: 5px solid #ffc107;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .important-box strong {
+      color: #856404;
+      font-size: 1.1rem;
+    }
+
+    .help-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .help-list li {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #333;
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+      position: relative;
+    }
+
+    .help-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #2e58a7;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    /* Ajuste de Botones */
+    .nav-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 1.5rem;
+      border-radius: 16px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .btn-landing {
+      background: linear-gradient(135deg, #2e58a7, #3d6bc3);
+      color: white;
+      font-weight: 600;
+      border: none;
+      padding: 14px 24px;
+      font-size: 0.95rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(46, 88, 167, 0.2);
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .btn-landing:hover {
+      background: linear-gradient(135deg, #244685, #2e58a7);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(46, 88, 167, 0.3);
+      text-decoration: none;
+    }
+
+    .btn-outline-landing {
+      background: white;
+      color: #2e58a7;
+      font-weight: 600;
+      border: 2px solid #2e58a7;
+      padding: 12px 24px;
+      font-size: 0.95rem;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      border-radius: 12px;
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .btn-outline-landing:hover {
+      background: #2e58a7;
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(46, 88, 167, 0.2);
+      text-decoration: none;
+    }
+
+    .help-footer {
+      position: relative;
+      z-index: 1;
+      margin: 4rem 0 2rem 0;
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .sidebar-nav-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #999;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .alert-info-custom {
+      background: linear-gradient(135deg, rgba(220, 53, 69, 0.1), rgba(220, 53, 69, 0.05));
+      border-left: 5px solid #dc3545;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .alert-info-custom h4 {
+      color: #a71d2a;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* Responsividad */
+    @media (max-width: 992px) {
+      .help-shell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+      }
+
+      .help-sidebar {
+        position: relative;
+        width: 100%;
+        top: 0;
+        margin-bottom: 3rem;
+      }
+
+      .nav-buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+
+      .help-main {
+        width: 100%;
+      }
+
+      .help-card {
+        padding: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="landing-orbs" aria-hidden="true">
+    <span class="orb orb-one"></span>
+    <span class="orb orb-two"></span>
+    <span class="orb orb-three"></span>
+  </div>
+
+  <div class="help-shell">
+    
+    <aside class="help-sidebar">
+      <h5 class="sidebar-nav-title">Navegación</h5>
+      <div class="nav-buttons">
+        <button onclick="window.history.back()" class="btn-outline-landing">← Volver</button>
+        <a href="img/res__n__9842_reglamento_general_de_estudios.pdf" target="_blank" class="btn-outline-landing">Ver Reglamento</a>
+        <a href="../index.html" class="btn-landing">Ir al inicio</a>
+      </div>
+    </aside>
+
+    <div class="help-main">
+      <header class="help-hero">
+        <p class="landing-eyebrow">Malla Interactiva UCEN</p>
+        <h1>Guía de Uso Completa</h1>
+        <p class="help-lead">Todo lo que necesitas saber para aprovechar al máximo la malla interactiva</p>
+      </header>
+
+      <div class="help-content">
+
+        <div class="help-card">
+          <h2 class="section-title">¿Cómo funciona la malla?</h2>
+          
+          <img src="img/funcionamiento-general.jpg" alt="Vista general de la malla interactiva" class="img-large">
+          
+          <p class="help-text">
+            La malla interactiva permite <strong>visualizar tu avance académico</strong> de manera más simple y directa. 
+            Puedes ver todos tus ramos organizados por semestre, marcar los que has aprobado y planificar cuáles tomar próximamente.
+          </p>
+
+          <img src="img/codigo-colores.png" alt="Código de colores de la malla" class="img-large">
+          
+          <p class="help-text">
+            La malla funciona mediante un <strong>código de colores</strong> que indica de qué categoría son las asignaturas. Revisa la leyenda de colores bajo la malla para identificar cada categoría.
+          </p>
+
+          <img src="img/ramos-bloqueados.jpg" alt="Ramos bloqueados por el artículo 18" class="img-medium">
+          
+          <div class="important-box">
+            <strong>⚠️ IMPORTANTE - Artículo 18:</strong> La malla muestra en un color más oscuro (sombreado) las asignaturas que estén 
+            3 semestres o más adelante que el ramo más atrasado que tengas, basándose en el <strong>Artículo 18 del Reglamento General de Estudios</strong>.
+          </div>
+        </div>
+
+        <div class="help-card">
+          <h2 class="section-title">Créditos</h2>
+          
+          <img src="img/info-creditos-aprobados.jpg" alt="Información de créditos" class="img-large">
+          
+          <p class="help-text">
+            <strong>Créditos aprobados:</strong> Total de créditos que has completado y su porcentaje.
+          </p>
+
+          <p class="help-text">
+            <strong>Total ramos:</strong> Porcentaje de asignaturas aprobadas.<br>
+          </p>
+
+          <p class="help-text">
+            <strong>Créditos en curso:</strong> Suma de los créditos de los ramos marcados en amarillo.
+          </p>
+
+          <div class="important-box">
+            <strong>⚠️ IMPORTANTE - Artículo 21:</strong> La carga académica máxima permitida es de <strong>32 créditos SCT por semestre</strong>, basándose en el <strong>Reglamento General de Estudios</strong>.
+          </div>
+        </div>
+
+        <div class="help-card">
+  <h2 class="section-title">Estados de las Asignaturas</h2>
+  <p class="help-text">Cada asignatura en la malla puede tener uno de estos estados:</p>
+
+  <div class="state-card state-approved">
+    <img src="img/estado-aprobado.jpg" alt="Asignatura aprobada" class="img-smaller">
+    <h4>✅ Aprobado (Marcado en verde)</h4>
+    <p class="help-text">
+      La asignatura fue <strong>aprobada exitosamente</strong> y permite desbloquear nuevas asignaturas.
+    </p>
+  </div>
+
+  <div class="state-card state-failed">
+    <img src="img/estado-reprobado.jpg" alt="Asignatura reprobada" class="img-smaller">
+    <h4>❌ Reprobado (Marcado en rojo)</h4>
+    <p class="help-text">
+      La asignatura fue <strong>reprobada</strong> y debe ser recursada en el próximo periodo académico en que se dicte.
+    </p>
+  </div>
+
+  <div class="state-card state-progress">
+    <img src="img/estado-progreso.jpg" alt="Asignatura en progreso" class="img-smaller">
+    <h4>📝 En Progreso / Por Tomar (Marcado en Amarillo)</h4>
+    <p class="help-text">
+      Indica que planeas tomarla o que actualmente la estás cursando, ayudándote a planificar tu semestre.
+    </p>
+  </div>
+
+  <div class="state-card">
+    <img src="img/estado-pendiente.jpg" alt="Asignatura pendiente" class="img-smaller">
+    <h4>⚪ Pendiente (Sin marcar)</h4>
+    <p class="help-text">
+      La asignatura <strong>aún no ha sido cursada</strong>. Es el estado inicial de todos los ramos.
+    </p>
+  </div>
+  <div class="important-box">
+      Consulta la guía de colores situada sobre la malla para identificar los datos rápidamente.
+  </div>
+</div>
+
+        <div class="help-card">
+          <h2 class="section-title">Sistema de Prerrequisitos</h2>
+          
+          <img src="img/prerrequisitos-ejemplo.jpg" alt="Ejemplo de prerrequisitos" class="img-medium">
+          
+          <p class="help-text">
+            Al posicionar el cursor en un ramo verás:
+          </p>
+
+          <ul class="help-list">
+            <li><strong style="color: #dc3545;">🔴 Ramos en ROJO:</strong> Son los que <strong>DESBLOQUEAN</strong> el ramo seleccionado.</li>
+            <li><strong style="color: #28a745;">🟢 Ramos en VERDE:</strong> Son los que <strong>SE DESBLOQUEAN</strong> al aprobar el ramo seleccionado.</li>
+          </ul>
+        </div>
+
+        <div class="help-card">
+          <h2 class="section-title">Cómo Usar la Interfaz</h2>
+
+          <h3 class="subsection-title">Herramientas de Gestión</h3>
+          <img src="img/botones-panel-ejemplo.jpg" alt="Botones del Panel Izquierdo" class="img-large">
+          
+          <p class="help-text">
+            En el panel lateral izquierdo encontrarás herramientas diseñadas para que tengas el control total de tu información:
+          </p>
+
+          <ul class="help-list">
+            <li><strong>Volver al Inicio:</strong> Regresas a la pagina principal para elegir tu malla.</li>
+            <li><strong>Limpiar Malla:</strong> Borra todos los ramos del sistema, permitiendote empezar desde cero.</li>
+            <li><strong>Cargar Malla desde Archivo:</strong> Importa tu archivo de progreso (.json) para continuar donde lo dejaste en cualquier dispositivo.</li>
+            <li><strong>Descargar Malla como Archivo:</strong> Guarda un respaldo de tus ramos marcados en tu computador.</li>
+            <li><strong>Descargar Malla como Imagen:</strong> Genera una captura de pantalla de tu malla completa, ideal para compartir o imprimir.</li>
+          </ul>
+
+          <div class="important-box">
+            <strong>💾 Guardado Automático:</strong> Tu avance se guarda automáticamente en este navegador. Si cambias de equipo o usas navegación de incógnito, asegúrate de usar <strong>Descargar Estado</strong> para no perder tus datos.
+          </div>
+        </div>
+
+        <div class="alert-info-custom">
+          <h4>📚 Recuerda</h4>
+          <p class="help-text" style="margin-bottom: 0;">
+            Esta herramienta es <strong>meramente ilustrativa</strong>. Siempre verifica la información con tu coordinación académica.
+          </p>
+        </div>
+
+      </div>
+
+      <footer class="help-footer">
+        <p>© Malla Interactiva - Universidad Central de Chile</p>
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
