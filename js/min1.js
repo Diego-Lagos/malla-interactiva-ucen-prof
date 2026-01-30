@@ -76,6 +76,8 @@ document.addEventListener("DOMContentLoaded", () => {
 function initMalla(careerName, welcome) {
     let m = mallaPersonal ? new CustomMalla(sct) : new Malla(sct);
     
+    window.malla = m; // <--- AGREGA ESTA LÍNEA (El puente mágico)
+
     if (prioritario || personalizar) m.enableCreditsSystem();
     else {
         m.enableCreditsStats();
