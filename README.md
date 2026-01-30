@@ -3,7 +3,7 @@
 Visualiza, planifica y gestiona tu avance en la malla curricular de tu carrera de una manera interactiva y amigable. Esta herramienta permite marcar ramos, calcular créditos y visualizar dependencias en tiempo real.
 
 Puedes acceder a la aplicación directamente a través del siguiente enlace:
-👉 **[Malla Interactiva UCEN](https://diego-lagos.github.io/malla-interactiva-ucen/)**
+👉 **[Malla Interactiva UCEN](https://diego-lagos.github.io/malla-interactiva-ucen-prof/)**
 
 > **⚠️ Aviso Importante:** Esta herramienta es **meramente ilustrativa**. Siempre debes usar la información oficial de tu universidad para la toma de ramos.
 
@@ -39,7 +39,7 @@ El proyecto se organiza de la siguiente manera para facilitar su mantenimiento:
 ### 🌐 Versión Web (Recomendado)
 
 Puedes acceder a la aplicación directamente sin instalar nada a través del siguiente enlace:
-👉 **[Malla Interactiva UCEN](https://diego-lagos.github.io/malla-interactiva-ucen/)**
+👉 **[Malla Interactiva UCEN](https://diego-lagos.github.io/malla-interactiva-ucen-prof/)**
 
 ### 💻 Ejecución Local
 
