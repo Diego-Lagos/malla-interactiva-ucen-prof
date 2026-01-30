@@ -3,6 +3,7 @@
 
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EY2REP8T30"></script>
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -202,6 +203,9 @@
             <a class="btn btn-sm btn-outline-secondary m-1" href="./">Volver al Inicio</a>
             <button id="cleanApprovedButton" class="btn btn-sm btn-secondary m-1">Limpiar Malla</button>
             <button id="loadfile" class="btn btn-sm btn-primary m-1">Cargar Malla desde archivo</button>
+            <button id="uploadExcelButton" class="btn btn-sm btn-success m-1">
+                <span class="d-none d-sm-inline">📤</span> Cargar Excel
+            </button>
             <button id="downloadStateButton" class="btn btn-sm btn-success m-1">Descargar Malla como Archivo</button>
             <button id="downloadImageButton" class="btn btn-sm btn-info m-1">Descargar Malla como Imagen</button>
         </div>
@@ -413,6 +417,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 <script src="js/min1.js" defer></script>
+<script src="js/excel_loader.js" defer></script>
 <script src="js/landing.js" defer></script>
 
 <script>
