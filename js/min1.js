@@ -24,7 +24,7 @@ const selectById = (id) => d3.select(document.getElementById(domIdForSigla(id)))
 
 // Función para limpiar el pop-up de carga
 function removePopUp() {
-    d3.select("#overlay").transition().duration(500).style("opacity", 0).on("end", function() {
+    d3.select("#overlay").transition().duration(500).style("opacity", 0).on("end", function () {
         d3.select(this).style("display", "none");
         d3.select("#content").classed("blur", false);
     });
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Configurar UI Básica
         const templateStr = document.querySelector('script[data-template="tab-template1"]').text;
         const render = (obj) => templateStr.replace(/\${(.+?)}/g, (match, p1) => obj[p1]);
-        
+
         let fullCareerName = "";
         carreras.forEach(c => {
             if (c.Link === carr) {
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!contact) {
             initMalla(fullCareerName, welcomeData);
         }
-        
+
         // Quitar overlay tras un pequeño delay para asegurar renderizado
         setTimeout(removePopUp, 500);
     }).catch(err => console.error("Error cargando la malla:", err));
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function initMalla(careerName, welcome) {
     let m = mallaPersonal ? new CustomMalla(sct) : new Malla(sct);
-    
+
     window.malla = m; // <--- AGREGA ESTA LÍNEA (El puente mágico)
 
     if (prioritario || personalizar) m.enableCreditsSystem();
@@ -254,8 +254,8 @@ class Malla {
             }
         }
     }
-    cleanSubjects() {
-        Object.values(this.ALLSUBJECTS).forEach(t => { t.cleanRamo() });
+    cleanSubjects(animated = true) {
+        Object.values(this.ALLSUBJECTS).forEach(t => { t.cleanRamo(animated) });
         this.APPROVED = [], this.FAILED = [], this.ONHOLD = [];
         this.verifyPrer(), this.updateStats(), this.updateSelectedCreditsCounter(), this.saveAllStates();
     }
@@ -317,66 +317,66 @@ class Malla {
         document.body.appendChild(a), a.click(), document.body.removeChild(a), URL.revokeObjectURL(url)
     }
     downloadMallaImage(format = "png") {
-    const svgElement = document.querySelector(".canvas svg");
-    if (!svgElement) return;
+        const svgElement = document.querySelector(".canvas svg");
+        if (!svgElement) return;
 
-    // 1. Fondo blanco para el SVG
-    const tempRect = d3.select(svgElement).insert("rect", ":first-child")
-        .attr("width", "100%")
-        .attr("height", "100%")
-        .attr("fill", "white")
-        .attr("id", "svgBackgroundFix");
+        // 1. Fondo blanco para el SVG
+        const tempRect = d3.select(svgElement).insert("rect", ":first-child")
+            .attr("width", "100%")
+            .attr("height", "100%")
+            .attr("fill", "white")
+            .attr("id", "svgBackgroundFix");
 
-    const svgData = new XMLSerializer().serializeToString(svgElement);
-    tempRect.remove();
+        const svgData = new XMLSerializer().serializeToString(svgElement);
+        tempRect.remove();
 
-    const svgBlob = new Blob([svgData], { type: "image/svg+xml;charset=utf-8" });
-    const svgUrl = URL.createObjectURL(svgBlob);
-    const img = new Image();
+        const svgBlob = new Blob([svgData], { type: "image/svg+xml;charset=utf-8" });
+        const svgUrl = URL.createObjectURL(svgBlob);
+        const img = new Image();
 
-    img.onload = () => {
-        const canvas = document.createElement("canvas");
-        const ctx = canvas.getContext("2d");
-        const scale = 2; // Alta resolución
+        img.onload = () => {
+            const canvas = document.createElement("canvas");
+            const ctx = canvas.getContext("2d");
+            const scale = 2; // Alta resolución
 
-        const originalSvgWidth = svgElement.clientWidth;
-        const originalSvgHeight = svgElement.clientHeight;
-        const footerHeight = 80; // Espacio extra para el texto
+            const originalSvgWidth = svgElement.clientWidth;
+            const originalSvgHeight = svgElement.clientHeight;
+            const footerHeight = 80; // Espacio extra para el texto
 
-        canvas.width = originalSvgWidth * scale;
-        canvas.height = (originalSvgHeight + footerHeight) * scale;
+            canvas.width = originalSvgWidth * scale;
+            canvas.height = (originalSvgHeight + footerHeight) * scale;
 
-        ctx.scale(scale, scale);
-        
-        // Fondo blanco general
-        ctx.fillStyle = 'white';
-        ctx.fillRect(0, 0, canvas.width / scale, canvas.height / scale);
-        
-        // Dibujar la malla
-        ctx.drawImage(img, 0, 0);
+            ctx.scale(scale, scale);
 
-        // --- PIE DE FOTO EN ROJO VIVO ---
-        ctx.fillStyle = "#FF0000"; // Rojo vivo
-        ctx.font = "bold 16px 'Space Grotesk', sans-serif";
-        ctx.textAlign = "center";
-        
-        const footerText = "Esta herramienta es meramente ilustrativa y no reemplaza una toma de ramos oficial.";
-        // Posicionar el texto centrado horizontalmente y debajo de la malla
-        ctx.fillText(footerText, originalSvgWidth / 2, originalSvgHeight + 40);
+            // Fondo blanco general
+            ctx.fillStyle = 'white';
+            ctx.fillRect(0, 0, canvas.width / scale, canvas.height / scale);
 
-        const mimeType = format === "jpg" ? "image/jpeg" : "image/png";
-        canvas.toBlob((blob) => {
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
-            a.download = `malla_${this.currentMalla}.${format}`;
-            a.click();
-            URL.revokeObjectURL(url);
-            URL.revokeObjectURL(svgUrl);
-        }, mimeType, 0.9);
-    };
-    img.src = svgUrl;
-}
+            // Dibujar la malla
+            ctx.drawImage(img, 0, 0);
+
+            // --- PIE DE FOTO EN ROJO VIVO ---
+            ctx.fillStyle = "#FF0000"; // Rojo vivo
+            ctx.font = "bold 16px 'Space Grotesk', sans-serif";
+            ctx.textAlign = "center";
+
+            const footerText = "Esta herramienta es meramente ilustrativa y no reemplaza una toma de ramos oficial.";
+            // Posicionar el texto centrado horizontalmente y debajo de la malla
+            ctx.fillText(footerText, originalSvgWidth / 2, originalSvgHeight + 40);
+
+            const mimeType = format === "jpg" ? "image/jpeg" : "image/png";
+            canvas.toBlob((blob) => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `malla_${this.currentMalla}.${format}`;
+                a.click();
+                URL.revokeObjectURL(url);
+                URL.revokeObjectURL(svgUrl);
+            }, mimeType, 0.9);
+        };
+        img.src = svgUrl;
+    }
     deRomanize(t) {
         let e = this.getRnums(), a = this.getAnums(), r = t.replace(/i/g, "M"), s = 0, i = 0, n = e.length;
         for (let t = 1; t < n; ++t) {
@@ -425,7 +425,7 @@ class Malla {
         let e = document.createElement("input");
         e.type = "file", e.accept = ".json";
         var a = new FileReader;
-        a.addEventListener("load", function(t) {
+        a.addEventListener("load", function (t) {
             try {
                 const fileContent = JSON.parse(t.target.result);
                 if (fileContent.malla) {
@@ -446,7 +446,7 @@ class Malla {
             semesterSubjects.forEach(subjectData => {
                 let sigla = subjectData[1], prer = [];
                 for (let i = 3; i < subjectData.length; i++) { if (Array.isArray(subjectData[i])) { prer = subjectData[i]; break } }
-                if (!this.dependencyMap[sigla]) { this.dependencyMap[sigla] = { prer: new Set(prer), unlocks: new Set() } } 
+                if (!this.dependencyMap[sigla]) { this.dependencyMap[sigla] = { prer: new Set(prer), unlocks: new Set() } }
                 else { prer.forEach(p => this.dependencyMap[sigla].prer.add(p)) }
             });
         });
@@ -522,9 +522,9 @@ class Ramo {
     }
     isBeingClicked() {
         if (this.isBlockedByRange && !this.approved && !this.failed) return;
-        if (this.approved) { this.deApproveRamo(), this.failRamo() } 
-        else if (this.failed) { this.cleanFail(), this.holdRamo() } 
-        else if (this.onHold) { this.cleanHold() } 
+        if (this.approved) { this.deApproveRamo(), this.failRamo() }
+        else if (this.failed) { this.cleanFail(), this.holdRamo() }
+        else if (this.onHold) { this.cleanHold() }
         else { this.approveRamo() }
         this.malla.verifyPrer(), this.malla.updateStats(), this.malla.updateSelectedCreditsCounter(), this.malla.saveAllStates()
     }
@@ -532,9 +532,13 @@ class Ramo {
         this.isCustom || selectById(this.sigla).select(".cross").attr("opacity", "1");
         if (!this.approved) { this.malla.approveSubject(this), this.approved = true }
     }
-    deApproveRamo() {
+    deApproveRamo(animated = true) {
         if (this.approved) {
-            this.isCustom || selectById(this.sigla).select(".cross").transition().attr("opacity", "0.01");
+            if (!this.isCustom) {
+                let sel = selectById(this.sigla).select(".cross");
+                if (animated) sel.transition().attr("opacity", "0.01");
+                else sel.interrupt().attr("opacity", "0.01");
+            }
             this.malla.deApproveSubject(this), this.approved = false;
         }
     }
@@ -544,9 +548,13 @@ class Ramo {
             this.malla.failSubject(this), this.failed = true;
         }
     }
-    cleanFail() {
+    cleanFail(animated = true) {
         if (this.failed) {
-            this.isCustom || selectById(this.sigla).select(".failed").transition().attr("opacity", "0.01");
+            if (!this.isCustom) {
+                let sel = selectById(this.sigla).select(".failed");
+                if (animated) sel.transition().attr("opacity", "0.01");
+                else sel.interrupt().attr("opacity", "0.01");
+            }
             this.malla.deFailSubject(this), this.failed = false;
         }
     }
@@ -556,13 +564,17 @@ class Ramo {
             this.malla.holdSubject(this), this.onHold = true;
         }
     }
-    cleanHold() {
+    cleanHold(animated = true) {
         if (this.onHold) {
-            this.isCustom || selectById(this.sigla).select(".on-hold").transition().attr("opacity", "0.01");
+            if (!this.isCustom) {
+                let sel = selectById(this.sigla).select(".on-hold");
+                if (animated) sel.transition().attr("opacity", "0.01");
+                else sel.interrupt().attr("opacity", "0.01");
+            }
             this.malla.deHoldSubject(this), this.onHold = false;
         }
     }
-    cleanRamo() { this.deApproveRamo(), this.cleanFail(), this.cleanHold() }
+    cleanRamo(animated = true) { this.deApproveRamo(animated), this.cleanFail(animated), this.cleanHold(animated) }
     blockByRange() {
         this.isBlockedByRange = true;
         if (!this.approved && !this.failed && !this.onHold) {
@@ -597,7 +609,7 @@ class Ramo {
     }
     needsWhiteText(t) {
         let e = 0, a = 0, r = 0;
-        if (4 === t.length) { e = "0x" + t[1] + t[1], a = "0x" + t[2] + t[2], r = "0x" + t[3] + t[3] } 
+        if (4 === t.length) { e = "0x" + t[1] + t[1], a = "0x" + t[2] + t[2], r = "0x" + t[3] + t[3] }
         else if (7 === t.length) { e = "0x" + t[1] + t[2], a = "0x" + t[3] + t[4], r = "0x" + t[5] + t[6] }
         let s = [e / 255, a / 255, r / 255];
         for (let i in s) s[i] = s[i] <= .03928 ? s[i] / 12.92 : Math.pow((s[i] + .055) / 1.055, 2.4);
