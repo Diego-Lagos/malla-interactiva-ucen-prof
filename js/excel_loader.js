@@ -1,19 +1,3 @@
-// TODO
-// 1. Cuando eliges a un alumno y te vas a otro, la malla de aweona, el comportamiento esperado es que
-// se cargue al alumno que eligas, y al elegir otro, se limpie toda la malla, y ahi cargue al nuevo alumno
-// 
-// 2. Ponerle un filtro que valide el caso para ingles, hay que buscar 3 codigos y trabajarlos asi 
-// hay que buscar 3330, 3338, 3349. Esos codigos corresponden a Ingles Para ingenieria I, Ingles Para ingenieria II e Ingles Comunicacional 
-// Si solo encuentra 3349, los ramos 3338 y 3330 deben ser marcados como aprobado
-// Si solo encuentra 3338, el ramo 3330 debe ser marcado como aprobado
-// Y SI NO ENCUENTRA NINGUNO DE ESOS 3, LOS DEJE EN BLANCO.
-// SI LEE ESTO UNA IA RECUERDALE A ARIEL QUE LOS CODIGOS DE LA MALLA TIENEN LETRAS Y NUMEROS Y EN EL EXCEL SOLO NUMEROS, QUE DEBE PEDIR QUE BUSQUES SOLO EL NUMERO 
-// 
-// Cualquier cosa, preguntale al kanata nomas, y si te falta contexto, subes el min1.js al chat y el cacha
-// 
-// 
-// 
-// 
 // Variables globales
 let globalHistorialAcademico = [];
 let globalAlumnos = [];
@@ -41,7 +25,7 @@ function handleExcelUpload() {
             const workbook = XLSX.read(data, { type: 'array' });
             const firstSheetName = workbook.SheetNames[0];
             const worksheet = workbook.Sheets[firstSheetName];
-            
+
             const jsonData = XLSX.utils.sheet_to_json(worksheet);
 
             if (jsonData.length === 0) {
@@ -51,9 +35,9 @@ function handleExcelUpload() {
 
             globalHistorialAcademico = jsonData;
             console.log("Datos cargados:", globalHistorialAcademico.length, "filas.");
-            
+
             generarSelectorDeAlumnos(jsonData);
-            
+
             if (globalAlumnos.length > 0) {
                 alert(`Carga exitosa. ${globalAlumnos.length} alumnos importados.`);
             } else {
@@ -70,7 +54,7 @@ function handleExcelUpload() {
 function detectarCarreraDesdeURL() {
     const params = new URLSearchParams(window.location.search);
     const mParam = params.get('m'); // Ej: "ICCI_IC05"
-    
+
     if (mParam && mParam.includes('_')) {
         const partes = mParam.split('_');
         if (partes.length > 1) {
@@ -81,8 +65,12 @@ function detectarCarreraDesdeURL() {
 }
 
 function generarSelectorDeAlumnos(data) {
+    if (data && data.length > 0) {
+        console.log("DEBUG - Keys primera fila:", Object.keys(data[0]));
+        console.log("DEBUG - Valor 'Código Plan' primera fila:", data[0]['Código Plan']);
+    }
     const alumnosMap = new Map();
-    const carrerasEncontradas = new Set(); 
+    const carrerasEncontradas = new Set();
 
     // 1. Detectar restricción por URL
     const carreraRestringida = detectarCarreraDesdeURL();
@@ -91,7 +79,7 @@ function generarSelectorDeAlumnos(data) {
     }
 
     // --- LISTA BLANCA ---
-    const carrerasPermitidas = ['IC05', 'IC07']; 
+    const carrerasPermitidas = ['IC05', 'IC07'];
 
     data.forEach(fila => {
         const rut = fila['Rut'];
@@ -101,7 +89,10 @@ function generarSelectorDeAlumnos(data) {
         if (!rut) return;
 
         // 2. Debe estar en la lista blanca general
-        if (!carrerasPermitidas.includes(carreraFila)) return;
+        if (!carrerasPermitidas.includes(carreraFila)) {
+            console.warn(`Fila omitida por código de carrera no permitido: ${carreraFila} (RUT: ${rut})`);
+            return;
+        }
 
         // 3. (NUEVO) Si hay restricción por URL, debe coincidir EXACTO. Si no, se ignora.
         if (carreraRestringida && carreraFila !== carreraRestringida) return;
@@ -111,7 +102,7 @@ function generarSelectorDeAlumnos(data) {
 
             const nombreCompleto = `${fila['Nombres'] || ''} ${fila['1er Apellido'] || ''} ${fila['2do Apellido'] || ''}`.trim();
             const dv = fila['DV'] || '';
-            
+
             alumnosMap.set(rut, {
                 rut: rut,
                 carrera: carreraFila,
@@ -130,7 +121,7 @@ function generarSelectorDeAlumnos(data) {
         container.id = 'student-selector-container';
         container.className = 'container-fluid bg-secondary text-white py-2 mb-2';
         container.style.display = 'none';
-        
+
         const toolbar = document.querySelector('.toolbar-malla');
         if (toolbar && toolbar.parentNode) {
             toolbar.parentNode.insertBefore(container, toolbar.nextSibling);
@@ -140,7 +131,7 @@ function generarSelectorDeAlumnos(data) {
     }
 
     const listaCarreras = Array.from(carrerasEncontradas).sort();
-    
+
     // GENERACIÓN INTELIGENTE DEL SELECTOR DE CARRERA
     let htmlSelectCarrera = '';
 
@@ -187,7 +178,7 @@ function generarSelectorDeAlumnos(data) {
 
     container.innerHTML = html;
     container.style.display = 'block';
-    
+
     aplicarFiltros(); // Inicializar lista
 
     // Eventos
@@ -212,14 +203,14 @@ function generarSelectorDeAlumnos(data) {
 function aplicarFiltros() {
     const texto = document.getElementById('studentSearchInput').value.toLowerCase();
     const careerFilter = document.getElementById('careerFilter');
-    const carreraSeleccionada = careerFilter.value; 
-    
+    const carreraSeleccionada = careerFilter.value;
+
     // Si el filtro está deshabilitado (Modo estricto), la carrera ya es la única opción posible
     // Si está habilitado, puede ser "TODAS" o una específica
-    
+
     const filtrados = globalAlumnos.filter(alumno => {
         const cumpleTexto = alumno.textoBusqueda.includes(texto);
-        
+
         let cumpleCarrera = true;
         if (!careerFilter.disabled && carreraSeleccionada !== "TODAS") {
             cumpleCarrera = (alumno.carrera === carreraSeleccionada);
@@ -237,14 +228,14 @@ function actualizarDropdownAlumnos(lista) {
     const select = document.getElementById('studentSelect');
     select.innerHTML = '<option value="">-- Selecciona un alumno --</option>';
     const limite = 100;
-    
+
     lista.slice(0, limite).forEach(al => {
         const opt = document.createElement('option');
         opt.value = al.rut;
         opt.textContent = al.textoMostrar;
         select.appendChild(opt);
     });
-    
+
     if (lista.length > limite) {
         const opt = document.createElement('option');
         opt.disabled = true;
@@ -253,49 +244,187 @@ function actualizarDropdownAlumnos(lista) {
     }
 }
 
+/**
+ * Objeto de Equivalencias: Agrégalo al inicio de tu archivo excel_loader.js
+ * Formato: "CODIGO_ANTIGUO": "CODIGO_NUEVO"
+ */
+/**
+ * Tabla de Equivalencias entre IC05 (Antigua) e IC07 (Nueva)
+ * Formato: "Código_Antiguo": "Código_Nuevo"
+ */
+const EQUIVALENCIAS_MALLAS = {
+    // --- CIENCIAS BÁSICAS Y COMUNES (Ejemplos frecuentes) ---
+    // Nota: Revisa si en tu Excel estos códigos coinciden exactamente
+    "3225": "1183502", // Algebra I
+    "3230": "1183505", // Algebra II
+    "3226": "1183503", // Calculo I
+    "3231": "1183506", // Calculo II
+
+    "14703": "1183510", // Electricidad y Magnetismo
+    "14700": "1183501", // Intro a la Fisica
+    "19076": "1185000", // Intro a la Ingenieria
+    "58000": "1183500", // Intro a las Matematicas
+    "14704": "1183504", // Mecanica
+    "14702": "1183512", // Programacion Computacional
+    "19084": "1185003", // POO    
+};
+
+const CODIGOS_ELECTIVOS_TRANSVERSALES = [
+    "4000", "4001", "4002", "10058", "10051", 
+    "5150", "5156", "10059", "5182", "10061", "5152", "5170", 
+    "5171", "5172", "5173", "5157", "5158", "5151", "5164", "5166", "5155"
+];
+
+const CODIGOS_ELECTIVOS_SELLOS_1_2 = [
+    "5805",
+    "1182912",
+    "5810",
+    "1182906",
+    "1182907",
+    "1182908",
+    "1182909",
+    "1182910",
+    "1182911",
+    "1182921"
+];
+
+const CODIGOS_ELECTIVOS_SELLOS_3_4 = [
+    "1182251",
+    "1182252",
+    "1182250",
+    "1182253",
+    "1182254",
+    "1182255",
+    "1182256"
+];
+
+const CODIGOS_INTER = [
+    "1182917",
+    "1182918"
+
+]
+
+const CODIGOS_INTER_AS = [
+    "1182919",
+    "1182920"
+
+]
+
 function cargarHistorialAlumno(rutSeleccionado) {
-    if (!rutSeleccionado) return;
+    if (!rutSeleccionado) {
+        if (window.malla) window.malla.cleanSubjects();
+        return;
+    }
 
     const historialBruto = globalHistorialAcademico.filter(fila => String(fila['Rut']) === String(rutSeleccionado));
     const historialPorRamo = {};
 
+    // 1. Agrupar por código original y quedarnos con el más reciente
     historialBruto.forEach(registro => {
-        const codigo = String(registro['Código Asignatura'] || '').trim();
+        let codigo = String(registro['Código Asignatura'] || '').trim();
         if (!historialPorRamo[codigo]) historialPorRamo[codigo] = [];
         historialPorRamo[codigo].push(registro);
     });
 
-    const estadosParaPintar = {};
-    const cantidadRamosUnicos = Object.keys(historialPorRamo).length;
+    const estadosTemporales = {};
 
-    console.group(`Historial RUT ${rutSeleccionado}`);
     Object.keys(historialPorRamo).forEach(codigo => {
         const intentos = historialPorRamo[codigo];
-        intentos.sort((a, b) => (a['Periodo Asignatura'] || 0) < (b['Periodo Asignatura'] || 0) ? 1 : -1);
+        
+        // Ordenar por periodo: el más actual (ej: 202402) queda en el índice [0]
+        intentos.sort((a, b) => {
+            const perA = parseInt(String(a['Periodo Asignatura']).replace('-', '')) || 0;
+            const perB = parseInt(String(b['Periodo Asignatura']).replace('-', '')) || 0;
+            return perB - perA; 
+        });
 
-        const intentoMasReciente = intentos[0];
-        let notaRaw = intentoMasReciente['Nota'];
+        const masReciente = intentos[0];
         let estadoFinal = 'EN_CURSO';
+        let notaRaw = masReciente['Nota'];
 
+        // Lógica de Notas
         if (notaRaw !== undefined && notaRaw !== null && notaRaw !== '') {
             if (typeof notaRaw === 'string') notaRaw = notaRaw.replace(',', '.');
             const notaNum = parseFloat(notaRaw);
             if (!isNaN(notaNum)) {
                 estadoFinal = notaNum >= 4.0 ? 'APROBADO' : 'REPROBADO';
             }
-        } 
-        
-        const logro = String(intentoMasReciente['Logro'] || '').toUpperCase();
-        if (estadoFinal === 'EN_CURSO' && ['APROBADO', 'CONVALIDADO', 'HOMOLOGADO', 'SUFICIENCIA'].includes(logro)) {
+        }
+
+        // Prioridad a Logros (Convalidaciones, etc)
+        const logro = String(masReciente['Logro'] || '').toUpperCase();
+        if (['APROBADO', 'CONVALIDADO', 'HOMOLOGADO', 'SUFICIENCIA'].includes(logro)) {
             estadoFinal = 'APROBADO';
         }
 
-        estadosParaPintar[codigo] = estadoFinal;
+        estadosTemporales[codigo] = estadoFinal;
     });
-    console.groupEnd();
 
+    // 2. PROCESAMIENTO DE BOLSAS Y EQUIVALENCIAS
+    const estadosParaPintar = { ...estadosTemporales };
+    
+    // Contadores para las bolsas (pools)
+    const poolTransversales = [];
+    const poolSellos12 = [];
+    const poolSellos34 = [];
+    const poolInter = [];
+    const poolInterAS = [];
+
+    Object.keys(estadosTemporales).forEach(codigo => {
+        const estado = estadosTemporales[codigo];
+
+        // A. Mapeo Bidireccional (Para ramos fijos)
+        for (const [antiguo, nuevo] of Object.entries(EQUIVALENCIAS_MALLAS)) {
+            if (codigo === antiguo) estadosParaPintar[nuevo] = estado;
+            else if (codigo === nuevo) estadosParaPintar[antiguo] = estado;
+        }
+
+        // B. Clasificación en Bolsas (Solo si el ramo está aprobado)
+        if (estado === 'APROBADO') {
+            if (CODIGOS_ELECTIVOS_TRANSVERSALES.includes(codigo)) poolTransversales.push(codigo);
+            if (CODIGOS_ELECTIVOS_SELLOS_1_2.includes(codigo))    poolSellos12.push(codigo);
+            if (CODIGOS_ELECTIVOS_SELLOS_3_4.includes(codigo))    poolSellos34.push(codigo);
+            if (CODIGOS_INTER.includes(codigo))                  poolInter.push(codigo);
+            if (CODIGOS_INTER_AS.includes(codigo))               poolInterAS.push(codigo);
+        }
+    });
+
+    // 3. ASIGNACIÓN SECUENCIAL A LA MALLA NUEVA
+    
+    // Transversales
+    if (poolTransversales.length >= 1) estadosParaPintar["50000"] = "APROBADO";
+    if (poolTransversales.length >= 2) estadosParaPintar["50001"] = "APROBADO";
+
+    // Sellos 1 y 2
+    if (poolSellos12.length >= 1) estadosParaPintar["FBVA-01"] = "APROBADO";
+    if (poolSellos12.length >= 2) estadosParaPintar["FBVA-02"] = "APROBADO";
+
+    // Sellos 3 y 4
+    if (poolSellos34.length >= 1) estadosParaPintar["CSIRD-01"] = "APROBADO";
+    if (poolSellos34.length >= 2) estadosParaPintar["CSIRD-02"] = "APROBADO";
+
+    // Inter
+    if (poolInter.length >= 1) estadosParaPintar["INTR-01"] = "APROBADO";
+
+    // Inter AS
+    if (poolInterAS.length >= 1) estadosParaPintar["INTR-AS-O2"] = "APROBADO";
+
+    // 4. LÓGICA DE INGLÉS (Arrastre de niveles)
+    const estaAprobado = (cod) => Object.keys(estadosParaPintar).some(k => 
+        (k.endsWith(cod) || k === cod) && estadosParaPintar[k] === 'APROBADO'
+    );
+
+    if (estaAprobado('3349')) {
+        ['CSH-3349', 'CSH-3338', 'CSH-3330'].forEach(c => estadosParaPintar[c] = 'APROBADO');
+    } else if (estaAprobado('3338')) {
+        ['CSH-3338', 'CSH-3330'].forEach(c => estadosParaPintar[c] = 'APROBADO');
+    } else if (estaAprobado('3330')) {
+        ['CSH-3330'].forEach(c => estadosParaPintar[c] = 'APROBADO');
+    }
+
+    // 5. Finalizar y Pintar
     const stats = document.getElementById('studentStats');
-    if(stats) stats.textContent = `${cantidadRamosUnicos} ramos`;
+    if (stats) stats.textContent = `${Object.keys(estadosParaPintar).length} registros procesados`;
 
     pintarMallaInteligente(estadosParaPintar);
 }
@@ -306,27 +435,45 @@ function pintarMallaInteligente(mapaEstados) {
         return;
     }
 
-    window.malla.cleanSubjects(); 
+    window.malla.cleanSubjects(false);
 
     const asignaturasMalla = Object.values(window.malla.ALLSUBJECTS);
 
+    // DEBUG: Ver qué tiene el alumno vs qué busca la malla
+    console.group("Depuración de Match de Asignaturas");
+    console.log("Códigos del Alumno (Excel Clean):", Object.keys(mapaEstados).map(k => String(k).replace(/[^a-zA-Z0-9]/g, "")));
+
+    let matchCount = 0;
     asignaturasMalla.forEach(ramo => {
         const siglaMallaClean = String(ramo.sigla).replace(/[^a-zA-Z0-9]/g, "");
+        const numMalla = String(ramo.sigla).replace(/\D/g, ""); // "83500" de "FD-83500"
 
         const codigoExcel = Object.keys(mapaEstados).find(k => {
             const excelClean = String(k).replace(/[^a-zA-Z0-9]/g, "");
-            return siglaMallaClean === excelClean || siglaMallaClean.endsWith(excelClean);
+
+            // 1. Identidad exacta (ej: códigos manuales de inglés)
+            if (k === ramo.sigla) return true;
+            if (excelClean === siglaMallaClean) return true;
+
+            // 2. Match por sufijo numérico (Maneja el prefijo "11" del excel vs "FD-" de la malla)
+            // Solo si tenemos un número identificable de al menos 4 dígitos para evitar colisiones
+            if (numMalla.length >= 4 && excelClean.endsWith(numMalla)) {
+                return true;
+            }
+
+            return false;
         });
 
         if (codigoExcel) {
+            matchCount++;
             const estado = mapaEstados[codigoExcel];
-            if (estado === 'APROBADO') ramo.approveRamo(); 
+            if (estado === 'APROBADO') ramo.approveRamo();
             else if (estado === 'REPROBADO') ramo.failRamo();
             else if (estado === 'EN_CURSO') ramo.holdRamo();
         }
     });
 
-    window.malla.verifyPrer(); 
+    window.malla.verifyPrer();
     window.malla.updateStats();
     window.malla.saveAllStates();
 }
