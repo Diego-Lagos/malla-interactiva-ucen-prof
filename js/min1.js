@@ -521,13 +521,30 @@ class Ramo {
         approvedGroup.append("rect").attr("x", t).attr("y", e).attr("width", a).attr("height", r).attr("fill", "none").attr("stroke", "#00AA00").attr("stroke-width", 5);
     }
     isBeingClicked() {
-        if (this.isBlockedByRange && !this.approved && !this.failed) return;
-        if (this.approved) { this.deApproveRamo(), this.failRamo() }
-        else if (this.failed) { this.cleanFail(), this.holdRamo() }
-        else if (this.onHold) { this.cleanHold() }
-        else { this.approveRamo() }
-        this.malla.verifyPrer(), this.malla.updateStats(), this.malla.updateSelectedCreditsCounter(), this.malla.saveAllStates()
+    const selector = document.getElementById('studentSelect');
+    
+    // Prioridad: Si hay un alumno del Excel seleccionado, abrir Modal
+    if (selector && selector.value !== "") {
+        if (typeof window.mostrarDetalleAsignatura === 'function') {
+            window.mostrarDetalleAsignatura(this.sigla);
+            return; // Detenemos aquí para que no pinte la malla
+        } else {
+            console.error("La función mostrarDetalleAsignatura no está cargada.");
+        }
     }
+
+    // Si no hay alumno, ejecutar comportamiento original de pintar la malla
+    if (this.isBlockedByRange && !this.approved && !this.failed) return;
+    if (this.approved) { this.deApproveRamo(); this.failRamo(); }
+    else if (this.failed) { this.cleanFail(); this.holdRamo(); }
+    else if (this.onHold) { this.cleanHold(); }
+    else { this.approveRamo(); }
+    
+    this.malla.verifyPrer();
+    this.malla.updateStats();
+    this.malla.updateSelectedCreditsCounter();
+    this.malla.saveAllStates();
+}
     approveRamo() {
         this.isCustom || selectById(this.sigla).select(".cross").attr("opacity", "1");
         if (!this.approved) { this.malla.approveSubject(this), this.approved = true }
