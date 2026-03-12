@@ -123,6 +123,12 @@
         min-width: 800px; 
         display: inline-block !important;
     }
+    .modal-backdrop {
+    z-index: 1040 !important;
+    }
+    #modalDetalleRamo {
+        z-index: 1050 !important;
+    }
   </style>
   </head>
 
@@ -413,12 +419,31 @@
     <a class="dropdown-item" href="?m=${Link}">Malla ${Nombre}</a>
   </script>
 
+<div class="modal fade" id="modalDetalleRamo" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title" id="modalTitle">Detalles de Asignatura</h5>
+          <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modalBody">
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <script src="https://d3js.org/d3.v5.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-<script src="js/min1.js" defer></script>
 <script src="js/excel_loader.js" defer></script>
+<script src="js/min1.js" defer></script>
 <script src="js/landing.js" defer></script>
+
 
 <script>
   // Solo lógica de UI que no depende de la Malla
